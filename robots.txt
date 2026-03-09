@@ -1,0 +1,22 @@
+# SMB ProFind — robots.txt
+# https://profind.io/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /?admin=true
+Disallow: /?adminMode=true
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://profind.io/sitemap.xml
