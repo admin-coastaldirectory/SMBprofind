@@ -4,106 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Startup Coaches — Best Founder & Venture Educators | SMBProFind</title>
-<meta name="description" content="Browse verified startup coaches on SMBProFind. Find the best founder, venture, product-market fit, and startup growth educators — free.">
+<meta name="description" content="Browse verified startup coaches. Y Combinator, Indie Hackers, How I Built This & more founder resources.">
 <link rel="canonical" href="https://smbprofind.netlify.app/startup">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What is product-market fit and how do I find it?","acceptedAnswer":{"@type":"Answer","text":"Product-market fit means you've built something a specific group of customers want strongly enough to pay for repeatedly and recommend to others. The classic test: if you removed your product, would users be very disappointed? Finding it requires talking to potential customers before building, launching an MVP quickly, and iterating based on actual usage data rather than assumptions."}},
-{"@type":"Question","name":"Do I need venture capital to start a startup?","acceptedAnswer":{"@type":"Answer","text":"No — the majority of successful tech companies were bootstrapped, including Basecamp, Mailchimp, GitHub (early), and Notion (initially). VC funding accelerates growth but dilutes ownership and creates pressure to scale fast. The bootstrapped path takes longer but preserves control and profitability. The right choice depends on market dynamics and your personal goals."}},
-{"@type":"Question","name":"What is Y Combinator and how do I get in?","acceptedAnswer":{"@type":"Answer","text":"Y Combinator is the world's most prestigious startup accelerator, having funded Airbnb, Stripe, Dropbox, and thousands of other companies. It provides $500K in funding for 7% equity, a 3-month intensive program, and a powerful alumni network. Acceptance is highly competitive (2–3% acceptance rate). Applications are free at ycombinator.com."}},
-{"@type":"Question","name":"What is an MVP (Minimum Viable Product)?","acceptedAnswer":{"@type":"Answer","text":"An MVP is the simplest version of your product that delivers enough value to attract early adopters and generate learning. The goal is not to build a minimal product — it's to maximize learning per dollar and hour invested. Many successful MVPs were manual processes (Airbnb's first listings were photographed by founders personally) or simple landing pages before any software was built."}},
-{"@type":"Question","name":"How do I write a startup pitch deck?","acceptedAnswer":{"@type":"Answer","text":"A standard pitch deck covers: problem, solution, market size, product, traction, business model, team, and funding ask — typically 10–15 slides. The most important slides are team (investors bet on people) and traction (proof that customers want it). Y Combinator's online resources and First Round Review both cover pitch deck construction in detail."}},
-{"@type":"Question","name":"What is the difference between a startup and a small business?","acceptedAnswer":{"@type":"Answer","text":"Startups are designed for rapid, scalable growth — often with a technology-enabled product that can serve millions of customers with minimal marginal cost. Small businesses are built to serve a local or niche market profitably and sustainably, often with linear growth. Most businesses are small businesses; startups represent a small but high-profile subset."}},
-{"@type":"Question","name":"What is Indie Hackers?","acceptedAnswer":{"@type":"Answer","text":"Indie Hackers is a community of bootstrapped founders who share revenue numbers, growth strategies, and lessons learned building profitable internet businesses without venture capital. Founded by Courtland Allen and acquired by Stripe, it's one of the most authentic and data-rich communities for solo and small-team founders pursuing profitability over growth at all costs."}},
-{"@type":"Question","name":"How do I validate a startup idea before building it?","acceptedAnswer":{"@type":"Answer","text":"Idea validation methods include: customer interviews (talk to 20+ potential customers before writing a line of code), landing pages with waitlist signups (measures demand), pre-selling (collect payment before building), building a manual version first (concierge MVP), and running ads to a coming-soon page to measure click-through rates. The goal is evidence of demand, not assumption."}}
-]}
-</script>
 <style>
-:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--text:#1e293b;--text-muted:#64748b;--card-shadow:0 2px 12px rgba(15,32,68,0.09);--card-shadow-hover:0 8px 32px rgba(15,32,68,0.16);--radius:12px;--radius-sm:8px;--transition:0.2s ease;--nav-height:64px;}
+:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#fff;--off:#f8fafc;--gray-200:#e2e8f0;--text:#1e293b;--muted:#64748b;--sh:0 2px 12px rgba(15,32,68,.09);--sh2:0 8px 32px rgba(15,32,68,.16);--r:12px;--rs:8px;--tr:.2s ease;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off-white);line-height:1.6;}
-nav{position:sticky;top:0;z-index:100;background:var(--navy);height:var(--nav-height);display:flex;align-items:center;padding:0 24px;gap:32px;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
-.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:var(--white);letter-spacing:-0.5px;}
-.logo span{color:var(--teal);}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off);line-height:1.6;}
+a{color:inherit;}
+nav{position:sticky;top:0;z-index:100;background:var(--navy);height:64px;display:flex;align-items:center;padding:0 24px;box-shadow:0 2px 12px rgba(0,0,0,.2);}
+.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:#fff;letter-spacing:-.5px;}.logo span{color:var(--teal);}
 .nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;}
-.nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:var(--radius-sm);transition:var(--transition);}
-.nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.1);}
-.nav-links a.btn-cta{background:var(--teal);color:var(--white);font-weight:700;}
-.nav-links a.btn-cta:hover{background:var(--teal-dark);}
-.breadcrumb{max-width:1100px;margin:0 auto;padding:12px 20px;font-size:0.8rem;color:var(--text-muted);}
-.breadcrumb a{color:var(--text-muted);text-decoration:none;}
-.breadcrumb a:hover{color:var(--teal);}
-.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);color:var(--white);padding:48px 24px 40px;text-align:center;}
-.hero .badge{display:inline-block;background:rgba(0,184,148,0.2);color:var(--teal);border:1px solid rgba(0,184,148,0.4);padding:4px 14px;border-radius:20px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px;}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.88rem;font-weight:500;padding:6px 12px;border-radius:var(--rs);transition:var(--tr);}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.1);}
+.nav-links a.cta{background:var(--teal);color:#fff;font-weight:700;}
+.bc{max-width:1100px;margin:0 auto;padding:12px 20px;font-size:.8rem;color:var(--muted);}
+.bc a{color:var(--muted);text-decoration:none;}.bc a:hover{color:var(--teal);}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:#fff;padding:48px 24px 44px;text-align:center;}
+.badge{display:inline-block;background:rgba(0,184,148,.2);color:var(--teal);border:1px solid rgba(0,184,148,.4);padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
 .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:10px;}
-.hero p{font-size:0.97rem;color:rgba(255,255,255,0.78);max-width:580px;margin:0 auto 14px;}
-.updated{font-size:0.75rem;color:rgba(255,255,255,0.45);}
+.hero p{font-size:.97rem;color:rgba(255,255,255,.78);max-width:580px;margin:0 auto 14px;}
+.upd{font-size:.74rem;color:rgba(255,255,255,.4);}
 .content{max-width:1100px;margin:0 auto;padding:28px 20px;}
-.seo-callout{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:var(--radius-sm);padding:18px 22px;margin-bottom:28px;}
-.seo-callout p{font-size:0.88rem;color:var(--text-muted);line-height:1.7;}
-.seo-callout strong{color:var(--teal-dark);}
-.authority-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
-.auth-link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);font-size:0.82rem;font-weight:600;color:var(--navy);text-decoration:none;box-shadow:var(--card-shadow);transition:var(--transition);}
+.callout{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:var(--rs);padding:16px 20px;margin-bottom:24px;font-size:.88rem;color:var(--muted);line-height:1.7;}
+.auth-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.auth-link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--rs);font-size:.82rem;font-weight:600;color:var(--navy);text-decoration:none;box-shadow:var(--sh);transition:var(--tr);}
 .auth-link:hover{border-color:var(--teal);color:var(--teal-dark);}
-.prose-section{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:32px;margin-bottom:24px;}
-.prose-section h2{font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:14px;}
-.prose-section p{font-size:0.9rem;color:var(--text-muted);line-height:1.78;margin-bottom:10px;}
-.section-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:18px;}
-.section-header h2{font-size:1.1rem;font-weight:800;color:var(--navy);}
-.section-header a{font-size:0.82rem;color:var(--teal);text-decoration:none;font-weight:600;}
-.section-header a:hover{color:var(--teal-dark);}
+.resources-block{margin-bottom:28px;}
+.resources-block h2{font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--teal-light);display:flex;align-items:center;gap:8px;}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:12px;}
+.res-card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px;display:flex;gap:12px;align-items:flex-start;transition:var(--tr);text-decoration:none;color:inherit;border:1.5px solid transparent;}
+.res-card:hover{border-color:var(--teal);box-shadow:var(--sh2);transform:translateY(-1px);}
+.res-icon{width:42px;height:42px;border-radius:var(--rs);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;}
+.res-body{flex:1;min-width:0;}
+.res-name{font-size:.87rem;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.res-desc{font-size:.75rem;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.res-type{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:10px;display:inline-block;}
+.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+.sec-hdr h2{font-size:1.1rem;font-weight:800;color:var(--navy);}
+.sec-hdr a{font-size:.82rem;color:var(--teal);text-decoration:none;font-weight:600;}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:28px;}
-.card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;transition:box-shadow var(--transition),transform var(--transition);display:flex;flex-direction:column;}
-.card:hover{box-shadow:var(--card-shadow-hover);transform:translateY(-2px);}
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:box-shadow var(--tr),transform var(--tr);display:flex;flex-direction:column;}
+.card:hover{box-shadow:var(--sh2);transform:translateY(-2px);}
 .card-top{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:16px;display:flex;align-items:flex-start;gap:12px;position:relative;}
-.avatar{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:var(--white);flex-shrink:0;border:2px solid rgba(255,255,255,0.25);}
-.card-meta{flex:1;min-width:0;}
-.card-name{font-size:0.95rem;font-weight:700;color:var(--white);line-height:1.2;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.card-handle{font-size:0.76rem;color:rgba(255,255,255,0.6);margin-bottom:5px;}
-.cat-tag{font-size:0.67rem;background:rgba(0,184,148,0.22);color:var(--teal);padding:2px 7px;border-radius:20px;font-weight:600;border:1px solid rgba(0,184,148,0.35);}
-.featured-badge{position:absolute;top:10px;right:10px;background:var(--gold);color:#7a5a00;font-size:0.65rem;font-weight:800;padding:3px 8px;border-radius:20px;text-transform:uppercase;letter-spacing:0.05em;}
-.card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:9px;}
-.card-cred{font-size:0.78rem;font-weight:600;color:var(--teal-dark);}
-.card-summary{font-size:0.82rem;color:var(--text-muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
-.stat-box{background:var(--gray-100);border-radius:6px;padding:5px 8px;text-align:center;}
-.stat-label{font-size:0.62rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);font-weight:600;}
-.stat-value{font-size:0.8rem;font-weight:700;color:var(--text);}
-.stat-value.green{color:#16a34a;}.stat-value.blue{color:#2563eb;}.stat-value.orange{color:#ea580c;}
-.platform-row{display:flex;gap:5px;flex-wrap:wrap;}
-.platform-btn{display:inline-flex;align-items:center;gap:3px;padding:4px 9px;border-radius:6px;font-size:0.73rem;font-weight:600;text-decoration:none;transition:var(--transition);border:1.5px solid transparent;}
-.platform-btn.yt{background:#fee2e2;color:#991b1b;border-color:#fca5a5;}.platform-btn.yt:hover{background:#ef4444;color:var(--white);}
-.platform-btn.ig{background:#fce7f3;color:#9d174d;border-color:#f9a8d4;}.platform-btn.ig:hover{background:#ec4899;color:var(--white);}
-.platform-btn.li{background:#dbeafe;color:#1e40af;border-color:#93c5fd;}.platform-btn.li:hover{background:#2563eb;color:var(--white);}
-.platform-btn.web{background:var(--teal-light);color:var(--teal-dark);border-color:#a7f3d0;}.platform-btn.web:hover{background:var(--teal);color:var(--white);}
-.book-link{font-size:0.72rem;color:var(--navy);text-decoration:none;background:var(--gray-100);padding:3px 8px;border-radius:4px;border:1px solid var(--gray-200);transition:var(--transition);}
-.book-link:hover{background:var(--navy);color:var(--white);}
-.wiki-link{font-size:0.72rem;color:#1a73e8;text-decoration:none;background:#e8f0fe;padding:3px 7px;border-radius:4px;border:1px solid #c5d9f8;transition:var(--transition);}
-.wiki-link:hover{background:#1a73e8;color:var(--white);}
-.loading{text-align:center;padding:48px 20px;color:var(--text-muted);}
-.spinner{width:32px;height:32px;border:3px solid var(--gray-200);border-top-color:var(--teal);border-radius:50%;animation:spin 0.7s linear infinite;margin:0 auto 10px;}
+.av{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:#fff;flex-shrink:0;border:2px solid rgba(255,255,255,.25);}
+.cm{flex:1;min-width:0;}
+.cn{font-size:.95rem;font-weight:700;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ch{font-size:.76rem;color:rgba(255,255,255,.6);margin-bottom:5px;}
+.ct{font-size:.67rem;background:rgba(0,184,148,.22);color:var(--teal);padding:2px 7px;border-radius:20px;font-weight:600;border:1px solid rgba(0,184,148,.35);}
+.fb{position:absolute;top:10px;right:10px;background:var(--gold);color:#7a5a00;font-size:.65rem;font-weight:800;padding:3px 8px;border-radius:20px;text-transform:uppercase;}
+.cb{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:9px;}
+.cc{font-size:.78rem;font-weight:600;color:var(--teal-dark);}
+.cs{font-size:.82rem;color:var(--muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.sb{background:var(--off);border-radius:6px;padding:5px 8px;text-align:center;}
+.sl{font-size:.62rem;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.sv{font-size:.8rem;font-weight:700;}.sv.green{color:#16a34a;}.sv.blue{color:#2563eb;}.sv.orange{color:#ea580c;}
+.pr{display:flex;gap:5px;flex-wrap:wrap;}
+.pb{display:inline-flex;align-items:center;gap:3px;padding:4px 9px;border-radius:6px;font-size:.73rem;font-weight:600;text-decoration:none;transition:var(--tr);border:1.5px solid transparent;}
+.pb.yt{background:#fee2e2;color:#991b1b;border-color:#fca5a5;}.pb.yt:hover{background:#ef4444;color:#fff;}
+.pb.ig{background:#fce7f3;color:#9d174d;border-color:#f9a8d4;}.pb.ig:hover{background:#ec4899;color:#fff;}
+.pb.li{background:#dbeafe;color:#1e40af;border-color:#93c5fd;}.pb.li:hover{background:#2563eb;color:#fff;}
+.pb.tk{background:#f0fdf4;color:#166534;border-color:#86efac;}.pb.tk:hover{background:#22c55e;color:#fff;}
+.pb.web{background:var(--teal-light);color:var(--teal-dark);border-color:#a7f3d0;}.pb.web:hover{background:var(--teal);color:#fff;}
+.bl{font-size:.72rem;color:var(--navy);text-decoration:none;background:var(--off);padding:3px 8px;border-radius:4px;border:1px solid var(--gray-200);transition:var(--tr);}
+.bl:hover{background:var(--navy);color:#fff;}
+.wl{font-size:.72rem;color:#1a73e8;background:#e8f0fe;padding:3px 7px;border-radius:4px;text-decoration:none;border:1px solid #c5d9f8;}
+.loading{text-align:center;padding:48px 20px;color:var(--muted);}
+.spinner{width:32px;height:32px;border:3px solid var(--gray-200);border-top-color:var(--teal);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 10px;}
 @keyframes spin{to{transform:rotate(360deg);}}
-.faq-section{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:28px 32px;margin-bottom:28px;}
-.faq-section h2{font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:16px;}
-.faq-item{border-bottom:1px solid var(--gray-200);}
-.faq-q{width:100%;text-align:left;padding:13px 0;font-size:0.88rem;font-weight:600;color:var(--text);background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:inherit;gap:8px;}
-.faq-q:hover{color:var(--teal-dark);}
-.faq-toggle{color:var(--teal);font-size:1.1rem;flex-shrink:0;}
-.faq-a{display:none;font-size:0.86rem;color:var(--text-muted);line-height:1.7;padding-bottom:13px;}
-.faq-a.open{display:block;}
-footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px;margin-top:48px;}
-.footer-inner{max-width:1280px;margin:0 auto;}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
-.footer-brand .logo{font-size:1.2rem;}
-.footer-brand p{font-size:0.8rem;margin-top:6px;line-height:1.6;}
-.footer-col h5{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:8px;}
-.footer-col a{display:block;font-size:0.81rem;color:rgba(255,255,255,0.6);text-decoration:none;margin-bottom:5px;transition:var(--transition);}
-.footer-col a:hover{color:var(--teal);}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;font-size:0.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-.footer-bottom a{color:rgba(255,255,255,0.5);text-decoration:none;}
-.footer-bottom a:hover{color:var(--teal);}
-.footer-disclosure{font-size:0.74rem;color:rgba(255,255,255,0.4);margin-top:10px;line-height:1.5;}
-.footer-disclosure a{color:rgba(0,184,148,0.7);}
+.faqs{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:28px 32px;margin-bottom:28px;}
+.faqs h2{font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:16px;}
+.fi{border-bottom:1px solid var(--gray-200);}
+.fq{width:100%;text-align:left;padding:13px 0;font-size:.88rem;font-weight:600;color:var(--text);background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:inherit;gap:8px;}
+.fq:hover{color:var(--teal-dark);}
+.ft{color:var(--teal);font-size:1.1rem;flex-shrink:0;}
+.fa{display:none;font-size:.86rem;color:var(--muted);line-height:1.7;padding-bottom:13px;}
+.fa.open{display:block;}
+footer{background:var(--navy);color:rgba(255,255,255,.7);padding:36px 24px 20px;margin-top:48px;}
+.fi2{max-width:1280px;margin:0 auto;}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
+.fb2 .logo{font-size:1.2rem;}.fb2 p{font-size:.8rem;margin-top:6px;line-height:1.6;}
+.fc h5{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin-bottom:8px;}
+.fc a{display:block;font-size:.81rem;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:5px;}.fc a:hover{color:var(--teal);}
+.fb3{border-top:1px solid rgba(255,255,255,.12);padding-top:16px;font-size:.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.fb3 a{color:rgba(255,255,255,.5);text-decoration:none;}.fb3 a:hover{color:var(--teal);}
+.disc{font-size:.74rem;color:rgba(255,255,255,.4);margin-top:10px;line-height:1.5;}
+.disc a{color:rgba(0,184,148,.7);}
+@media(max-width:700px){.nav-links a:not(.cta){display:none;}.res-grid,.grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -114,174 +101,99 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
     <a href="blog.html">📝 Blog</a>
     <a href="hubs.html">🔗 Hubs</a>
     <a href="advertise.html">📢 Advertise</a>
-    <a href="submit.html" class="btn-cta">Get Listed →</a>
+    <a href="submit.html" class="cta">Get Listed →</a>
   </div>
 </nav>
-
-<div class="breadcrumb"><a href="index.html">Home</a> › Startup Coaches & Founder Educators</div>
-
+<div class="bc"><a href="index.html">Home</a> › Startup Coaches & Founder Educators</div>
 <div class="hero">
   <div class="badge">🚀 Category Hub</div>
   <h1>Startup Coaches & Founder Educators</h1>
   <p>The best startup coaches, venture educators, and founder mentors for early-stage companies.</p>
-  <div class="updated">Last updated: March 2025</div>
+  <div class="upd">Last updated: March 2025</div>
 </div>
-
 <div class="content">
-  <div class="seo-callout"><p>Verified startup educators on SMBProFind — covering fundraising, product-market fit, pitch decks, growth hacking, and building from zero to one.</p></div>
-
-  <div class="authority-links">
-    <a href="https://www.ycombinator.com/blog" class="auth-link" target="_blank" rel="noopener">🚀 Y Combinator Blog — Startup Advice</a>
-    <a href="https://review.firstround.com" class="auth-link" target="_blank" rel="noopener">📚 First Round Review — Founder Content</a>
-    <a href="https://www.indiehackers.com" class="auth-link" target="_blank" rel="noopener">💻 Indie Hackers — Bootstrap Startups</a>
-  </div>
-
-  <div class="prose-section">
-    <h2>What Are Startup Coaches and Founder Educators?</h2>
-    <p>Startup coaches are educators, operators, and investors who help early-stage founders navigate the unique challenges of building a company from scratch — finding product-market fit, building an MVP, raising venture capital, assembling a founding team, and scaling from first customers to sustainable growth. The startup world has its own language, frameworks, and playbooks that differ significantly from traditional SMB advice.</p>
-    <p>The startup education landscape is split between the VC-backed path (raise money, grow fast, aim for an exit) and the bootstrapped path (build profitably without investor capital, aim for lifestyle or SMB scale). Y Combinator represents the gold standard of VC-path education; Indie Hackers and the bootstrapped SaaS community represent the profitable-first path. Both are legitimate — the right choice depends on the type of company you're building and the outcome you want.</p>
-    <p>Many of the entrepreneurs featured in SMBProFind's entrepreneurship category started as startup founders and can speak to both worlds. Dan Martell (SaaS and recurring revenue), Noah Kagan (bootstrapped to acquisition at Mint), and Shaan Puri (startup investing and ideation) bridge the startup and SMB worlds effectively.</p>
-  </div>
-
-  <div class="prose-section">
-    <h2>How to Find the Right Startup Coach</h2>
-    <p>The most important match to make is between the coach's path and your target path. If you want to build a VC-backed, high-growth technology company, learn from founders and investors who have done exactly that — Y Combinator alumni content, First Round Review, and Lenny Rachitsky (product) are excellent resources. If you want to build a profitable, bootstrapped SaaS or service business, Indie Hackers, Pieter Levels, and the MicroConf community are better fits.</p>
-    <p>Stage also matters enormously. Pre-revenue, the most important work is customer discovery and finding product-market fit — not building features or thinking about scaling. Paul Graham's essays (free on paulgraham.com) and Y Combinator's startup school curriculum are the best free resources for this stage. Post-revenue but pre-scale, Lenny Rachitsky's newsletter on growth and retention is outstanding.</p>
-    <p>Be skeptical of startup coaches who don't have operating experience — who have only written about startups rather than built them. The best startup education comes from founders who have actually shipped products, acquired customers, and navigated the real psychology and mechanics of early-stage building.</p>
-  </div>
-
-  <div class="section-header">
-    <h2>🎙 Top Coaches <span id="infCount" style="font-size:0.85rem;font-weight:400;color:var(--text-muted);"></span></h2>
+  <div class="callout"><strong>Verified startup educators</strong> covering fundraising, product-market fit, pitch decks, growth hacking, bootstrapping, and building from zero to one.</div>
+  <div class="auth-links"><a href="https://www.ycombinator.com/blog" class="auth-link" target="_blank" rel="noopener">🚀 Y Combinator Blog</a><a href="https://review.firstround.com" class="auth-link" target="_blank" rel="noopener">📚 First Round Review</a><a href="https://www.indiehackers.com" class="auth-link" target="_blank" rel="noopener">💻 Indie Hackers</a></div>
+  <div class="resources-block"><h2>🛠 Tools & Software</h2><div class="res-grid"><a href="https://notion.so/product/affiliate-program" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a1a1a">📓</div><div class="res-body"><div class="res-name">Notion</div><div class="res-desc">The all-in-one workspace used by millions of entrepreneurs — SOPs, wikis, databases, project management, and team docs in one tool. Affiliate program via their official partner network.</div><div style="margin-top:5px;"><span class="res-type" style="background:#dbeafe;color:#1e40af;">Software</span><span style="font-size:.67rem;color:#16a34a;font-weight:700;margin-left:5px;">💰 50% first payment</span></div></div></a><a href="https://www.shopify.com/affiliates" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#96bf48">🛒</div><div class="res-body"><div class="res-name">Shopify Affiliate Program</div><div class="res-desc">The gold standard of ecommerce affiliate programs — Shopify pays $150 for standard and up to $500 for advanced plan referrals. High brand recognition and the dominant platform position make this one of the best-converting affiliate opportunities for any entrepreneurship or business audience.</div><div style="margin-top:5px;"><span class="res-type" style="background:#dbeafe;color:#1e40af;">Software</span><span style="font-size:.67rem;color:#16a34a;font-weight:700;margin-left:5px;">💰 $150–$500/signup</span></div></div></a></div></div>
+<div class="resources-block"><h2>📚 Must-Read Books</h2><div class="res-grid"><a href="https://www.amazon.com/dp/0887307280?tag=smbinf-20" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a5c3a">📗</div><div class="res-body"><div class="res-name">The E-Myth Revisited</div><div class="res-desc">Michael Gerber's seminal book on why most small businesses fail — and how to fix it. The core insight: business owners must work on the business, not just in it. Introduces the Franchise Prototype model and the three personalities every owner must manage: entrepreneur, manager, and technician.</div><div style="margin-top:5px;"><span class="res-type" style="background:#fef9c3;color:#854d0e;">Book</span></div></div></a><a href="https://www.amazon.com/dp/1328972356?tag=smbinf-20" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a3260">📘</div><div class="res-body"><div class="res-name">Company of One (Paul Jarvis)</div><div class="res-desc">A counter-narrative to growth-at-all-costs — Paul Jarvis argues that staying lean, independent, and focused can lead to more profit, freedom, and sustainability than constant expansion. Must-read for solopreneurs and lifestyle business owners who want to optimize for margin, not headcount.</div><div style="margin-top:5px;"><span class="res-type" style="background:#fef9c3;color:#854d0e;">Book</span></div></div></a></div></div>
+<div class="resources-block"><h2>🎧 Podcasts</h2><div class="res-grid"><a href="https://www.npr.org/series/how-i-built-this" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">🎙️</div><div class="res-body"><div class="res-name">How I Built This (NPR)</div><div class="res-desc">Guy Raz's legendary NPR podcast interviewing the founders of the world's best-known companies. From Airbnb to Spanx, each episode dives deep into origin stories, near-death moments, and the decisions that made the difference. Required listening for any entrepreneur.</div><div style="margin-top:5px;"><span class="res-type" style="background:#ffedd5;color:#9a3412;">Podcast</span></div></div></a><a href="https://www.mfmpod.com" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a4d3a">💰</div><div class="res-body"><div class="res-name">My First Million</div><div class="res-desc">Sam Parr and Shaan Puri brainstorm business ideas, break down how companies got to $1M+ in revenue, and riff on trends before they hit. One of the most entertaining and intellectually rich shows in the entrepreneurship space — famous for deep-dive idea breakdowns.</div><div style="margin-top:5px;"><span class="res-type" style="background:#ffedd5;color:#9a3412;">Podcast</span></div></div></a></div></div>
+<div class="resources-block"><h2>📧 Newsletters</h2><div class="res-grid"><a href="https://thehustle.co" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">📬</div><div class="res-body"><div class="res-name">The Hustle</div><div class="res-desc">HubSpot's daily business and tech newsletter read by 1.5M+ entrepreneurs and operators. Covers business news, startup stories, and market trends in a punchy, readable format. One of the most widely subscribed entrepreneurship newsletters on the internet.</div><div style="margin-top:5px;"><span class="res-type" style="background:#e0f2fe;color:#0c4a6e;">Newsletter</span></div></div></a><a href="https://bootstrappedfounder.com" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#2c3e50">🥾</div><div class="res-body"><div class="res-name">Bootstrapped Founder</div><div class="res-desc">Arvid Kahl writes about bootstrapping a SaaS or online business to profitability without VC funding. Covers building in public, audience monetization, and the mindset of self-funded founders. Essential for solo operators and lean startup builders.</div><div style="margin-top:5px;"><span class="res-type" style="background:#e0f2fe;color:#0c4a6e;">Newsletter</span></div></div></a></div></div>
+<div class="resources-block"><h2>🤝 Communities & Networks</h2><div class="res-grid"><a href="https://www.facebook.com/groups/smallbusinessnetworking" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1877f2">👥</div><div class="res-body"><div class="res-name">Small Business Networking (Facebook)</div><div class="res-desc">One of the largest Facebook groups for small business owners with 300,000+ members. A peer support community for sharing challenges, getting advice, discussing marketing tactics, and connecting with fellow owners across all industries. Active daily posting.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://eonetwork.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">🌐</div><div class="res-body"><div class="res-name">Entrepreneurs Organization (EO)</div><div class="res-desc">Global peer network of 17,000+ entrepreneurs in 60+ countries with annual revenue of $1M+. Local chapters host monthly forums, speaker events, and learning days. One of the highest-value business networks in the world — members only above the revenue threshold.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://score.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a5c3a">🏅</div><div class="res-body"><div class="res-name">SCORE Mentorship Network</div><div class="res-desc">Free mentorship and education for small business owners from 10,000+ volunteer mentors who are current and former executives. SCORE helped start 59,447 new businesses in 2024 alone. Access to live workshops, on-demand courses, and one-on-one mentoring sessions at no cost.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://ypo.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#8b0000">🌟</div><div class="res-body"><div class="res-name">Aligned (YPO Local Chapters)</div><div class="res-desc">Young Presidents Organization — global community for chief executives under 45 with companies above a revenue threshold. Monthly forum groups of 10–12 peers, chapter events, and global learning conferences. The premier executive peer network for growth-stage business owners.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a></div></div>
+  <div class="sec-hdr">
+    <h2>🎙 Top Educators <span id="cnt" style="font-size:.85rem;font-weight:400;color:var(--muted);"></span></h2>
     <a href="index.html">Browse All →</a>
   </div>
   <div class="grid" id="grid">
     <div class="loading"><div class="spinner"></div><p>Loading coaches…</p></div>
   </div>
-
-  <div class="faq-section">
-    <h2>Frequently Asked Questions — Startup Coaches</h2>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What is product-market fit and how do I find it?</span><span class="faq-toggle">+</span></button><div class="faq-a">Product-market fit means you've built something a specific group of customers want strongly enough to pay for repeatedly and recommend to others. The classic test: if you removed your product, would users be very disappointed? Finding it requires talking to potential customers before building, launching an MVP quickly, and iterating based on actual usage data rather than assumptions.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Do I need venture capital to start a startup?</span><span class="faq-toggle">+</span></button><div class="faq-a">No — the majority of successful tech companies were bootstrapped, including Basecamp, Mailchimp, GitHub (early), and Notion (initially). VC funding accelerates growth but dilutes ownership and creates pressure to scale fast. The bootstrapped path takes longer but preserves control and profitability. The right choice depends on market dynamics and your personal goals.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What is Y Combinator and how do I get in?</span><span class="faq-toggle">+</span></button><div class="faq-a">Y Combinator is the world's most prestigious startup accelerator, having funded Airbnb, Stripe, Dropbox, and thousands of other companies. It provides $500K in funding for 7% equity, a 3-month intensive program, and a powerful alumni network. Acceptance is highly competitive (2–3% acceptance rate). Applications are free at ycombinator.com.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What is an MVP (Minimum Viable Product)?</span><span class="faq-toggle">+</span></button><div class="faq-a">An MVP is the simplest version of your product that delivers enough value to attract early adopters and generate learning. The goal is not to build a minimal product — it's to maximize learning per dollar and hour invested. Many successful MVPs were manual processes (Airbnb's first listings were photographed by founders personally) or simple landing pages before any software was built.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>How do I write a startup pitch deck?</span><span class="faq-toggle">+</span></button><div class="faq-a">A standard pitch deck covers: problem, solution, market size, product, traction, business model, team, and funding ask — typically 10–15 slides. The most important slides are team (investors bet on people) and traction (proof that customers want it). Y Combinator's online resources and First Round Review both cover pitch deck construction in detail.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What is the difference between a startup and a small business?</span><span class="faq-toggle">+</span></button><div class="faq-a">Startups are designed for rapid, scalable growth — often with a technology-enabled product that can serve millions of customers with minimal marginal cost. Small businesses are built to serve a local or niche market profitably and sustainably, often with linear growth. Most businesses are small businesses; startups represent a small but high-profile subset.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>What is Indie Hackers?</span><span class="faq-toggle">+</span></button><div class="faq-a">Indie Hackers is a community of bootstrapped founders who share revenue numbers, growth strategies, and lessons learned building profitable internet businesses without venture capital. Founded by Courtland Allen and acquired by Stripe, it's one of the most authentic and data-rich communities for solo and small-team founders pursuing profitability over growth at all costs.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>How do I validate a startup idea before building it?</span><span class="faq-toggle">+</span></button><div class="faq-a">Idea validation methods include: customer interviews (talk to 20+ potential customers before writing a line of code), landing pages with waitlist signups (measures demand), pre-selling (collect payment before building), building a manual version first (concierge MVP), and running ads to a coming-soon page to measure click-through rates. The goal is evidence of demand, not assumption.</div></div>
+  <div class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I find the right coach in this category?</span><span class="ft">+</span></button><div class="fa">Match coaches to your stage and business type. Browse the verified profiles above — featured coaches appear first. Use the main directory search to filter by name, keyword, or platform. All coaches are manually verified.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>Are the software and book links on this page affiliate links?</span><span class="ft">+</span></button><div class="fa">Some links include affiliate relationships where SMBProFind may earn a commission if you sign up or purchase. All affiliate links are labeled with a 💰 badge showing the commission rate. Amazon book links include tag=smbinf-20. This never affects our editorial rankings or recommendations. See our full Affiliate Disclosure.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I get listed in SMBProFind?</span><span class="ft">+</span></button><div class="fa">Business coaches, educators, and content creators can apply for a free listing using the Get Listed button. Featured listing upgrades are available for priority placement at the top of category pages. Our team reviews and verifies every submission.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I advertise to this audience?</span><span class="ft">+</span></button><div class="fa">SMBProFind offers pay-per-click advertising starting at $0.25/click, featured listings, category spotlight placements, newsletter sponsorships, and affiliate / CPA deal arrangements. Visit the Advertise page for full details and pricing.</div></div>
   </div>
 </div>
-
 <footer>
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">SMBPro<span>Find</span></a>
-        <p>The #1 directory of business influencers, coaches & creators.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Directory</h5>
-        <a href="index.html">All Influencers</a>
-        <a href="hubs.html">Category Hubs</a>
-        <a href="blog.html">Blog</a>
-        <a href="submit.html">Get Listed</a>
-      </div>
-      <div class="footer-col">
-        <h5>Top Hubs</h5>
-        <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="home-services.html">Home Services</a>
-        <a href="sales.html">Sales</a>
-        <a href="marketing-seo.html">Marketing & SEO</a>
-        <a href="ecommerce.html">E-Commerce</a>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <a href="about.html">About</a>
-        <a href="advertise.html">Advertise</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-      </div>
+  <div class="fi2">
+    <div class="fg">
+      <div class="fb2"><a href="index.html" class="logo">SMBPro<span>Find</span></a><p>The #1 directory of business influencers, coaches &amp; creators.</p></div>
+      <div class="fc"><h5>Directory</h5><a href="index.html">All Influencers</a><a href="hubs.html">Category Hubs</a><a href="blog.html">Blog</a><a href="submit.html">Get Listed</a></div>
+      <div class="fc"><h5>Top Hubs</h5><a href="entrepreneurship.html">Entrepreneurship</a><a href="home-services.html">Home Services</a><a href="sales.html">Sales</a><a href="marketing-seo.html">Marketing &amp; SEO</a><a href="ecommerce.html">E-Commerce</a></div>
+      <div class="fc"><h5>Company</h5><a href="about.html">About</a><a href="advertise.html">Advertise</a><a href="privacy.html">Privacy Policy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div>
     </div>
-    <div class="footer-bottom">
+    <div class="fb3">
       <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
       <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a></span>
     </div>
-    <p class="footer-disclosure">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). Commissions never affect our editorial rankings. <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
+    <p class="disc">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). Commissions never affect our editorial rankings. <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
   </div>
 </footer>
-
 <script>
-const AMAZON_TAG = 'smbinf-20';
-const CAT_KEYWORDS = ['startup','venture','seed','pitch','mvp','product market fit','founder','saas','bootstrapped'];
-const cfg = localStorage.getItem('smb_cfg') ? JSON.parse(localStorage.getItem('smb_cfg')) : {};
-const SB_URL = cfg.sbUrl || '';
-const SB_KEY = cfg.sbKey || '';
-const SB_TABLE = cfg.sbTable || 'profind_influencers';
 
-function amazonLink(url){if(!url)return url;try{const u=new URL(url);if(u.hostname.includes('amazon.com')){u.searchParams.set('tag',AMAZON_TAG);return u.toString();}}catch{}return url;}
-function esc(s){if(!s)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function initials(n){if(!n)return'?';return n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();}
-function statColor(v,t){const n=parseFloat(v);if(isNaN(n))return'';if(t==='eng')return n>=5?'green':n>=2.5?'blue':'orange';if(t==='growth')return n>=20?'green':n>=5?'blue':'orange';if(t==='real')return n>=90?'green':n>=75?'blue':'orange';return'';}
-
-function catMatch(l){
-  const str=[(l.category||''),(l.cats||[]).join(' ')].join(' ').toLowerCase().replace(/-/g,' ');
-  return CAT_KEYWORDS.some(k=>str.includes(k.replace(/-/g,' ')));
+const AMZ='smbinf-20';
+function esc(s){return s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):''}
+function ini(n){return n?n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase():'?'}
+function sc(v,t){const n=parseFloat(v);if(isNaN(n))return'';return t==='eng'?n>=5?'green':n>=2.5?'blue':'orange':t==='grw'?n>=20?'green':n>=5?'blue':'orange':t==='real'?n>=90?'green':n>=75?'blue':'orange':''}
+function az(u){if(!u||!u.includes('amazon.com'))return u;return u.includes('tag=')?u:u+(u.includes('?')?'&':'?')+'tag='+AMZ}
+function rc(inf){
+  const cats=(Array.isArray(inf.cats)?inf.cats:[inf.category]).filter(Boolean).slice(0,2);
+  const ct=cats.map(c=>'<span class="ct">'+esc(c)+'</span>').join('');
+  const pl=[];
+  if(inf.yt)pl.push('<a href="'+esc(inf.yt)+'" class="pb yt" target="_blank" rel="noopener">▶ YouTube</a>');
+  if(inf.ig)pl.push('<a href="'+esc(inf.ig)+'" class="pb ig" target="_blank" rel="noopener">📸 IG</a>');
+  if(inf.li)pl.push('<a href="'+esc(inf.li)+'" class="pb li" target="_blank" rel="noopener">in LI</a>');
+  if(inf.tk)pl.push('<a href="'+esc(inf.tk)+'" class="pb tk" target="_blank" rel="noopener">♪ TikTok</a>');
+  if(inf.web)pl.push('<a href="'+esc(inf.web)+'" class="pb web" target="_blank" rel="noopener">🌐 Web</a>');
+  const bt=Array.isArray(inf.bookTitles)?inf.bookTitles:(inf.bookTitles||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const bu=Array.isArray(inf.bookUrls)?inf.bookUrls:(inf.bookUrls||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const bks=bt.map((t,i)=>{const u=az(bu[i]||'');return u?'<a href="'+esc(u)+'" class="bl" target="_blank" rel="noopener">📖 '+esc(t)+'</a>':'<span class="bl">📖 '+esc(t)+'</span>';});
+  const wk=inf.wiki?'<a href="'+esc(inf.wiki)+'" class="wl" target="_blank" rel="noopener">W</a>':'';
+  const st=[];
+  if(inf.engagement)st.push('<div class="sb"><div class="sl">Engagement</div><div class="sv '+sc(inf.engagement,'eng')+'">'+esc(inf.engagement)+'</div></div>');
+  if(inf.growth)st.push('<div class="sb"><div class="sl">Growth 6mo</div><div class="sv '+sc(inf.growth,'grw')+'">'+esc(inf.growth)+'</div></div>');
+  if(inf.realScore)st.push('<div class="sb"><div class="sl">Real Followers</div><div class="sv '+sc(inf.realScore,'real')+'">'+esc(inf.realScore)+'</div></div>');
+  if(inf.revenue)st.push('<div class="sb"><div class="sl">Est. Revenue</div><div class="sv blue">'+esc(inf.revenue)+'</div></div>');
+  return '<div class="card"><div class="card-top"><div class="av" style="background:'+(inf.color||inf.avatarBg||'#0f2044')+'">'+(inf.initials||inf.avatar||ini(inf.name))+'</div><div class="cm"><div class="cn">'+esc(inf.name)+'</div>'+(inf.handle?'<div class="ch">'+esc(inf.handle)+'</div>':'')+'<div>'+ct+'</div></div>'+(inf.featured?'<span class="fb">⭐ Featured</span>':'')+'</div><div class="cb">'+(inf.exp||inf.cred?'<div class="cc">✓ '+(inf.exp||inf.cred||'')+(inf.subs||inf.followers?' · <span style="color:var(--muted);font-weight:400">'+(inf.subs||inf.followers)+'</span>':'')+(wk?' '+wk:'')+'</div>':'')+'<p class="cs">'+esc(inf.summary||'')+'</p>'+(st.length?'<div class="sg">'+st.join('')+'</div>':'')+(pl.length?'<div class="pr">'+pl.join('')+'</div>':'')+(bks.length?'<div class="pr">'+bks.join('')+'</div>':'')+'</div></div>';
 }
-
-function renderCard(inf){
-  const cats=(Array.isArray(inf.cats)?inf.cats:[inf.category].filter(Boolean)).slice(0,2);
-  const catTags=cats.map(c=>`<span class="cat-tag">${esc(c)}</span>`).join('');
-  const platforms=[];
-  if(inf.yt)platforms.push(`<a href="${esc(inf.yt)}" class="platform-btn yt" target="_blank" rel="noopener">▶ YouTube</a>`);
-  if(inf.ig)platforms.push(`<a href="${esc(inf.ig)}" class="platform-btn ig" target="_blank" rel="noopener">📸 IG</a>`);
-  if(inf.li)platforms.push(`<a href="${esc(inf.li)}" class="platform-btn li" target="_blank" rel="noopener">in</a>`);
-  if(inf.web)platforms.push(`<a href="${esc(inf.web)}" class="platform-btn web" target="_blank" rel="noopener">🌐</a>`);
-  const titles=Array.isArray(inf.bookTitles)?inf.bookTitles:(inf.bookTitles||'').split(',').map(s=>s.trim()).filter(Boolean);
-  const urls=Array.isArray(inf.bookUrls)?inf.bookUrls:(inf.bookUrls||'').split(',').map(s=>s.trim()).filter(Boolean);
-  const books=titles.map((t,i)=>{const u=amazonLink(urls[i]||'');return u?`<a href="${esc(u)}" class="book-link" target="_blank" rel="noopener">📖 ${esc(t)}</a>`:`<span class="book-link">📖 ${esc(t)}</span>`;});
-  const wiki=inf.wiki?`<a href="${esc(inf.wiki)}" class="wiki-link" target="_blank" rel="noopener">W</a>`:'';
-  const stats=[];
-  if(inf.engagement)stats.push(`<div class="stat-box"><div class="stat-label">Engagement</div><div class="stat-value ${statColor(inf.engagement,'eng')}">${esc(inf.engagement)}</div></div>`);
-  if(inf.growth)stats.push(`<div class="stat-box"><div class="stat-label">Growth 6mo</div><div class="stat-value ${statColor(inf.growth,'growth')}">${esc(inf.growth)}</div></div>`);
-  if(inf.realScore)stats.push(`<div class="stat-box"><div class="stat-label">Real Followers</div><div class="stat-value ${statColor(inf.realScore,'real')}">${esc(inf.realScore)}</div></div>`);
-  if(inf.revenue)stats.push(`<div class="stat-box"><div class="stat-label">Est. Revenue</div><div class="stat-value blue">${esc(inf.revenue)}</div></div>`);
-  return`<div class="card">
-    <div class="card-top">
-      <div class="avatar" style="background:${inf.color||'#0f2044'}">${inf.initials||initials(inf.name)}</div>
-      <div class="card-meta">
-        <div class="card-name">${esc(inf.name)}</div>
-        ${inf.handle?`<div class="card-handle">${esc(inf.handle)}</div>`:''}
-        <div>${catTags}</div>
-      </div>
-      ${inf.featured?'<span class="featured-badge">⭐ Featured</span>':''}
-    </div>
-    <div class="card-body">
-      ${inf.cred?`<div class="card-cred">✓ ${esc(inf.cred)}${inf.followers?` · <span style="color:var(--text-muted);font-weight:400">${esc(inf.followers)}</span>`:''}${wiki?` ${wiki}`:'' }</div>`:''}
-      <p class="card-summary">${esc(inf.summary||'')}</p>
-      ${stats.length?`<div class="stats-grid">${stats.join('')}</div>`:''}
-      ${platforms.length?`<div class="platform-row">${platforms.join('')}</div>`:''}
-      ${books.length?`<div class="platform-row">${books.join('')}</div>`:''}
-    </div>
-  </div>`;
-}
-
-async function loadAndRender(){
+async function load(KW){
+  const cfg=localStorage.getItem('smb_cfg')?JSON.parse(localStorage.getItem('smb_cfg')):{};
   let data=[];
-  if(SB_URL&&SB_KEY){
+  if(cfg.sbUrl&&cfg.sbKey){
     try{
-      const res=await fetch(`${SB_URL}/rest/v1/${SB_TABLE}?select=*&order=id.asc`,{headers:{apikey:SB_KEY,Authorization:`Bearer ${SB_KEY}`}});
-      if(res.ok){const rows=await res.json();data=rows.map(r=>(({id:r.id,...(r.data||{}),name:r.name||r.data?.name,category:r.category||r.data?.category})));}
-    }catch{}
+      const r=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&order=id.asc',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
+      if(r.ok){const rows=await r.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
+    }catch(e){}
   }
-  if(!data.length){const local=localStorage.getItem('smb_influencers');if(local)try{data=JSON.parse(local);}catch{}}
-  const filtered=data.filter(catMatch).sort((a,b)=>(b.featured?1:0)-(a.featured?1:0));
-  document.getElementById('infCount').textContent=`(${filtered.length})`;
-  const grid=document.getElementById('grid');
-  grid.innerHTML=filtered.length?filtered.map(renderCard).join(''):'<p style="color:var(--text-muted);padding:20px;">No coaches found. Connect Supabase in the admin panel on the main directory.</p>';
+  if(!data.length){try{const l=localStorage.getItem('smb_influencers');if(l)data=JSON.parse(l);}catch(e){}}
+  const f=data.filter(l=>{const s=[(l.category||''),(Array.isArray(l.cats)?l.cats:[]).join(' ')].join(' ').toLowerCase().replace(/-/g,' ');return KW.some(k=>s.includes(k.replace(/-/g,' ')));}).sort((a,b)=>(b.featured?1:0)-(a.featured?1:0));
+  document.getElementById('cnt').textContent='('+f.length+')';
+  const g=document.getElementById('grid');
+  g.innerHTML=f.length?f.map(rc).join(''):'<p style="color:var(--muted);padding:20px;font-size:.88rem;">Connect Supabase in the admin panel on the main directory to load verified coach profiles here.</p>';
 }
+function tf(btn){const a=btn.nextElementSibling;const t=btn.querySelector('.ft');const o=a.classList.contains('open');a.classList.toggle('open',!o);if(t)t.textContent=o?'+':'−';}
 
-function toggleFaq(btn){const a=btn.nextElementSibling;const t=btn.querySelector('.faq-toggle');const o=a.classList.contains('open');a.classList.toggle('open',!o);if(t)t.textContent=o?'+':'−';}
-
-loadAndRender();
+load(["startup","venture","seed","pitch","mvp","product market fit","founder","saas","bootstrap"]);
 </script>
 </body>
 </html>
