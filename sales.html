@@ -180,7 +180,7 @@ function rc(inf){
   return '<div class="card"><div class="card-top"><div class="av" style="background:'+(inf.color||inf.avatarBg||'#0f2044')+'">'+(inf.initials||inf.avatar||ini(inf.name))+'</div><div class="cm"><div class="cn">'+esc(inf.name)+'</div>'+(inf.handle?'<div class="ch">'+esc(inf.handle)+'</div>':'')+'<div>'+ct+'</div></div>'+(inf.featured?'<span class="fb">⭐ Featured</span>':'')+'</div><div class="cb">'+(inf.exp||inf.cred?'<div class="cc">✓ '+(inf.exp||inf.cred||'')+(inf.subs||inf.followers?' · <span style="color:var(--muted);font-weight:400">'+(inf.subs||inf.followers)+'</span>':'')+(wk?' '+wk:'')+'</div>':'')+'<p class="cs">'+esc(inf.summary||'')+'</p>'+(st.length?'<div class="sg">'+st.join('')+'</div>':'')+(pl.length?'<div class="pr">'+pl.join('')+'</div>':'')+(bks.length?'<div class="pr">'+bks.join('')+'</div>':'')+'</div></div>';
 }
 async function load(KW){
-  const cfg=localStorage.getItem('smb_cfg')?JSON.parse(localStorage.getItem('smb_cfg')):{};
+  const cfg=localStorage.getItem('smb_cfg')?JSON.parse(localStorage.getItem('smb_cfg')):{sbUrl:'https://wixahbxwqhgizbotybyj.supabase.co',sbKey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8',sbTable:'profind_influencers'};
   let data=[];
   if(cfg.sbUrl&&cfg.sbKey){
     try{
