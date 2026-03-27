@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Listed on SMBProFind — Submit Your Business Coach Profile</title>
+<meta name="description" content="Apply for a free listing on SMBProFind — the #1 directory of business coaches, educators, and creators. Get found by thousands of SMB owners searching for experts in your niche.">
+<link rel="canonical" href="https://smbprofind.netlify.app/submit">
+<style>
+:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--text:#1e293b;--text-muted:#64748b;--card-shadow:0 2px 12px rgba(15,32,68,0.09);--radius:12px;--radius-sm:8px;--transition:0.2s ease;--nav-height:64px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off-white);line-height:1.6;}
+nav{position:sticky;top:0;z-index:100;background:var(--navy);height:var(--nav-height);display:flex;align-items:center;padding:0 24px;gap:32px;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:var(--white);letter-spacing:-0.5px;}
+.logo span{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;flex-wrap:wrap;}
+.nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:var(--radius-sm);transition:var(--transition);}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.1);}
+.nav-links a.btn-cta{background:var(--teal);color:var(--white);font-weight:700;}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:var(--white);padding:52px 24px 44px;text-align:center;}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;}
+.hero h1 span{color:var(--teal);}
+.hero p{font-size:0.97rem;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 18px;}
+.trust-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.trust-item{font-size:0.8rem;color:rgba(255,255,255,0.55);display:flex;align-items:center;gap:5px;}
+.content{max-width:900px;margin:0 auto;padding:32px 20px;}
+.layout{display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:start;}
+@media(max-width:780px){.layout{grid-template-columns:1fr;}.sidebar{display:none;}}
+/* Form card */
+.form-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;}
+.form-card-header{background:var(--navy);color:var(--white);padding:18px 24px;}
+.form-card-header h2{font-size:1rem;font-weight:700;}
+.form-card-header p{font-size:0.82rem;color:rgba(255,255,255,0.65);margin-top:3px;}
+.form-body{padding:24px;}
+.form-section{margin-bottom:4px;}
+.section-divider{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);padding:14px 0 8px;border-top:1px solid var(--gray-100);margin-top:8px;display:flex;align-items:center;gap:6px;}
+.section-divider:first-child{border-top:none;padding-top:0;}
+.form-group{margin-bottom:12px;}
+.form-label{display:block;font-size:0.8rem;font-weight:600;color:var(--gray-600, #475569);margin-bottom:5px;text-transform:uppercase;letter-spacing:0.04em;}
+.form-label .req{color:var(--teal);}
+.form-control{width:100%;border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);padding:9px 12px;font-size:0.9rem;font-family:inherit;color:var(--text);background:var(--white);transition:border-color var(--transition);outline:none;}
+.form-control:focus{border-color:var(--teal);}
+textarea.form-control{resize:vertical;min-height:90px;}
+.form-select{width:100%;border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);padding:9px 12px;font-size:0.9rem;font-family:inherit;background:var(--white);color:var(--text);cursor:pointer;outline:none;}
+.form-select:focus{border-color:var(--teal);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:540px){.form-row{grid-template-columns:1fr;}}
+/* Tier cards */
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px;}
+@media(max-width:480px){.tier-grid{grid-template-columns:1fr;}}
+.tier-card{border:2px solid var(--gray-200);border-radius:var(--radius-sm);padding:14px 12px;text-align:center;cursor:pointer;transition:var(--transition);}
+.tier-card:hover{border-color:var(--teal);}
+.tier-card.selected{border-color:var(--teal);background:var(--teal-light);}
+.tier-card.featured-tier{border-color:var(--gold);background:#fffbeb;}
+.tier-card .tier-name{font-size:0.85rem;font-weight:800;color:var(--navy);margin-bottom:3px;}
+.tier-card .tier-price{font-size:1.1rem;font-weight:800;color:var(--teal);}
+.tier-card .tier-desc{font-size:0.72rem;color:var(--text-muted);margin-top:3px;}
+.tier-card.featured-tier .tier-price{color:#d97706;}
+/* Checkboxes */
+.check-row{display:flex;align-items:flex-start;gap:8px;font-size:0.84rem;color:var(--text-muted);margin-bottom:8px;cursor:pointer;}
+.check-row input{margin-top:2px;accent-color:var(--teal);}
+.submit-btn{width:100%;background:var(--teal);color:var(--white);border:none;border-radius:var(--radius-sm);padding:13px;font-size:0.97rem;font-weight:700;cursor:pointer;font-family:inherit;transition:var(--transition);margin-top:4px;}
+.submit-btn:hover{background:var(--teal-dark);}
+/* Success */
+.success-box{display:none;text-align:center;padding:40px 24px;}
+.success-box .icon{font-size:2.5rem;margin-bottom:10px;}
+.success-box h3{font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:8px;}
+.success-box p{font-size:0.9rem;color:var(--text-muted);}
+/* Sidebar */
+.sidebar{position:sticky;top:calc(var(--nav-height)+12px);}
+.sidebar-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:20px;margin-bottom:16px;}
+.sidebar-card h4{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.benefit-item{display:flex;align-items:flex-start;gap:8px;font-size:0.83rem;color:var(--text-muted);margin-bottom:8px;}
+.benefit-item .icon{color:var(--teal);flex-shrink:0;margin-top:1px;}
+.stats-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;}
+.stat-mini{background:var(--gray-100);border-radius:var(--radius-sm);padding:10px;text-align:center;}
+.stat-mini .val{font-size:1.2rem;font-weight:800;color:var(--navy);}
+.stat-mini .lbl{font-size:0.7rem;color:var(--text-muted);}
+footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px;margin-top:56px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;font-size:0.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.footer-bottom a{color:rgba(255,255,255,0.5);text-decoration:none;}
+.footer-bottom a:hover{color:var(--teal);}
+.footer-disclosure{font-size:0.74rem;color:rgba(255,255,255,0.4);margin-top:10px;line-height:1.5;}
+.footer-disclosure a{color:rgba(0,184,148,0.7);}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="btn-cta">Get Listed →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Get Listed on <span>SMBProFind</span></h1>
+  <p>Connect with thousands of small business owners actively searching for experts in your niche. Free basic listing — featured upgrades available.</p>
+  <div class="trust-row">
+    <span class="trust-item">✓ 1,000+ verified educators</span>
+    <span class="trust-item">✓ 10K+ monthly visitors</span>
+    <span class="trust-item">✓ 15 industry categories</span>
+    <span class="trust-item">✓ Review in 2 business days</span>
+  </div>
+</div>
+
+<div class="content">
+  <div class="layout">
+
+    <div>
+      <div class="form-card">
+        <div class="form-card-header">
+          <h2>📋 Listing Application</h2>
+          <p>Fill in your profile details below. Our team reviews every application within 2 business days.</p>
+        </div>
+        <div class="form-body" id="submitForm">
+
+          <div class="section-divider">👤 Your Information</div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Full Name / Brand <span class="req">*</span></label><input class="form-control" id="sf_name" placeholder="Alex Hormozi"></div>
+            <div class="form-group"><label class="form-label">Handle / Username</label><input class="form-control" id="sf_handle" placeholder="@alexhormozi"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">Email Address <span class="req">*</span></label><input class="form-control" id="sf_email" type="email" placeholder="you@example.com"></div>
+            <div class="form-group"><label class="form-label">Phone (optional)</label><input class="form-control" id="sf_phone" type="tel" placeholder="+1 (555) 000-0000"></div>
+          </div>
+
+          <div class="section-divider">📂 Category & Expertise</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Primary Category <span class="req">*</span></label>
+              <select class="form-select" id="sf_cat">
+                <option value="">— Select your category —</option>
+                <option>💼 Entrepreneurship</option>
+                <option>🔑 ETA / Buy a Business</option>
+                <option>🏪 Franchise</option>
+                <option>📣 Marketing & SEO</option>
+                <option>📊 Business Finance</option>
+                <option>💰 Personal Finance</option>
+                <option>🔧 Home Services</option>
+                <option>⚙️ Mechanical Trades</option>
+                <option>🛒 E-Commerce</option>
+                <option>🤝 Sales</option>
+                <option>⚡ Productivity</option>
+                <option>🚚 Transportation & Logistics</option>
+                <option>🏡 Real Estate</option>
+                <option>🍽️ Restaurant</option>
+                <option>🚀 Startup</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Years of Experience</label>
+              <select class="form-select" id="sf_exp">
+                <option value="">Select range</option>
+                <option>Less than 1 year</option>
+                <option>1–3 years</option>
+                <option>3–5 years</option>
+                <option>5–10 years</option>
+                <option>10+ years</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label class="form-label">Bio / Summary <span class="req">*</span></label><textarea class="form-control" id="sf_bio" placeholder="Brief description of your expertise, background, and what you help SMB owners achieve…"></textarea></div>
+
+          <div class="section-divider">🔗 Platform Links</div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">▶ YouTube URL</label><input class="form-control" id="sf_yt" placeholder="https://youtube.com/@..."></div>
+            <div class="form-group"><label class="form-label">📸 Instagram URL</label><input class="form-control" id="sf_ig" placeholder="https://instagram.com/..."></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">♪ TikTok URL</label><input class="form-control" id="sf_tt" placeholder="https://tiktok.com/@..."></div>
+            <div class="form-group"><label class="form-label">in LinkedIn URL</label><input class="form-control" id="sf_li" placeholder="https://linkedin.com/in/..."></div>
+          </div>
+          <div class="form-group"><label class="form-label">🌐 Website / Primary Link</label><input class="form-control" id="sf_web" placeholder="https://yourwebsite.com"></div>
+
+          <div class="section-divider">💳 Listing Tier</div>
+          <div class="tier-grid">
+            <div class="tier-card selected" onclick="selectTier(this,'basic')">
+              <div class="tier-name">Basic</div>
+              <div class="tier-price">Free</div>
+              <div class="tier-desc">Standard listing</div>
+            </div>
+            <div class="tier-card" onclick="selectTier(this,'pro')">
+              <div class="tier-name">Pro</div>
+              <div class="tier-price">$0.50<span style="font-size:0.7rem;font-weight:400">/click</span></div>
+              <div class="tier-desc">Priority placement</div>
+            </div>
+            <div class="tier-card featured-tier" onclick="selectTier(this,'featured')">
+              <div class="tier-name">⭐ Featured</div>
+              <div class="tier-price">$1.00<span style="font-size:0.7rem;font-weight:400">/click</span></div>
+              <div class="tier-desc">Gold badge + top spot</div>
+            </div>
+          </div>
+          <input type="hidden" id="sf_tier" value="basic">
+
+          <div class="section-divider">✅ Confirmation</div>
+          <label class="check-row"><input type="checkbox" id="sf_check1"> I confirm all platform links and follower counts are accurate.</label>
+          <label class="check-row"><input type="checkbox" id="sf_check2"> I agree to SMBProFind's <a href="privacy.html" style="color:var(--teal);">terms</a> and pay-per-click billing terms (for Pro/Featured).</label>
+          <label class="check-row"><input type="checkbox" id="sf_check3"> I consent to SMBProFind generating an AI-enhanced summary for my profile.</label>
+
+          <button class="submit-btn" onclick="submitProfile()">Submit My Profile for Review →</button>
+        </div>
+
+        <div class="success-box" id="submitSuccess">
+          <div class="icon">🎉</div>
+          <h3>Application Received!</h3>
+          <p>Our team will review your profile within 2 business days and email your listing confirmation to the address you provided.</p>
+          <p style="margin-top:10px;font-size:0.83rem;color:var(--text-muted);">In the meantime, explore the <a href="index.html" style="color:var(--teal);">full directory</a> to see how other profiles look.</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h4>Why get listed?</h4>
+        <div class="benefit-item"><span class="icon">👁️</span><span>Get found by 10,000+ monthly SMB owners actively searching for experts</span></div>
+        <div class="benefit-item"><span class="icon">📂</span><span>Listed in your industry category with direct links to all your platforms</span></div>
+        <div class="benefit-item"><span class="icon">🆓</span><span>Basic listings are completely free — no credit card required</span></div>
+        <div class="benefit-item"><span class="icon">⭐</span><span>Featured listings appear at the top of category pages with a gold badge</span></div>
+        <div class="benefit-item"><span class="icon">✓</span><span>Every profile is manually reviewed for quality and accuracy</span></div>
+        <div class="stats-mini">
+          <div class="stat-mini"><div class="val">1,000+</div><div class="lbl">Listed Educators</div></div>
+          <div class="stat-mini"><div class="val">10K+</div><div class="lbl">Monthly Visitors</div></div>
+          <div class="stat-mini"><div class="val">15</div><div class="lbl">Categories</div></div>
+          <div class="stat-mini"><div class="val">2 days</div><div class="lbl">Review Time</div></div>
+        </div>
+      </div>
+      <div class="sidebar-card" style="background:var(--teal-light);border:1.5px solid #a7f3d0;">
+        <h4 style="color:var(--teal-dark);">⭐ Featured Listing</h4>
+        <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:10px;">Get a gold Featured badge, appear at the top of your category, and maximize visibility to active searchers.</p>
+        <p style="font-size:0.8rem;color:var(--teal-dark);font-weight:600;">$1.00 per qualified click · No monthly minimums</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a></span>
+    </div>
+    <p class="footer-disclosure">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
+  </div>
+</footer>
+
+<script>
+const cfg = localStorage.getItem('smb_cfg') ? JSON.parse(localStorage.getItem('smb_cfg')) : {};
+
+function selectTier(el, tier) {
+  document.querySelectorAll('.tier-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('sf_tier').value = tier;
+}
+
+async function submitProfile() {
+  const name = document.getElementById('sf_name').value.trim();
+  const email = document.getElementById('sf_email').value.trim();
+  const cat = document.getElementById('sf_cat').value;
+  const bio = document.getElementById('sf_bio').value.trim();
+  const c1 = document.getElementById('sf_check1').checked;
+  const c2 = document.getElementById('sf_check2').checked;
+
+  if (!name || !email || !cat || !bio) { alert('Please fill in all required fields (Name, Email, Category, Bio).'); return; }
+  if (!c1 || !c2) { alert('Please confirm the accuracy and terms checkboxes before submitting.'); return; }
+
+  const payload = {
+    name, email,
+    handle: document.getElementById('sf_handle').value.trim(),
+    phone: document.getElementById('sf_phone').value.trim(),
+    category: cat,
+    experience: document.getElementById('sf_exp').value,
+    bio,
+    yt: document.getElementById('sf_yt').value.trim(),
+    ig: document.getElementById('sf_ig').value.trim(),
+    tt: document.getElementById('sf_tt').value.trim(),
+    li: document.getElementById('sf_li').value.trim(),
+    web: document.getElementById('sf_web').value.trim(),
+    tier: document.getElementById('sf_tier').value,
+    source: 'SMBProFind Submit Form',
+    submitted_at: new Date().toISOString(),
+  };
+
+  if (cfg.whSubmit) {
+    try { await fetch(cfg.whSubmit, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) }); } catch {}
+  }
+
+  document.getElementById('submitForm').style.display = 'none';
+  document.getElementById('submitSuccess').style.display = 'block';
+}
+</script>
+</body>
+</html>

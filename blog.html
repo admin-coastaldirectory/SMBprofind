@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMBProFind Blog — Business Growth Guides for SMB Owners</title>
+<meta name="description" content="Expert articles, guides, and industry insights for small business owners — from SMBProFind, the #1 directory of business coaches and educators.">
+<link rel="canonical" href="https://smbprofind.netlify.app/blog">
+<style>
+:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--text:#1e293b;--text-muted:#64748b;--card-shadow:0 2px 12px rgba(15,32,68,0.09);--card-shadow-hover:0 8px 32px rgba(15,32,68,0.16);--radius:12px;--radius-sm:8px;--transition:0.2s ease;--nav-height:64px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off-white);line-height:1.6;}
+nav{position:sticky;top:0;z-index:100;background:var(--navy);height:var(--nav-height);display:flex;align-items:center;padding:0 24px;gap:32px;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:var(--white);letter-spacing:-0.5px;}
+.logo span{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;flex-wrap:wrap;}
+.nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:var(--radius-sm);transition:var(--transition);}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.1);}
+.nav-links a.active{color:var(--white);}
+.nav-links a.btn-cta{background:var(--teal);color:var(--white);font-weight:700;}
+.nav-links a.btn-cta:hover{background:var(--teal-dark);}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:var(--white);padding:48px 24px 40px;text-align:center;}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;}
+.hero h1 span{color:var(--teal);}
+.hero p{font-size:0.97rem;color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto;}
+.content{max-width:1100px;margin:0 auto;padding:28px 20px;}
+.blog-layout{display:grid;grid-template-columns:1fr 260px;gap:24px;align-items:start;}
+@media(max-width:800px){.blog-layout{grid-template-columns:1fr;}.blog-sidebar{display:none;}}
+/* Cat filter tabs */
+.cat-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;}
+.cat-tab{font-size:0.81rem;padding:6px 14px;border-radius:20px;border:1.5px solid var(--gray-200);background:var(--white);color:var(--text-muted);cursor:pointer;font-family:inherit;font-weight:500;transition:var(--transition);}
+.cat-tab:hover{border-color:var(--teal);color:var(--teal-dark);}
+.cat-tab.active{background:var(--teal);color:var(--white);border-color:var(--teal);}
+/* Blog grid */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;}
+.blog-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;transition:box-shadow var(--transition),transform var(--transition);display:flex;flex-direction:column;cursor:pointer;}
+.blog-card:hover{box-shadow:var(--card-shadow-hover);transform:translateY(-2px);}
+.blog-card-top{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:20px;min-height:90px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;}
+.blog-emoji{font-size:2rem;margin-bottom:8px;}
+.blog-cat-badge{position:absolute;top:12px;right:12px;font-size:0.68rem;background:rgba(0,184,148,0.25);color:var(--teal);border:1px solid rgba(0,184,148,0.4);padding:3px 8px;border-radius:20px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;}
+.blog-card-body{padding:16px;flex:1;display:flex;flex-direction:column;gap:8px;}
+.blog-title{font-size:0.97rem;font-weight:700;color:var(--text);line-height:1.3;}
+.blog-excerpt{font-size:0.82rem;color:var(--text-muted);line-height:1.6;flex:1;}
+.blog-meta{display:flex;align-items:center;gap:10px;font-size:0.74rem;color:var(--text-muted);padding-top:8px;border-top:1px solid var(--gray-200);}
+.blog-author{font-weight:600;color:var(--navy);}
+/* Empty / coming soon */
+.blog-coming{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:48px 32px;text-align:center;grid-column:1/-1;}
+.blog-coming .icon{font-size:2.5rem;margin-bottom:12px;}
+.blog-coming h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.blog-coming p{font-size:0.88rem;color:var(--text-muted);max-width:420px;margin:0 auto 18px;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 20px;border-radius:var(--radius-sm);font-size:0.9rem;font-weight:700;cursor:pointer;border:none;transition:var(--transition);font-family:inherit;text-decoration:none;}
+.btn-primary{background:var(--teal);color:var(--white);}
+.btn-primary:hover{background:var(--teal-dark);}
+/* Sidebar */
+.blog-sidebar{position:sticky;top:calc(var(--nav-height)+12px);}
+.sidebar-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;margin-bottom:16px;}
+.sidebar-hd{background:var(--navy);color:var(--white);padding:12px 16px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;}
+.sidebar-body{padding:14px 16px;}
+.sidebar-body a{display:block;font-size:0.83rem;color:var(--navy);text-decoration:none;padding:7px 0;border-bottom:1px solid var(--gray-100);font-weight:500;transition:var(--transition);}
+.sidebar-body a:last-child{border-bottom:none;}
+.sidebar-body a:hover{color:var(--teal);}
+.newsletter-card{background:linear-gradient(135deg,var(--navy),var(--navy-mid));border-radius:var(--radius);padding:20px;color:var(--white);}
+.newsletter-card h4{font-size:0.97rem;font-weight:700;margin-bottom:6px;}
+.newsletter-card p{font-size:0.8rem;opacity:0.75;margin-bottom:14px;}
+.newsletter-card input{width:100%;border:none;border-radius:var(--radius-sm);padding:9px 12px;font-size:0.87rem;font-family:inherit;margin-bottom:8px;outline:none;}
+.newsletter-card button{width:100%;background:var(--teal);color:var(--white);border:none;border-radius:var(--radius-sm);padding:10px;font-weight:700;font-size:0.87rem;cursor:pointer;font-family:inherit;transition:var(--transition);}
+.newsletter-card button:hover{background:var(--teal-dark);}
+/* Seed articles */
+.seed-posts{display:contents;}
+footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px;margin-top:56px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
+.footer-brand .logo{font-size:1.2rem;}
+.footer-brand p{font-size:0.8rem;margin-top:6px;line-height:1.6;}
+.footer-col h5{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:8px;}
+.footer-col a{display:block;font-size:0.81rem;color:rgba(255,255,255,0.6);text-decoration:none;margin-bottom:5px;transition:var(--transition);}
+.footer-col a:hover{color:var(--teal);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;font-size:0.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.footer-bottom a{color:rgba(255,255,255,0.5);text-decoration:none;}
+.footer-bottom a:hover{color:var(--teal);}
+.footer-disclosure{font-size:0.74rem;color:rgba(255,255,255,0.4);margin-top:10px;line-height:1.5;}
+.footer-disclosure a{color:rgba(0,184,148,0.7);}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html" class="active">📝 Blog</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="btn-cta">Get Listed →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1><span>SMBProFind</span> Blog</h1>
+  <p>Tips, guides, and industry insights to help small business owners find the right mentors, tools, and growth strategies.</p>
+</div>
+
+<div class="content">
+  <div class="blog-layout">
+    <div>
+      <div class="cat-tabs" id="catTabs">
+        <button class="cat-tab active" onclick="filterCat('all',this)">📋 All Posts</button>
+        <button class="cat-tab" onclick="filterCat('entrepreneurship',this)">💼 Entrepreneurship</button>
+        <button class="cat-tab" onclick="filterCat('marketing',this)">📣 Marketing</button>
+        <button class="cat-tab" onclick="filterCat('finance',this)">📊 Finance</button>
+        <button class="cat-tab" onclick="filterCat('home-services',this)">🔧 Home Services</button>
+        <button class="cat-tab" onclick="filterCat('franchise',this)">🏪 Franchise</button>
+        <button class="cat-tab" onclick="filterCat('sales',this)">🤝 Sales</button>
+        <button class="cat-tab" onclick="filterCat('ecommerce',this)">🛒 E-Commerce</button>
+      </div>
+      <div class="blog-grid" id="blogGrid">
+        <!-- Posts rendered by JS. Seed posts shown if none in DB -->
+      </div>
+    </div>
+
+    <aside class="blog-sidebar">
+      <div class="newsletter-card">
+        <h4>📧 SMBProFind Weekly</h4>
+        <p>New coaches, guides, and SMB insights — every week.</p>
+        <input type="email" id="nlEmail" placeholder="your@email.com">
+        <button onclick="subscribeNewsletter()">Subscribe Free →</button>
+      </div>
+
+      <div class="sidebar-card" style="margin-top:16px;">
+        <div class="sidebar-hd">🔗 Top Category Hubs</div>
+        <div class="sidebar-body">
+          <a href="entrepreneurship.html">💼 Entrepreneurship</a>
+          <a href="home-services.html">🔧 Home Services</a>
+          <a href="sales.html">🤝 Sales</a>
+          <a href="marketing-seo.html">📣 Marketing & SEO</a>
+          <a href="ecommerce.html">🛒 E-Commerce</a>
+          <a href="franchise.html">🏪 Franchise</a>
+          <a href="productivity.html">⚡ Productivity</a>
+          <a href="hubs.html">View All Hubs →</a>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-hd">📰 Top SEO Guides</div>
+        <div class="sidebar-body">
+          <a href="business-influencers.html">Best Business Influencers 2025</a>
+          <a href="home-service-business-coaches.html">Home Service Coaches</a>
+          <a href="best-entrepreneurship-podcasts.html">Best Business Podcasts</a>
+          <a href="top-sales-coaches.html">Top Sales Coaches</a>
+          <a href="how-to-find-business-mentor.html">How to Find a Mentor</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+        <p>The #1 directory of business influencers, coaches & creators.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Directory</h5>
+        <a href="index.html">All Influencers</a>
+        <a href="hubs.html">Category Hubs</a>
+        <a href="blog.html">Blog</a>
+        <a href="submit.html">Get Listed</a>
+      </div>
+      <div class="footer-col">
+        <h5>Top Hubs</h5>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="home-services.html">Home Services</a>
+        <a href="sales.html">Sales</a>
+        <a href="marketing-seo.html">Marketing & SEO</a>
+        <a href="ecommerce.html">E-Commerce</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a></span>
+    </div>
+    <p class="footer-disclosure">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). Commissions never affect our editorial rankings. <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
+  </div>
+</footer>
+
+<script>
+const cfg = localStorage.getItem('smb_cfg') ? JSON.parse(localStorage.getItem('smb_cfg')) : {};
+const SB_URL = cfg.sbUrl || '';
+const SB_KEY = cfg.sbKey || '';
+
+// Seed posts shown before DB is connected
+const SEED_POSTS = [
+  { title:'How to Choose the Right Business Coach for Your Industry', category:'entrepreneurship', emoji:'💼', excerpt:'Not all business coaches are created equal. Here\'s a framework for finding an educator whose experience matches your specific business challenge.', author:'SMBProFind Editorial', date:'March 2025' },
+  { title:'The 5 KPIs Every Home Service Business Should Track Weekly', category:'home-services', emoji:'🔧', excerpt:'Revenue per tech, close rate, average ticket, maintenance attach rate, and 5-star review rate — the five numbers that predict home service business health.', author:'SMBProFind Editorial', date:'March 2025' },
+  { title:'Profit First for Small Business — A Complete Guide', category:'finance', emoji:'📊', excerpt:'Mike Michalowicz\'s Profit First system has been adopted by 500,000+ small businesses. Here\'s how it works and whether it\'s right for your company.', author:'SMBProFind Editorial', date:'February 2025' },
+  { title:'Amazon FBA vs. Shopify Dropshipping in 2025 — Which Model Wins?', category:'ecommerce', emoji:'🛒', excerpt:'Two fundamentally different business models, two very different skill sets. A head-to-head comparison for entrepreneurs evaluating their first e-commerce business.', author:'SMBProFind Editorial', date:'February 2025' },
+  { title:'How to Read an FDD Before Buying a Franchise', category:'franchise', emoji:'🏪', excerpt:'The 23-item Franchise Disclosure Document is the most important document in franchise due diligence. Here\'s what to look for in Items 7, 19, and 21.', author:'SMBProFind Editorial', date:'January 2025' },
+  { title:'The Best Free Sales Training Resources for Small Business Owners', category:'sales', emoji:'🤝', excerpt:'From Jeb Blount\'s Fanatical Prospecting to Jeremy Miner\'s NEPQ — a guide to the best free sales training available in 2025.', author:'SMBProFind Editorial', date:'January 2025' },
+];
+
+let currentCat = 'all';
+
+function esc(s){if(!s)return'';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function renderCard(post) {
+  const cat = (post.category||'').toLowerCase();
+  return `<div class="blog-card" data-cat="${cat}">
+    <div class="blog-card-top">
+      <div class="blog-emoji">${esc(post.emoji||post.icon||'📝')}</div>
+      <div class="blog-cat-badge">${esc(post.category||'')}</div>
+    </div>
+    <div class="blog-card-body">
+      <div class="blog-title">${esc(post.title||'')}</div>
+      <div class="blog-excerpt">${esc(post.excerpt||'')}</div>
+      <div class="blog-meta">
+        <span class="blog-author">${esc(post.author||'SMBProFind Editorial')}</span>
+        <span>·</span>
+        <span>${esc(post.date||'2025')}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderEmpty() {
+  return `<div class="blog-coming">
+    <div class="icon">✍️</div>
+    <h3>First articles coming soon</h3>
+    <p>We're publishing guides on business coaching, SMB growth, and industry-specific education. Subscribe to get notified when new posts go live.</p>
+    <a href="advertise.html" class="btn btn-primary">Partner With Us →</a>
+  </div>`;
+}
+
+function filterCat(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  const cards = document.querySelectorAll('.blog-card');
+  cards.forEach(c => {
+    const show = cat === 'all' || c.dataset.cat === cat;
+    c.style.display = show ? '' : 'none';
+  });
+}
+
+async function loadPosts() {
+  let posts = [];
+  if (SB_URL && SB_KEY) {
+    try {
+      const res = await fetch(`${SB_URL}/rest/v1/profind_blog?select=*&status=eq.published&order=id.desc`, {
+        headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` }
+      });
+      if (res.ok) {
+        const rows = await res.json();
+        posts = rows.map(r => ({ ...(r.data||{}), title: r.title, category: r.category, status: r.status }));
+      }
+    } catch {}
+  }
+
+  const grid = document.getElementById('blogGrid');
+  if (posts.length) {
+    grid.innerHTML = posts.map(renderCard).join('');
+  } else {
+    // Show seed posts as placeholders
+    grid.innerHTML = SEED_POSTS.map(renderCard).join('');
+  }
+}
+
+async function subscribeNewsletter() {
+  const email = document.getElementById('nlEmail').value.trim();
+  if (!email) return;
+  if (cfg.whNewsletter) {
+    try {
+      await fetch(cfg.whNewsletter, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email, source:'SMBProFind Blog Newsletter' }) });
+    } catch {}
+  }
+  document.getElementById('nlEmail').value = '';
+  alert('✅ Subscribed! You\'ll hear from us when new articles go live.');
+}
+
+loadPosts();
+</script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Category Hubs — Find Coaches by Industry | SMBProFind</title>
+<meta name="description" content="Browse all 15 SMB category hubs on SMBProFind — find verified business coaches, educators, and creators organized by industry niche.">
+<link rel="canonical" href="https://smbprofind.netlify.app/hubs">
+<style>
+:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--text:#1e293b;--text-muted:#64748b;--card-shadow:0 2px 12px rgba(15,32,68,0.09);--card-shadow-hover:0 8px 32px rgba(15,32,68,0.16);--radius:12px;--radius-sm:8px;--transition:0.2s ease;--nav-height:64px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off-white);line-height:1.6;}
+nav{position:sticky;top:0;z-index:100;background:var(--navy);height:var(--nav-height);display:flex;align-items:center;padding:0 24px;gap:32px;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:var(--white);letter-spacing:-0.5px;}
+.logo span{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;flex-wrap:wrap;}
+.nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:0.88rem;font-weight:500;padding:6px 12px;border-radius:var(--radius-sm);transition:var(--transition);}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,0.1);}
+.nav-links a.active{color:var(--white);}
+.nav-links a.btn-cta{background:var(--teal);color:var(--white);font-weight:700;}
+.nav-links a.btn-cta:hover{background:var(--teal-dark);}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:var(--white);padding:48px 24px 40px;text-align:center;}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;}
+.hero h1 span{color:var(--teal);}
+.hero p{font-size:0.97rem;color:rgba(255,255,255,0.75);max-width:540px;margin:0 auto;}
+.content{max-width:1100px;margin:0 auto;padding:32px 20px;}
+.section-label{font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-muted);margin-bottom:14px;}
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-bottom:36px;}
+.hub-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow var(--transition),transform var(--transition);}
+.hub-card:hover{box-shadow:var(--card-shadow-hover);transform:translateY(-2px);}
+.hub-card-top{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:20px 20px 16px;position:relative;}
+.hub-icon{font-size:2rem;margin-bottom:6px;}
+.hub-name{font-size:1rem;font-weight:800;color:var(--white);line-height:1.2;}
+.hub-count{position:absolute;top:14px;right:14px;background:rgba(0,184,148,0.25);color:var(--teal);border:1px solid rgba(0,184,148,0.4);font-size:0.7rem;font-weight:700;padding:3px 8px;border-radius:20px;}
+.hub-card-body{padding:14px 18px 18px;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:10px;}
+.hub-desc{font-size:0.83rem;color:var(--text-muted);line-height:1.55;}
+.hub-links{display:flex;gap:8px;flex-wrap:wrap;}
+.hub-link-btn{font-size:0.76rem;font-weight:600;color:var(--teal-dark);text-decoration:none;background:var(--teal-light);border:1px solid #a7f3d0;padding:4px 10px;border-radius:20px;transition:var(--transition);}
+.hub-link-btn:hover{background:var(--teal);color:var(--white);}
+.hub-link-btn.primary{background:var(--teal);color:var(--white);border-color:var(--teal-dark);}
+.hub-link-btn.primary:hover{background:var(--teal-dark);}
+/* SEO page links section */
+.seo-links-section{background:var(--white);border-radius:var(--radius);box-shadow:var(--card-shadow);padding:28px 32px;margin-bottom:28px;}
+.seo-links-section h2{font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:16px;}
+.seo-link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;}
+.seo-link-card{display:flex;flex-direction:column;gap:3px;padding:12px 14px;background:var(--gray-100);border-radius:var(--radius-sm);border:1.5px solid var(--gray-200);text-decoration:none;transition:var(--transition);}
+.seo-link-card:hover{border-color:var(--teal);background:var(--teal-light);}
+.seo-link-card .seo-title{font-size:0.85rem;font-weight:600;color:var(--navy);}
+.seo-link-card .seo-vol{font-size:0.72rem;color:var(--text-muted);}
+footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px;margin-top:56px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
+.footer-brand .logo{font-size:1.2rem;}
+.footer-brand p{font-size:0.8rem;margin-top:6px;line-height:1.6;}
+.footer-col h5{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:8px;}
+.footer-col a{display:block;font-size:0.81rem;color:rgba(255,255,255,0.6);text-decoration:none;margin-bottom:5px;transition:var(--transition);}
+.footer-col a:hover{color:var(--teal);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px;font-size:0.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.footer-bottom a{color:rgba(255,255,255,0.5);text-decoration:none;}
+.footer-bottom a:hover{color:var(--teal);}
+.footer-disclosure{font-size:0.74rem;color:rgba(255,255,255,0.4);margin-top:10px;line-height:1.5;}
+.footer-disclosure a{color:rgba(0,184,148,0.7);}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="hubs.html" class="active">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="btn-cta">Get Listed →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Business Category <span>Hubs</span></h1>
+  <p>Deep-dive resources, verified coaches, and curated tools organized by industry. Find the hub that matches your business.</p>
+</div>
+
+<div class="content">
+
+  <p class="section-label">🏆 15 Industry Hub Pages</p>
+  <div class="hub-grid">
+
+    <a href="entrepreneurship.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">💼</div><div class="hub-name">Entrepreneurship</div><div class="hub-count">80+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Business building, offer creation, systems, scaling, and the full journey from idea to 8-figure company.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Alex Hormozi</span><span class="hub-link-btn">Gary Vee</span></div>
+      </div>
+    </a>
+
+    <a href="home-services.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🔧</div><div class="hub-name">Home Services</div><div class="hub-count">60+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">HVAC, plumbing, electrical, lawn care, cleaning — field service business growth, pricing, and operations.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Tommy Mello</span><span class="hub-link-btn">Ken Goodrich</span></div>
+      </div>
+    </a>
+
+    <a href="sales.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🤝</div><div class="hub-name">Sales</div><div class="hub-count">100+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">B2B, B2C, field sales, closing, prospecting, and building repeatable sales systems for small business.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Grant Cardone</span><span class="hub-link-btn">Jeremy Miner</span></div>
+      </div>
+    </a>
+
+    <a href="marketing-seo.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">📣</div><div class="hub-name">Marketing & SEO</div><div class="hub-count">75+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">SEO, paid ads, email marketing, funnels, social media, content strategy, and local marketing.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Neil Patel</span><span class="hub-link-btn">Russell Brunson</span></div>
+      </div>
+    </a>
+
+    <a href="ecommerce.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🛒</div><div class="hub-name">E-Commerce</div><div class="hub-count">95+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Shopify, Amazon FBA, dropshipping, private label, and online store growth strategies.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Kevin David</span><span class="hub-link-btn">Ezra Firestone</span></div>
+      </div>
+    </a>
+
+    <a href="franchise.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🏪</div><div class="hub-name">Franchise</div><div class="hub-count">40+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">FDD due diligence, franchise investment, multi-unit operations, and franchisee-to-franchisor strategy.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Erik Van Horn</span><span class="hub-link-btn">Brian Beers</span></div>
+      </div>
+    </a>
+
+    <a href="eta-buy-a-business.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🔑</div><div class="hub-name">ETA / Buy a Business</div><div class="hub-count">75+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Search funds, SBA acquisition loans, business valuation, due diligence, and post-close operations.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Walker Deibel</span><span class="hub-link-btn">Codie Sanchez</span></div>
+      </div>
+    </a>
+
+    <a href="productivity.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">⚡</div><div class="hub-name">Productivity</div><div class="hub-count">75+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Time management, deep work, habits, delegation, SOPs, and leadership for busy entrepreneurs.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Ali Abdaal</span><span class="hub-link-btn">James Clear</span></div>
+      </div>
+    </a>
+
+    <a href="business-finance.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">📊</div><div class="hub-name">Business Finance</div><div class="hub-count">40+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Cash flow, Profit First, accounting, bookkeeping, fractional CFO, and financial management for SMBs.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Mike Michalowicz</span></div>
+      </div>
+    </a>
+
+    <a href="personal-finance.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">💰</div><div class="hub-name">Personal Finance</div><div class="hub-count">40+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Investing, wealth building, FIRE, tax strategy, and managing personal finances alongside your business.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span></div>
+      </div>
+    </a>
+
+    <a href="mechanical-trades.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">⚙️</div><div class="hub-name">Mechanical Trades</div><div class="hub-count">50+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">HVAC, plumbing, electrical business education — trade-specific pricing, software, and growth frameworks.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">HVAC School</span><span class="hub-link-btn">Electrician U</span></div>
+      </div>
+    </a>
+
+    <a href="real-estate.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🏡</div><div class="hub-name">Real Estate</div><div class="hub-count">50+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Rental properties, BRRRR, flipping, multifamily, commercial, and real estate syndications.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Grant Cardone</span><span class="hub-link-btn">BiggerPockets</span></div>
+      </div>
+    </a>
+
+    <a href="restaurant.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🍽️</div><div class="hub-name">Restaurant</div><div class="hub-count">35+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Food cost, labor management, POS systems, online reviews, and profitability for restaurant operators.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span></div>
+      </div>
+    </a>
+
+    <a href="transportation-logistics.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🚚</div><div class="hub-name">Transportation & Logistics</div><div class="hub-count">30+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Trucking, freight brokerage, dispatching, 3PL, and fleet management business education.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span></div>
+      </div>
+    </a>
+
+    <a href="startup.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🚀</div><div class="hub-name">Startup</div><div class="hub-count">45+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Fundraising, product-market fit, MVPs, pitch decks, VC vs. bootstrapping, and founder education.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Y Combinator</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="seo-links-section">
+    <h2>📰 Trending Guides & SEO Pages</h2>
+    <div class="seo-link-grid">
+      <a href="business-influencers.html" class="seo-link-card"><span class="seo-title">Best Business Influencers 2025</span><span class="seo-vol">12,100 searches/mo</span></a>
+      <a href="best-entrepreneurship-podcasts.html" class="seo-link-card"><span class="seo-title">Best Entrepreneurship Podcasts</span><span class="seo-vol">8,100 searches/mo</span></a>
+      <a href="top-sales-coaches.html" class="seo-link-card"><span class="seo-title">Top Sales Coaches 2025</span><span class="seo-vol">6,600 searches/mo</span></a>
+      <a href="home-service-business-coaches.html" class="seo-link-card"><span class="seo-title">Home Service Business Coaches</span><span class="seo-vol">5,400 searches/mo</span></a>
+      <a href="marketing-coaches-for-small-business.html" class="seo-link-card"><span class="seo-title">Marketing Coaches for Small Business</span><span class="seo-vol">4,400 searches/mo</span></a>
+      <a href="how-to-find-business-mentor.html" class="seo-link-card"><span class="seo-title">How to Find a Business Mentor</span><span class="seo-vol">3,600 searches/mo</span></a>
+      <a href="best-youtube-channels-small-business.html" class="seo-link-card"><span class="seo-title">Best YouTube Channels for Small Business</span><span class="seo-vol">2,900 searches/mo</span></a>
+      <a href="top-hvac-business-coaches.html" class="seo-link-card"><span class="seo-title">Top HVAC Business Coaches</span><span class="seo-vol">2,400 searches/mo</span></a>
+      <a href="franchise-coaches-to-follow.html" class="seo-link-card"><span class="seo-title">Best Franchise Coaches to Follow</span><span class="seo-vol">1,900 searches/mo</span></a>
+      <a href="ecommerce-coaches-2025.html" class="seo-link-card"><span class="seo-title">Best E-Commerce Coaches 2025</span><span class="seo-vol">1,600 searches/mo</span></a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+        <p>The #1 directory of business influencers, coaches & creators.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Directory</h5>
+        <a href="index.html">All Influencers</a>
+        <a href="hubs.html">Category Hubs</a>
+        <a href="blog.html">Blog</a>
+        <a href="submit.html">Get Listed</a>
+      </div>
+      <div class="footer-col">
+        <h5>Top Hubs</h5>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="home-services.html">Home Services</a>
+        <a href="sales.html">Sales</a>
+        <a href="marketing-seo.html">Marketing & SEO</a>
+        <a href="ecommerce.html">E-Commerce</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a></span>
+    </div>
+    <p class="footer-disclosure">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). Commissions never affect our editorial rankings. <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
+  </div>
+</footer>
+</body>
+</html>
