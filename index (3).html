@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Coach Directory — 1,000+ SMB Coaches & Educators | SMBProFind</title>
+<meta name="description" content="Browse 1,000+ verified business coaches, educators, and influencers across 15 SMB categories. Find the right mentor for entrepreneurship, sales, marketing, home services & more — free.">
+<meta property="og:title" content="Business Coach Directory — 1,000+ SMB Coaches & Educators | SMBProFind">
+<meta property="og:description" content="The #1 directory of business influencers, coaches & creators across 15 SMB categories.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://smbprofind.netlify.app/">
+
+<!-- Amazon Affiliate Tag: smbinf-20 -->
+<script>window.AMAZON_TAG = 'smbinf-20';</script>
+
+<style>
+  :root {
+    --navy: #0f2044;
+    --navy-mid: #1a3260;
+    --teal: #00b894;
+    --teal-dark: #00967a;
+    --teal-light: #e6faf6;
+    --gold: #f4b942;
+    --white: #ffffff;
+    --off-white: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-400: #94a3b8;
+    --gray-600: #475569;
+    --gray-800: #1e293b;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --card-shadow: 0 2px 12px rgba(15,32,68,0.09);
+    --card-shadow-hover: 0 8px 32px rgba(15,32,68,0.16);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --transition: 0.2s ease;
+    --nav-height: 64px;
+    --font-heading: 'Georgia', 'Times New Roman', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--off-white);
+    line-height: 1.6;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    gap: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+  .logo span { color: var(--teal); }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.82);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+  }
+  .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+  .nav-links a.btn-cta {
+    background: var(--teal);
+    color: var(--white);
+    font-weight: 700;
+  }
+  .nav-links a.btn-cta:hover { background: var(--teal-dark); }
+
+  /* ── HERO BAND ── */
+  .hero-band {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    color: var(--white);
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  .hero-band h1 {
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .hero-band h1 span { color: var(--teal); }
+  .hero-band p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.78);
+    max-width: 560px;
+    margin: 0 auto 20px;
+  }
+
+  .search-bar {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  }
+  .search-bar input {
+    flex: 1;
+    border: none;
+    padding: 14px 20px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: var(--font-body);
+  }
+  .search-bar button {
+    background: var(--teal);
+    border: none;
+    padding: 14px 24px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-body);
+  }
+  .search-bar button:hover { background: var(--teal-dark); }
+
+  .hero-stats {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .hero-stat { text-align: center; }
+  .hero-stat .num {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--teal);
+    line-height: 1;
+  }
+  .hero-stat .lbl {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+  }
+
+  /* ── LAYOUT ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  @media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    position: sticky;
+    top: calc(var(--nav-height) + 12px);
+    height: fit-content;
+    max-height: calc(100vh - var(--nav-height) - 24px);
+    overflow-y: auto;
+  }
+
+  .sidebar-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .sidebar-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .cat-list { padding: 6px 0; }
+  .cat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    font-size: 0.87rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-left: 3px solid transparent;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .cat-item:hover { background: var(--gray-100); color: var(--navy); }
+  .cat-item.active {
+    background: var(--teal-light);
+    border-left-color: var(--teal);
+    color: var(--teal-dark);
+    font-weight: 600;
+  }
+  .cat-count {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: var(--gray-100);
+    padding: 1px 6px;
+    border-radius: 10px;
+  }
+  .cat-item.active .cat-count { background: var(--teal); color: var(--white); }
+  .hub-link {
+    font-size: 0.7rem;
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .hub-link:hover { color: var(--teal-dark); }
+
+  /* ── MAIN CONTENT ── */
+  .main-content { min-width: 0; }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .results-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    flex: 1;
+  }
+  .results-label strong { color: var(--text); }
+
+  .sort-select {
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 7px 12px;
+    font-size: 0.84rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    cursor: pointer;
+    color: var(--text);
+  }
+
+  .btn-icon {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 7px 12px;
+    font-size: 0.84rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: var(--transition);
+  }
+  .btn-icon:hover { background: var(--gray-100); color: var(--text); }
+  .btn-icon.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+  /* ── GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: box-shadow var(--transition), transform var(--transition);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .card-top {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+  }
+
+  .avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--white);
+    flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.25);
+  }
+
+  .card-meta { flex: 1; min-width: 0; }
+  .card-name {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .card-handle {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 6px;
+  }
+  .card-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .cat-tag {
+    font-size: 0.68rem;
+    background: rgba(0,184,148,0.22);
+    color: var(--teal);
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 1px solid rgba(0,184,148,0.35);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--gold);
+    color: #7a5a00;
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 3px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .card-body { padding: 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+
+  .card-summary {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Stats grid 2x2 */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .stat-box {
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    padding: 6px 8px;
+    text-align: center;
+  }
+  .stat-label {
+    font-size: 0.63rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .stat-value {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .stat-value.green { color: #16a34a; }
+  .stat-value.blue { color: #2563eb; }
+  .stat-value.orange { color: #ea580c; }
+  .stat-value.red { color: #dc2626; }
+
+  .platform-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .platform-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 10px;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1.5px solid transparent;
+  }
+
+  .platform-btn.yt { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+  .platform-btn.yt:hover { background: #ef4444; color: var(--white); }
+  .platform-btn.ig { background: #fce7f3; color: #9d174d; border-color: #f9a8d4; }
+  .platform-btn.ig:hover { background: #ec4899; color: var(--white); }
+  .platform-btn.tt { background: var(--gray-100); color: var(--gray-800); border-color: var(--gray-200); }
+  .platform-btn.tt:hover { background: var(--gray-800); color: var(--white); }
+  .platform-btn.li { background: #dbeafe; color: #1e40af; border-color: #93c5fd; }
+  .platform-btn.li:hover { background: #2563eb; color: var(--white); }
+  .platform-btn.web { background: var(--teal-light); color: var(--teal-dark); border-color: #a7f3d0; }
+  .platform-btn.web:hover { background: var(--teal); color: var(--white); }
+  .platform-btn.primary { background: var(--teal); color: var(--white); border-color: var(--teal-dark); }
+  .platform-btn.primary:hover { background: var(--teal-dark); }
+
+  .books-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .book-link {
+    font-size: 0.73rem;
+    color: var(--navy);
+    text-decoration: none;
+    background: var(--gray-100);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+  }
+  .book-link:hover { background: var(--navy); color: var(--white); }
+
+  .wiki-link {
+    font-size: 0.73rem;
+    color: #1a73e8;
+    text-decoration: none;
+    background: #e8f0fe;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid #c5d9f8;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    transition: var(--transition);
+  }
+  .wiki-link:hover { background: #1a73e8; color: var(--white); }
+
+  /* ── LOADING / EMPTY ── */
+  .loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+  .loading .spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--gray-200);
+    border-top-color: var(--teal);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  /* ── PAGINATION ── */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .page-btn {
+    border: 1.5px solid var(--gray-200);
+    background: var(--white);
+    padding: 7px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: var(--font-body);
+  }
+  .page-btn:hover { background: var(--gray-100); }
+  .page-btn.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+  .page-btn:disabled { opacity: 0.4; cursor: default; }
+
+  /* ── MODALS ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 200;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--white);
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .modal-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .modal-header .close {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    background: none;
+    border: none;
+    color: var(--white);
+    line-height: 1;
+  }
+  .modal-header .close:hover { opacity: 1; }
+  .modal-body { padding: 24px; }
+
+  /* ── FORM ELEMENTS ── */
+  .form-group { margin-bottom: 14px; }
+  .form-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--gray-600);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .form-control {
+    width: 100%;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--white);
+    transition: border-color var(--transition);
+    outline: none;
+  }
+  .form-control:focus { border-color: var(--teal); }
+  textarea.form-control { resize: vertical; min-height: 80px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    font-family: var(--font-body);
+  }
+  .btn-primary { background: var(--teal); color: var(--white); }
+  .btn-primary:hover { background: var(--teal-dark); }
+  .btn-secondary { background: var(--gray-100); color: var(--text); }
+  .btn-secondary:hover { background: var(--gray-200); }
+  .btn-danger { background: #fee2e2; color: #991b1b; }
+  .btn-danger:hover { background: #ef4444; color: var(--white); }
+  .btn-navy { background: var(--navy); color: var(--white); }
+  .btn-navy:hover { background: var(--navy-mid); }
+
+  /* ── ADVERTISE MODAL ── */
+  #advertiseModal .modal { max-width: 560px; }
+  .form-select {
+    width: 100%;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: 9px 12px;
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--text);
+    cursor: pointer;
+    outline: none;
+  }
+  .form-select:focus { border-color: var(--teal); }
+
+  .success-box {
+    display: none;
+    text-align: center;
+    padding: 32px;
+  }
+  .success-box .icon { font-size: 2.5rem; margin-bottom: 10px; }
+  .success-box h3 { font-size: 1.2rem; margin-bottom: 6px; }
+  .success-box p { color: var(--text-muted); font-size: 0.9rem; }
+
+  /* ── ADD/EDIT INFLUENCER MODAL ── */
+  .section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 10px 0 6px;
+    border-top: 1px solid var(--gray-100);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .cats-check-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 6px;
+  }
+  .cats-check-grid label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.83rem;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+
+  /* ── ADMIN ── */
+  #adminModal .modal { max-width: 900px; }
+  .admin-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--gray-200);
+    background: var(--gray-100);
+    overflow-x: auto;
+  }
+  .admin-tab {
+    padding: 10px 18px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: var(--transition);
+    color: var(--text-muted);
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: var(--font-body);
+  }
+  .admin-tab.active { border-bottom-color: var(--teal); color: var(--teal-dark); }
+  .admin-tab:hover { color: var(--text); }
+
+  .admin-pane { display: none; padding: 20px; }
+  .admin-pane.active { display: block; }
+
+  .admin-table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+  th {
+    background: var(--gray-100);
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    border-bottom: 1.5px solid var(--gray-200);
+    white-space: nowrap;
+  }
+  td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--gray-100);
+    vertical-align: middle;
+  }
+  tr:hover td { background: var(--gray-100); }
+  .td-name { font-weight: 600; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .td-cat { max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.78rem; color: var(--text-muted); }
+  .td-actions { display: flex; gap: 6px; white-space: nowrap; }
+  .btn-sm { padding: 4px 10px; font-size: 0.76rem; }
+
+  .admin-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .admin-stat-box {
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    text-align: center;
+  }
+  .admin-stat-box .val { font-size: 1.6rem; font-weight: 800; color: var(--navy); }
+  .admin-stat-box .lbl { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── SETTINGS ── */
+  .settings-section {
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .settings-section h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .sb-status {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .sb-status.connected { background: #d1fae5; color: #065f46; }
+  .sb-status.disconnected { background: #fee2e2; color: #991b1b; }
+
+  /* ── HUB VIEW ── */
+  #hubView {
+    display: none;
+    min-width: 0;
+  }
+  .hub-header {
+    background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    margin-bottom: 20px;
+  }
+  .hub-header h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; }
+  .hub-header p { color: rgba(255,255,255,0.72); font-size: 0.92rem; }
+
+  /* ── CLICK TRACKER ── */
+  #clickDash {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  #clickDash h3 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .dash-stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .dash-stat { flex: 1; min-width: 120px; background: var(--gray-100); border-radius: var(--radius-sm); padding: 12px; text-align: center; }
+  .dash-stat .val { font-size: 1.4rem; font-weight: 800; color: var(--navy); }
+  .dash-stat .lbl { font-size: 0.73rem; color: var(--text-muted); margin-top: 2px; }
+
+  /* ── AFFILIATE CALLOUT ── */
+  .affiliate-notice {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    padding: 10px 14px;
+    background: var(--gray-100);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--teal);
+    margin-top: 4px;
+  }
+  .affiliate-notice a { color: var(--teal-dark); }
+
+  /* ── SECTION HEADERS (SEO) ── */
+  .seo-intro {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+  .seo-intro h2 { font-size: 1.3rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+  .seo-intro p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; margin-bottom: 8px; }
+  .seo-intro .cat-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .seo-cat-link {
+    font-size: 0.8rem;
+    color: var(--navy);
+    text-decoration: none;
+    background: var(--teal-light);
+    border: 1px solid #a7f3d0;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  .seo-cat-link:hover { background: var(--teal); color: var(--white); }
+
+  /* ── FAQ SECTION ── */
+  .faq-section {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+  .faq-section h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 16px; }
+  .faq-item { border-bottom: 1px solid var(--gray-200); }
+  .faq-q {
+    width: 100%;
+    text-align: left;
+    padding: 14px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-body);
+    gap: 8px;
+  }
+  .faq-q:hover { color: var(--teal-dark); }
+  .faq-q span { flex: 1; text-align: left; }
+  .faq-toggle { color: var(--teal); font-size: 1.1rem; flex-shrink: 0; }
+  .faq-a {
+    display: none;
+    font-size: 0.87rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    padding-bottom: 14px;
+  }
+  .faq-a.open { display: block; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 40px 24px 24px;
+    margin-top: 48px;
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+  .footer-brand .logo { font-size: 1.3rem; }
+  .footer-brand p { font-size: 0.82rem; margin-top: 8px; line-height: 1.6; }
+  .footer-col h5 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  .footer-col a {
+    display: block;
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: var(--transition);
+  }
+  .footer-col a:hover { color: var(--teal); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 18px;
+    font-size: 0.78rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-bottom a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--teal); }
+  .footer-disclosure {
+    font-size: 0.76rem;
+    color: rgba(255,255,255,0.45);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  .footer-disclosure a { color: rgba(0,184,148,0.7); }
+
+  /* ── UTILITIES ── */
+  .text-center { text-align: center; }
+  .mt-12 { margin-top: 12px; }
+  .mt-16 { margin-top: 16px; }
+  .flex { display: flex; }
+  .items-center { align-items: center; }
+  .gap-8 { gap: 8px; }
+  .hidden { display: none !important; }
+
+  /* ── ADMIN SIGN-IN ── */
+  .admin-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .admin-error {
+    color: #dc2626;
+    font-size: 0.82rem;
+    margin-top: -6px;
+  }
+
+  /* Filter row below search */
+  .filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .filter-tag {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1.5px solid var(--gray-200);
+    cursor: pointer;
+    background: var(--white);
+    color: var(--text-muted);
+    transition: var(--transition);
+    font-family: var(--font-body);
+    font-weight: 500;
+  }
+  .filter-tag:hover { border-color: var(--teal); color: var(--teal-dark); }
+  .filter-tag.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="btn-cta">Get Listed →</a>
+  </div>
+</nav>
+
+<!-- ══ ADVERTISE MODAL ══ -->
+<div class="modal-overlay" id="advertiseModal">
+  <div class="modal">
+    <div class="modal-header">
+      ◆ PARTNER WITH SMBPROFIND
+      <button class="close" onclick="closeModal('advertiseModal')">✕</button>
+    </div>
+    <div class="modal-body" id="advertiseForm">
+      <h2 style="font-size:1.2rem;margin-bottom:6px;">Advertise With Us</h2>
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:18px;">Reach thousands of SMB owners searching for expert guidance.</p>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name *</label><input class="form-control" id="adv_first" placeholder="Jane"></div>
+        <div class="form-group"><label class="form-label">Last Name *</label><input class="form-control" id="adv_last" placeholder="Smith"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Work Email *</label><input class="form-control" id="adv_email" type="email" placeholder="jane@company.com"></div>
+      <div class="form-group"><label class="form-label">Company / Brand *</label><input class="form-control" id="adv_company" placeholder="Acme Corp"></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Budget Range</label>
+          <select class="form-select" id="adv_budget">
+            <option value="">Select range</option>
+            <option>Under $500/mo</option><option>$500 – $1,000/mo</option>
+            <option>$1,000 – $2,500/mo</option><option>$2,500 – $5,000/mo</option><option>$5,000+/mo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Partnership Type</label>
+          <select class="form-select" id="adv_type">
+            <option value="">Select type</option>
+            <option>Sponsored Listing</option><option>Featured Placement</option>
+            <option>Newsletter Sponsorship</option><option>Banner / Display Ad</option>
+            <option>Content Partnership</option><option>Affiliate / CPA Deal</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label class="form-label">What would you like to promote?</label><textarea class="form-control" id="adv_notes" rows="3" placeholder="Tell us about your product or service…"></textarea></div>
+      <button class="btn btn-primary" onclick="submitAdvertise()">Send Partnership Inquiry →</button>
+    </div>
+    <div class="success-box" id="advertiseSuccess">
+      <div class="icon">🎉</div>
+      <h3>Inquiry Received!</h3>
+      <p>Our partnerships team will be in touch within 1–2 business days.</p>
+      <button class="btn btn-secondary mt-12" onclick="closeModal('advertiseModal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ADD/EDIT INFLUENCER MODAL ══ -->
+<div class="modal-overlay" id="influencerModal">
+  <div class="modal" style="max-width:720px;">
+    <div class="modal-header">
+      <span id="infModalTitle">Add New Influencer</span>
+      <button class="close" onclick="closeModal('influencerModal')">✕</button>
+    </div>
+    <div class="modal-body" style="max-height:80vh;overflow-y:auto;">
+      <input type="hidden" id="inf_id">
+      <div class="section-label">👤 Basic Information</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Full Name / Brand *</label><input class="form-control" id="inf_name" placeholder="Alex Hormozi"></div>
+        <div class="form-group"><label class="form-label">Handle / Username</label><input class="form-control" id="inf_handle" placeholder="@alexhormozi"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Categories * (select one or more)</label>
+        <div class="cats-check-grid" id="catsCheckboxes"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Subscriber / Follower Count</label><input class="form-control" id="inf_followers" placeholder="1.2M"></div>
+        <div class="form-group"><label class="form-label">Experience / Credential</label><input class="form-control" id="inf_cred" placeholder="Built $200M business"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Highlight / Bonus Stat</label><input class="form-control" id="inf_highlight" placeholder="10M YouTube views"></div>
+        <div class="form-group"><label class="form-label">Engagement Rate</label><input class="form-control" id="inf_engagement" placeholder="4.2%"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Follower Growth (6mo)</label><input class="form-control" id="inf_growth" placeholder="+18%"></div>
+        <div class="form-group"><label class="form-label">Real Follower Score</label><input class="form-control" id="inf_real" placeholder="92%"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Est. Revenue / Sales</label><input class="form-control" id="inf_revenue" placeholder="$100M+"></div>
+      <div class="form-group"><label class="form-label">AI Summary / Bio *</label><textarea class="form-control" id="inf_summary" rows="4" placeholder="Brief bio…"></textarea></div>
+      <div class="section-label">📚 Books & Courses</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Book Title(s) (comma separated)</label><input class="form-control" id="inf_bookTitles" placeholder="$100M Offers, $100M Leads"></div>
+        <div class="form-group"><label class="form-label">Book URL(s) (matching order)</label><input class="form-control" id="inf_bookUrls" placeholder="https://amazon.com/dp/..."></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Course Title(s)</label><input class="form-control" id="inf_courseTitles" placeholder="Acquisition.com University"></div>
+        <div class="form-group"><label class="form-label">Course URL(s)</label><input class="form-control" id="inf_courseUrls" placeholder="https://..."></div>
+      </div>
+      <div class="section-label">🔗 Platform Links</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">▶ YouTube URL</label><input class="form-control" id="inf_yt" placeholder="https://youtube.com/@..."></div>
+        <div class="form-group"><label class="form-label">📸 Instagram URL</label><input class="form-control" id="inf_ig" placeholder="https://instagram.com/..."></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">♪ TikTok URL</label><input class="form-control" id="inf_tt" placeholder="https://tiktok.com/@..."></div>
+        <div class="form-group"><label class="form-label">in LinkedIn URL</label><input class="form-control" id="inf_li" placeholder="https://linkedin.com/in/..."></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">🌐 Website URL</label><input class="form-control" id="inf_web" placeholder="https://..."></div>
+        <div class="form-group"><label class="form-label">🖼 Primary Link (card button)</label><input class="form-control" id="inf_primary" placeholder="https://..."></div>
+      </div>
+      <div class="form-group"><label class="form-label">Wikipedia URL</label><input class="form-control" id="inf_wiki" placeholder="https://en.wikipedia.org/wiki/..."></div>
+      <div class="section-label">🎨 Appearance</div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Avatar Initials (2 letters)</label><input class="form-control" id="inf_initials" maxlength="2" placeholder="AH"></div>
+        <div class="form-group"><label class="form-label">Avatar Background Color</label><input class="form-control" id="inf_color" type="color" value="#0f2044"></div>
+      </div>
+      <div class="form-group">
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:0.87rem;">
+          <input type="checkbox" id="inf_featured"> ⭐ Featured Listing (gold badge, appears at top)
+        </label>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:8px;">
+        <button class="btn btn-primary" onclick="saveInfluencer()">💾 Save Profile</button>
+        <button class="btn btn-secondary" onclick="closeModal('influencerModal')">Cancel</button>
+        <button class="btn btn-danger btn-sm" id="deleteBtn" style="margin-left:auto;" onclick="deleteInfluencer()">🗑 Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ADMIN MODAL ══ -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal" style="max-width:960px;">
+    <div class="modal-header">
+      🔐 SMBProFind Admin
+      <button class="close" onclick="closeModal('adminModal')">✕</button>
+    </div>
+    <!-- Sign In -->
+    <div id="adminSignIn" class="modal-body">
+      <h3 style="margin-bottom:16px;">Admin Access</h3>
+      <div class="admin-signin">
+        <div class="form-group"><label class="form-label">Username</label><input class="form-control" id="adminUser" placeholder="admin"></div>
+        <div class="form-group"><label class="form-label">Password</label><input class="form-control" type="password" id="adminPass" placeholder="••••••" onkeydown="if(event.key==='Enter')adminLogin()"></div>
+        <div class="admin-error hidden" id="adminErr">Incorrect username or password.</div>
+        <button class="btn btn-navy" onclick="adminLogin()">Sign In</button>
+
+      </div>
+    </div>
+    <!-- Dashboard -->
+    <div id="adminDash" class="hidden">
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchTab('dashboard')">📊 Dashboard</button>
+        <button class="admin-tab" onclick="switchTab('influencers')">👤 Influencers</button>
+        <button class="admin-tab" onclick="switchTab('settings')">⚙️ Settings</button>
+        <button class="admin-tab" onclick="switchTab('pages')">📄 Pages</button>
+        <button class="admin-tab" style="margin-left:auto;" onclick="adminLogout()">Sign Out →</button>
+      </div>
+      <!-- Dashboard pane -->
+      <div class="admin-pane active" id="pane-dashboard">
+        <div class="admin-stat-grid">
+          <div class="admin-stat-box"><div class="val" id="dashCount">—</div><div class="lbl">Influencers</div></div>
+          <div class="admin-stat-box"><div class="val" id="dashFeatured">—</div><div class="lbl">Featured</div></div>
+          <div class="admin-stat-box"><div class="val" id="dashCats">15</div><div class="lbl">Categories</div></div>
+          <div class="admin-stat-box"><div class="val" id="dashClicks">—</div><div class="lbl">Clicks Today</div></div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="btn btn-primary" onclick="openAddInfluencer()">+ Add Influencer</button>
+          <button class="btn btn-secondary" onclick="exportJSON()">⬇ Export JSON</button>
+          <button class="btn btn-secondary" onclick="exportCSV()">⬇ Export CSV</button>
+        </div>
+      </div>
+      <!-- Influencers pane -->
+      <div class="admin-pane" id="pane-influencers">
+        <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center;">
+          <button class="btn btn-primary btn-sm" onclick="openAddInfluencer()">+ Add Influencer</button>
+          <select class="sort-select" id="adminCatFilter" onchange="renderAdminTable()">
+            <option value="">All Categories</option>
+          </select>
+          <input class="form-control" id="adminSearch" style="max-width:200px;" placeholder="Search name…" oninput="renderAdminTable()">
+        </div>
+        <div class="admin-table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Name</th><th>Category</th><th>Platforms</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="adminTableBody"></tbody>
+          </table>
+        </div>
+        <div class="pagination" id="adminPagination"></div>
+      </div>
+      <!-- Settings pane -->
+      <div class="admin-pane" id="pane-settings">
+        <div class="settings-section">
+          <h4>🗄️ Supabase Database</h4>
+          <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px;">Connect your Supabase project for real-time sync. <span id="sbStatusBadge" class="sb-status disconnected">○ Not connected</span></p>
+          <div class="form-group"><label class="form-label">Project URL</label><input class="form-control" id="cfg_sbUrl" placeholder="https://xxxx.supabase.co"></div>
+          <div class="form-group"><label class="form-label">Anon / Public Key</label><input class="form-control" id="cfg_sbKey" placeholder="eyJ..."></div>
+          <div class="form-group"><label class="form-label">Table Name</label><input class="form-control" id="cfg_sbTable" placeholder="profind_influencers" value="profind_influencers"></div>
+          <button class="btn btn-primary btn-sm" onclick="saveSupabase()">Save & Test Connection</button>
+        </div>
+        <div class="settings-section">
+          <h4>✦ Claude AI (Auto-Fill)</h4>
+          <div class="form-group"><label class="form-label">Anthropic API Key</label><input class="form-control" id="cfg_aiKey" placeholder="sk-ant-..."></div>
+          <button class="btn btn-primary btn-sm" onclick="saveAIKey()">Save Key</button>
+        </div>
+        <div class="settings-section">
+          <h4>🔐 Change Password</h4>
+          <div class="form-row">
+            <div class="form-group"><label class="form-label">New Username</label><input class="form-control" id="cfg_user" placeholder="admin"></div>
+            <div class="form-group"><label class="form-label">New Password</label><input class="form-control" type="password" id="cfg_pass" placeholder="••••••"></div>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="saveCreds()">💾 Save Credentials</button>
+        </div>
+        <div class="settings-section">
+          <h4>🔗 GHL Webhook URLs</h4>
+          <div class="form-group"><label class="form-label">Submit Influencer Form Webhook</label><input class="form-control" id="cfg_wh1" placeholder="https://hooks.gohighlevel.com/..."></div>
+          <div class="form-group"><label class="form-label">Advertise / Sponsor Form Webhook</label><input class="form-control" id="cfg_wh2" placeholder="https://hooks.gohighlevel.com/..."></div>
+          <div class="form-group"><label class="form-label">Newsletter Signup Webhook</label><input class="form-control" id="cfg_wh3" placeholder="https://hooks.gohighlevel.com/..."></div>
+          <button class="btn btn-primary btn-sm" onclick="saveWebhooks()">💾 Save Webhooks</button>
+        </div>
+        <div class="settings-section">
+          <h4>🌐 Affiliate Settings</h4>
+          <div class="form-group"><label class="form-label">Amazon Affiliate Tag</label><input class="form-control" id="cfg_amzTag" placeholder="smbinf-20" value="smbinf-20"></div>
+          <div class="form-group"><label class="form-label">Affiliate Disclosure Text</label><textarea class="form-control" id="cfg_disclosure" rows="2">SMBProFind earns a referral fee when you click through to featured partners. This never affects our rankings. Amazon links use tag: smbinf-20.</textarea></div>
+          <button class="btn btn-primary btn-sm" onclick="saveAffiliate()">💾 Save</button>
+        </div>
+        <div class="settings-section" style="border:1.5px solid #fca5a5;">
+          <h4 style="color:#991b1b;">⚠️ Danger Zone</h4>
+          <button class="btn btn-danger btn-sm" onclick="if(confirm('Reset ALL data? This cannot be undone.'))resetAll()">🔥 Reset ALL Data</button>
+        </div>
+      </div>
+      <!-- Pages pane -->
+      <div class="admin-pane" id="pane-pages">
+        <p style="font-size:0.87rem;color:var(--text-muted);">Manage static page content — About, Privacy, Terms, and Affiliate Disclosure. Coming in Phase 4 with standalone page files.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">
+          <a href="about.html" class="btn btn-secondary btn-sm">🏢 About</a>
+          <a href="privacy.html" class="btn btn-secondary btn-sm">🔒 Privacy Policy</a>
+          <a href="affiliate-disclosure.html" class="btn btn-secondary btn-sm">📢 FTC Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<div class="hero-band">
+  <h1>THE BUSINESS INFLUENCER <span>DIRECTORY</span></h1>
+  <p>Find the Right Business Coach, Creator, or Educator. 1,000+ verified profiles across 15 SMB categories.</p>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by name, niche, or keyword…" oninput="onSearch()">
+    <button onclick="onSearch()">Search</button>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num" id="heroTotal">1,000</div><div class="lbl">Verified Influencers</div></div>
+    <div class="hero-stat"><div class="num">15</div><div class="lbl">Expert Categories</div></div>
+    <div class="hero-stat"><div class="num">50M+</div><div class="lbl">Combined Followers</div></div>
+    <div class="hero-stat"><div class="num" id="heroClicks">0</div><div class="lbl">Clicks Today</div></div>
+  </div>
+</div>
+
+<!-- ══ SEO INTRO BLOCK ══ -->
+<div style="max-width:1280px;margin:0 auto;padding:20px 16px 0;">
+  <div class="seo-intro">
+    <h2>Find the Best Business Coaches, Creators & Educators</h2>
+    <p>SMBProFind is the #1 directory of <strong>business influencers</strong>, <strong>business coaches</strong>, and <strong>business content creators</strong>. With 1,000+ verified profiles across 15 categories, we make it easy to find the right educator for your industry — whether you run a home service company, franchise, e-commerce store, or B2B business.</p>
+    <p>Browse by category below, or use the search bar to find coaches by name, niche, or keyword. All listings are free to browse. No account needed.</p>
+    <div class="cat-links">
+      <a href="entrepreneurship.html" class="seo-cat-link">💼 Entrepreneurship</a>
+      <a href="home-services.html" class="seo-cat-link">🔧 Home Services</a>
+      <a href="sales.html" class="seo-cat-link">🤝 Sales</a>
+      <a href="marketing-seo.html" class="seo-cat-link">📣 Marketing & SEO</a>
+      <a href="ecommerce.html" class="seo-cat-link">🛒 E-Commerce</a>
+      <a href="franchise.html" class="seo-cat-link">🏪 Franchise</a>
+      <a href="productivity.html" class="seo-cat-link">⚡ Productivity</a>
+      <a href="real-estate.html" class="seo-cat-link">🏡 Real Estate</a>
+      <a href="restaurant.html" class="seo-cat-link">🍽️ Restaurant</a>
+      <a href="startup.html" class="seo-cat-link">🚀 Startup</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ MAIN LAYOUT ══ -->
+<div class="layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-header">🏠 Browse by Category</div>
+      <div class="cat-list" id="catList"></div>
+    </div>
+    <div class="sidebar-card" style="padding:14px 16px;">
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:10px;font-weight:600;">Are you an influencer?</p>
+      <a href="submit.html" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.83rem;">Get Listed Free →</a>
+    </div>
+    <div class="sidebar-card" style="padding:14px 16px;">
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:10px;font-weight:600;">Advertise with us</p>
+      <button class="btn btn-secondary" style="width:100%;justify-content:center;font-size:0.83rem;" onclick="openModal('advertiseModal')">📢 Partner →</button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <!-- Directory View -->
+    <div id="directoryView">
+      <div class="toolbar">
+        <span class="results-label">Showing <strong id="resultCount">—</strong> influencers</span>
+        <select class="sort-select" id="sortSelect" onchange="renderGrid()">
+          <option value="featured">⭐ Featured First</option>
+          <option value="az">A → Z</option>
+          <option value="za">Z → A</option>
+          <option value="newest">🆕 Newest</option>
+        </select>
+        <button class="btn-icon" id="adminBtn" onclick="openModal('adminModal')" title="Admin">⚙ Admin</button>
+      </div>
+      <div class="grid" id="grid">
+        <div class="loading"><div class="spinner"></div><p>Loading influencers…</p></div>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+
+    <!-- Hub View -->
+    <div id="hubView">
+      <div class="hub-header">
+        <h2 id="hubTitle">Category</h2>
+        <p id="hubDesc">Explore influencers, tools, and resources in this category.</p>
+        <a href="index.html" style="color:rgba(255,255,255,0.7);font-size:0.82rem;text-decoration:none;display:inline-block;margin-top:10px;">← Back to Directory</a>
+      </div>
+      <div class="grid" id="hubGrid"></div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section" id="mainFaq">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Who are the best business influencers to follow?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-a">The top business influencers include Alex Hormozi, Gary Vaynerchuk, Codie Sanchez, Mike Michalowicz, Dan Martell, Noah Kagan, Tim Ferriss, Tony Robbins, Russell Brunson, and Amy Porterfield. All 1,000+ are searchable on SMBProFind, organized by niche and industry.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>What makes SMBProFind different from other directories?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-a">SMBProFind is the only directory built specifically for small business owners looking for verified educators. Unlike generic influencer databases, every profile is categorized by industry niche — so an HVAC owner finds HVAC-specific coaches, not generic motivational speakers. With 1,000+ profiles and 15 categories, it's the most comprehensive business coach and creator directory available.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>How do I find a business coach in my industry?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-a">Use the category sidebar to filter by your industry — choose from Entrepreneurship, Sales, Marketing, E-Commerce, Home Services, Franchise, HVAC/Plumbing/Electrical, Productivity, ETA, Finance, Restaurant, Real Estate, or Transportation. Then search by name or keyword to narrow further. Every profile includes links to YouTube, Instagram, LinkedIn, and their main website.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)"><span>Can I get my business listed in SMBProFind?</span><span class="faq-toggle">+</span></button>
+        <div class="faq-a">Yes! Business coaches, educators, and content creators can apply for a free listing using the "Get Listed" button. Featured listing upgrades are available for maximum visibility at the top of category pages. Featured listings are reviewed and approved by the SMBProFind team.</div>
+      </div>
+    </div>
+
+    <!-- Schema JSON-LD FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Who are the best business influencers to follow?","acceptedAnswer":{"@type":"Answer","text":"The top business influencers include Alex Hormozi, Gary Vaynerchuk, Codie Sanchez, Mike Michalowicz, Dan Martell, Noah Kagan, Tim Ferriss, Tony Robbins, Russell Brunson, and Amy Porterfield."}},
+        {"@type":"Question","name":"What makes SMBProFind different?","acceptedAnswer":{"@type":"Answer","text":"SMBProFind is the only directory built specifically for small business owners looking for verified educators, organized by industry niche with 1,000+ profiles across 15 categories."}},
+        {"@type":"Question","name":"How do I find a business coach in my industry?","acceptedAnswer":{"@type":"Answer","text":"Use the category sidebar to filter by industry — choose from 15 categories including Entrepreneurship, Sales, Marketing, E-Commerce, Home Services, and more."}},
+        {"@type":"Question","name":"Can I get listed in SMBProFind?","acceptedAnswer":{"@type":"Answer","text":"Yes! Coaches, educators, and content creators can apply for a free listing using the Get Listed button."}}
+      ]
+    }
+    </script>
+  </main>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+        <p>The #1 directory of business influencers, coaches & creators — 1,000+ verified profiles across 15 categories.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Directory</h5>
+        <a href="index.html">All Influencers</a>
+        <a href="hubs.html">Category Hubs</a>
+        <a href="blog.html">Blog</a>
+        <a href="submit.html">Get Listed</a>
+      </div>
+      <div class="footer-col">
+        <h5>Top Categories</h5>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="home-services.html">Home Services</a>
+        <a href="sales.html">Sales</a>
+        <a href="marketing-seo.html">Marketing & SEO</a>
+        <a href="ecommerce.html">E-Commerce</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About SMBProFind</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
+      <span>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      </span>
+    </div>
+    <p class="footer-disclosure">
+      <strong>Disclosure:</strong> SMBProFind participates in affiliate programs including Amazon Associates (tag: <strong>smbinf-20</strong>). When you click a resource link and make a purchase, we may earn a commission at no extra cost to you. This never affects our editorial rankings or influencer listings.
+      <a href="affiliate-disclosure.html">Full FTC Disclosure →</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Floating admin/dash buttons -->
+<div style="position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:8px;z-index:90;">
+  <button onclick="openModal('adminModal')" style="background:var(--navy);color:var(--white);border:none;border-radius:50px;padding:10px 16px;font-size:0.8rem;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.25);">⚙ Admin</button>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+// CONFIG
+// ══════════════════════════════════════════
+const AMAZON_TAG = 'smbinf-20';
+
+const CATS = [
+  {id:'entrepreneurship',  label:'💼 Entrepreneurship',          hub:'entrepreneurship.html'},
+  {id:'startup',           label:'🚀 Startup',                   hub:'startup.html'},
+  {id:'eta',               label:'🔑 ETA / Buy a Biz',           hub:'eta-buy-a-business.html'},
+  {id:'franchise',         label:'🏪 Franchise',                 hub:'franchise.html'},
+  {id:'marketing',         label:'📣 Marketing & SEO',           hub:'marketing-seo.html'},
+  {id:'business-finance',  label:'📊 Finance — Business',        hub:'business-finance.html'},
+  {id:'personal-finance',  label:'💰 Finance — Personal',        hub:'personal-finance.html'},
+  {id:'home-services',     label:'🔧 Home Services',             hub:'home-services.html'},
+  {id:'mechanical-trades', label:'⚙️ Mechanical Trades',         hub:'mechanical-trades.html'},
+  {id:'ecommerce',         label:'🛒 E-Commerce',                hub:'ecommerce.html'},
+  {id:'sales',             label:'🤝 Sales',                     hub:'sales.html'},
+  {id:'productivity',      label:'⚡ Productivity',              hub:'productivity.html'},
+  {id:'transportation',    label:'🚚 Transportation & Logistics', hub:'transportation-logistics.html'},
+  {id:'real-estate',       label:'🏡 Real Estate',               hub:'real-estate.html'},
+  {id:'restaurant',        label:'🍽️ Restaurant',                hub:'restaurant.html'},
+];
+
+// ── Storage helpers ──
+const storage = {
+  get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+  set: (k, v) => localStorage.setItem(k, JSON.stringify(v)),
+  remove: k => localStorage.removeItem(k),
+};
+
+// ── Config ──
+let CFG = storage.get('smb_cfg') || {
+  sbUrl: 'https://wixahbxwqhgizbotybyj.supabase.co', sbKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8', sbTable: 'profind_influencers',
+  aiKey: '', adminUser: 'admin', adminPass: 'smbpro2025',
+  whSubmit: '', whAdvertise: '', whNewsletter: '',
+  amzTag: 'smbinf-20', disclosure: '',
+};
+const saveCFG = () => storage.set('smb_cfg', CFG);
+
+// ── Data ──
+let allInfluencers = [];
+let filteredInfluencers = [];
+let currentCat = 'all';
+let currentSearch = '';
+let currentPage = 1;
+const PAGE_SIZE = 24;
+let isLoggedIn = false;
+let clicksToday = 0;
+let sessionClicks = [];
+
+// ──────────────────────────────────────
+// AMAZON AFFILIATE LINK HELPER
+// ──────────────────────────────────────
+function amazonLink(url) {
+  if (!url) return url;
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('amazon.com')) {
+      u.searchParams.set('tag', CFG.amzTag || AMAZON_TAG);
+      return u.toString();
+    }
+  } catch {}
+  return url;
+}
+
+// ──────────────────────────────────────
+// CATEGORY MATCHING (hyphen-safe)
+// ──────────────────────────────────────
+// Map directory cat ids → actual data category strings
+const CAT_ALIASES = {
+  'business-finance':  ['finance-business','finance business','business finance','business-finance'],
+  'personal-finance':  ['finance-personal','finance personal','personal finance','personal-finance'],
+  'startup':           ['startup'],
+  'entrepreneurship':  ['entrepreneurship','startup'],
+  'home-services':     ['home-services','home services','landscaping','cleaning'],
+  'mechanical-trades': ['mechanical-trades','mechanical trades','hvac','plumbing','electrical'],
+  'ecommerce':         ['ecommerce','e-commerce','retail','dropshipping','etsy'],
+  'real-estate':       ['real-estate','real estate'],
+  'transportation':    ['transportation','transportation logistics'],
+  'marketing':         ['marketing','marketing-seo','marketing seo'],
+};
+function catMatch(l, kw) {
+  const str = [(l.category||''), Array.isArray(l.cats)? l.cats.join(' ') : ''].join(' ')
+    .toLowerCase().replace(/-/g,' ');
+  const kwClean = kw.toLowerCase().replace(/-/g,' ');
+  if (str.includes(kwClean)) return true;
+  const aliases = CAT_ALIASES[kw] || [];
+  return aliases.some(a => str.includes(a.replace(/-/g,' ')));
+}
+
+function getInfluencerCats(inf) {
+  const cats = Array.isArray(inf.cats) ? inf.cats : [];
+  if (inf.category && !cats.includes(inf.category)) cats.push(inf.category);
+  return cats;
+}
+
+// ──────────────────────────────────────
+// SUPABASE FETCH
+// ──────────────────────────────────────
+async function fetchFromSupabase() {
+  if (!CFG.sbUrl || !CFG.sbKey) return null;
+  try {
+    const res = await fetch(
+      `${CFG.sbUrl}/rest/v1/${CFG.sbTable}?select=*&order=id.asc`,
+      { headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}` } }
+    );
+    if (!res.ok) return null;
+    const rows = await res.json();
+    return rows.map(r => {
+      const d = r.data || {};
+      return { id: r.id, name: r.name || d.name, category: r.category || d.category, ...d };
+    });
+  } catch { return null; }
+}
+
+async function saveToSupabase(inf) {
+  if (!CFG.sbUrl || !CFG.sbKey) return false;
+  try {
+    const body = { id: inf.id, name: inf.name, category: inf.category, data: inf };
+    const existing = await fetch(
+      `${CFG.sbUrl}/rest/v1/${CFG.sbTable}?id=eq.${inf.id}`,
+      { headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}` } }
+    );
+    const rows = await existing.json();
+    const method = rows.length ? 'PATCH' : 'POST';
+    const url = rows.length
+      ? `${CFG.sbUrl}/rest/v1/${CFG.sbTable}?id=eq.${inf.id}`
+      : `${CFG.sbUrl}/rest/v1/${CFG.sbTable}`;
+    await fetch(url, {
+      method,
+      headers: {
+        apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}`,
+        'Content-Type': 'application/json', Prefer: 'return=minimal',
+      },
+      body: JSON.stringify(body),
+    });
+    return true;
+  } catch { return false; }
+}
+
+async function deleteFromSupabase(id) {
+  if (!CFG.sbUrl || !CFG.sbKey) return;
+  await fetch(`${CFG.sbUrl}/rest/v1/${CFG.sbTable}?id=eq.${id}`, {
+    method: 'DELETE',
+    headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}` },
+  });
+}
+
+// ──────────────────────────────────────
+// LOAD DATA
+// ──────────────────────────────────────
+async function loadData() {
+  let data = await fetchFromSupabase();
+  if (!data) {
+    data = storage.get('smb_influencers') || getSeedData();
+  }
+  allInfluencers = data;
+  storage.set('smb_influencers', data);
+  applyFilters();
+  document.getElementById('heroTotal').textContent = data.length.toLocaleString();
+}
+
+function getSeedData() {
+  return [
+    { id: 1, name: 'Alex Hormozi', handle: '@alexhormozi', category: 'entrepreneurship',
+      cats: ['entrepreneurship','sales'], summary: 'Built $200M+ portfolio (Gym Launch, Acquisition.com). Teaches sales, offers, and scaling. Author of $100M Offers and $100M Leads.',
+      followers: '9M+', cred: '$200M+ revenue', featured: true, initials: 'AH', color: '#0f2044',
+      yt: 'https://youtube.com/@AlexHormozi', ig: 'https://instagram.com/hormozi',
+      wiki: 'https://en.wikipedia.org/wiki/Alex_Hormozi',
+      bookTitles: ['$100M Offers','$100M Leads'],
+      bookUrls: ['https://www.amazon.com/dp/B09BKYD4GZ?tag=smbinf-20','https://www.amazon.com/dp/B0CDFZGK9D?tag=smbinf-20'],
+      engagement: '6.8%', growth: '+22%', realScore: '94%', revenue: '$200M+' },
+    { id: 2, name: 'Gary Vaynerchuk', handle: '@garyvee', category: 'entrepreneurship',
+      cats: ['entrepreneurship','marketing'], summary: 'Serial entrepreneur, VaynerMedia CEO, bestselling author. Known for documenting the journey and aggressive social media strategy.',
+      followers: '20M+', cred: 'VaynerMedia CEO', featured: true, initials: 'GV', color: '#1e3a5f',
+      yt: 'https://youtube.com/@garyvee', ig: 'https://instagram.com/garyvee',
+      wiki: 'https://en.wikipedia.org/wiki/Gary_Vaynerchuk',
+      bookTitles: ['Crush It!','Jab, Jab, Jab, Right Hook'],
+      bookUrls: ['https://www.amazon.com/dp/0061914177?tag=smbinf-20','https://www.amazon.com/dp/006227306X?tag=smbinf-20'],
+      engagement: '3.2%', growth: '+8%', realScore: '87%', revenue: '$250M+' },
+    { id: 3, name: 'Codie Sanchez', handle: '@codiesanchez', category: 'entrepreneurship',
+      cats: ['entrepreneurship','eta'], summary: 'Founder of Contrarian Thinking. Teaches buying boring businesses and cash flow investing. 2M+ newsletter subscribers.',
+      followers: '3M+', cred: '2M+ newsletter', featured: true, initials: 'CS', color: '#134e4a',
+      yt: 'https://youtube.com/@CodieSanchez', ig: 'https://instagram.com/codiesanchez',
+      wiki: 'https://en.wikipedia.org/wiki/Codie_Sanchez',
+      bookTitles: ['Main Street Millionaire'],
+      bookUrls: ['https://www.amazon.com/dp/B0CFQMJB11?tag=smbinf-20'],
+      engagement: '5.1%', growth: '+31%', realScore: '91%', revenue: '$50M+' },
+    { id: 4, name: 'Tommy Mello', handle: '@tommymello', category: 'home-services',
+      cats: ['home-services'], summary: 'Built A1 Garage Door Service from $50K to $200M+ revenue. Teaches home service businesses how to scale through operations, hiring, and marketing.',
+      followers: '300K+', cred: '$200M+ revenue', featured: true, initials: 'TM', color: '#1e40af',
+      yt: 'https://youtube.com/@TommyMello', ig: 'https://instagram.com/tommymello1',
+      bookTitles: ['Elevate'],
+      bookUrls: ['https://www.amazon.com/dp/B09LPQJLF5?tag=smbinf-20'],
+      engagement: '4.8%', growth: '+18%', realScore: '93%', revenue: '$200M+' },
+    { id: 5, name: 'Grant Cardone', handle: '@grantcardone', category: 'sales',
+      cats: ['sales','real-estate'], summary: 'Sales trainer and real estate investor. Creator of Cardone University and the 10X movement. Author of The 10X Rule.',
+      followers: '10M+', cred: '10X Rule author', featured: true, initials: 'GC', color: '#7c3aed',
+      yt: 'https://youtube.com/@GrantCardone', ig: 'https://instagram.com/grantcardone',
+      wiki: 'https://en.wikipedia.org/wiki/Grant_Cardone',
+      bookTitles: ['The 10X Rule','Sell or Be Sold'],
+      bookUrls: ['https://www.amazon.com/dp/0470627603?tag=smbinf-20','https://www.amazon.com/dp/1608322904?tag=smbinf-20'],
+      engagement: '2.9%', growth: '+11%', realScore: '78%', revenue: '$400M+' },
+    { id: 6, name: 'Neil Patel', handle: '@neilpatel', category: 'marketing',
+      cats: ['marketing'], summary: 'Co-founder of NP Digital. One of the world\'s top digital marketing experts. Helps brands grow through SEO, content, and paid media.',
+      followers: '5M+', cred: 'NP Digital founder', featured: false, initials: 'NP', color: '#ea580c',
+      yt: 'https://youtube.com/@NeilPatel', web: 'https://neilpatel.com',
+      wiki: 'https://en.wikipedia.org/wiki/Neil_Patel_(entrepreneur)',
+      bookTitles: ['Hustle'],
+      bookUrls: ['https://www.amazon.com/dp/1250116260?tag=smbinf-20'],
+      engagement: '3.5%', growth: '+14%', realScore: '88%', revenue: '$100M+' },
+    { id: 7, name: 'Ali Abdaal', handle: '@aliabdaal', category: 'productivity',
+      cats: ['productivity'], summary: 'Former Cambridge doctor turned creator and author. Teaches productivity, content creation, and building a creator business.',
+      followers: '5M+', cred: 'Cambridge MD, creator', featured: false, initials: 'AA', color: '#0891b2',
+      yt: 'https://youtube.com/@aliabdaal', web: 'https://aliabdaal.com',
+      wiki: 'https://en.wikipedia.org/wiki/Ali_Abdaal',
+      bookTitles: ['Feel-Good Productivity'],
+      bookUrls: ['https://www.amazon.com/dp/0593656660?tag=smbinf-20'],
+      engagement: '4.4%', growth: '+19%', realScore: '96%', revenue: '$5M+' },
+    { id: 8, name: 'Walker Deibel', handle: '@walkerdeibel', category: 'eta',
+      cats: ['eta'], summary: 'Author of Buy Then Build. Leading voice on Entrepreneurship Through Acquisition (ETA) and SMB acquisition strategy.',
+      followers: '100K+', cred: 'Buy Then Build author', featured: false, initials: 'WD', color: '#0f2044',
+      web: 'https://walkerdeibel.com',
+      bookTitles: ['Buy Then Build'],
+      bookUrls: ['https://www.amazon.com/dp/1544511566?tag=smbinf-20'],
+      engagement: '3.1%', growth: '+9%', realScore: '97%', revenue: '$10M+' },
+  ];
+}
+
+// ──────────────────────────────────────
+// FILTERS & SORT
+// ──────────────────────────────────────
+function applyFilters() {
+  let data = [...allInfluencers];
+  if (currentCat !== 'all') {
+    data = data.filter(l => catMatch(l, currentCat));
+  }
+  if (currentSearch) {
+    const q = currentSearch.toLowerCase();
+    data = data.filter(l =>
+      (l.name||'').toLowerCase().includes(q) ||
+      (l.summary||'').toLowerCase().includes(q) ||
+      (l.handle||'').toLowerCase().includes(q) ||
+      (l.cred||'').toLowerCase().includes(q)
+    );
+  }
+  const sort = document.getElementById('sortSelect')?.value || 'featured';
+  if (sort === 'az') data.sort((a,b) => (a.name||'').localeCompare(b.name||''));
+  else if (sort === 'za') data.sort((a,b) => (b.name||'').localeCompare(a.name||''));
+  else if (sort === 'newest') data.sort((a,b) => (b.id||0) - (a.id||0));
+  else { data.sort((a,b) => (b.featured?1:0) - (a.featured?1:0)); }
+
+  filteredInfluencers = data;
+  currentPage = 1;
+  renderGrid();
+  updateCatCounts();
+}
+
+function onSearch() {
+  currentSearch = document.getElementById('searchInput')?.value || '';
+  applyFilters();
+}
+
+function renderGrid() {
+  const grid = document.getElementById('grid');
+  if (!grid) return;
+  document.getElementById('resultCount').textContent = filteredInfluencers.length.toLocaleString();
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const page = filteredInfluencers.slice(start, start + PAGE_SIZE);
+  if (!page.length) {
+    grid.innerHTML = '<div class="empty">No influencers found. Try a different search or category.</div>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+  grid.innerHTML = page.map(inf => renderCard(inf)).join('');
+  renderPagination(Math.ceil(filteredInfluencers.length / PAGE_SIZE));
+}
+
+function renderPagination(total) {
+  const el = document.getElementById('pagination');
+  if (!el || total <= 1) { if(el) el.innerHTML = ''; return; }
+  let html = `<button class="page-btn" ${currentPage===1?'disabled':''} onclick="goPage(${currentPage-1})">‹ Prev</button>`;
+  for (let i=1;i<=total;i++) {
+    if (i===1||i===total||Math.abs(i-currentPage)<=2) {
+      html += `<button class="page-btn ${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
+    } else if (Math.abs(i-currentPage)===3) html += '<span style="padding:7px 4px;color:var(--text-muted)">…</span>';
+  }
+  html += `<button class="page-btn" ${currentPage===total?'disabled':''} onclick="goPage(${currentPage+1})">Next ›</button>`;
+  el.innerHTML = html;
+}
+
+function goPage(p) { currentPage = p; renderGrid(); window.scrollTo(0,0); }
+
+// ──────────────────────────────────────
+// CARD RENDER
+// ──────────────────────────────────────
+function renderCard(inf) {
+  const cats = getInfluencerCats(inf);
+  const catTags = cats.slice(0,2).map(c => {
+    const cat = CATS.find(x => x.id === c.replace(/-/g,' ').trim() || x.id === c);
+    const label = cat ? cat.label.replace(/^[^\w]*/, '').trim() : c;
+    return `<span class="cat-tag">${label}</span>`;
+  }).join('');
+
+  const platforms = [];
+  if (inf.yt) platforms.push(`<a href="${inf.yt}" class="platform-btn yt" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','YouTube')">▶ YouTube</a>`);
+  if (inf.ig) platforms.push(`<a href="${inf.ig}" class="platform-btn ig" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','Instagram')">📸 IG</a>`);
+  if (inf.tt) platforms.push(`<a href="${inf.tt}" class="platform-btn tt" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','TikTok')">♪ TikTok</a>`);
+  if (inf.li) platforms.push(`<a href="${inf.li}" class="platform-btn li" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','LinkedIn')">in</a>`);
+  if (inf.web) platforms.push(`<a href="${inf.web}" class="platform-btn web" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','Website')">🌐</a>`);
+  if (inf.primary) platforms.push(`<a href="${inf.primary}" class="platform-btn primary" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','Primary')">Visit →</a>`);
+
+  // Books (inject affiliate tag)
+  const books = [];
+  const titles = Array.isArray(inf.bookTitles) ? inf.bookTitles : (inf.bookTitles||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const urls = Array.isArray(inf.bookUrls) ? inf.bookUrls : (inf.bookUrls||'').split(',').map(s=>s.trim()).filter(Boolean);
+  titles.forEach((t, i) => {
+    if (!t) return;
+    const rawUrl = urls[i] || '';
+    const url = amazonLink(rawUrl);
+    if (url) books.push(`<a href="${url}" class="book-link" target="_blank" rel="noopener" onclick="trackClick('${esc(inf.name)}','Book')">📖 ${esc(t)}</a>`);
+    else books.push(`<span class="book-link">📖 ${esc(t)}</span>`);
+  });
+
+  const wiki = inf.wiki ? `<a href="${inf.wiki}" class="wiki-link" target="_blank" rel="noopener">W Wikipedia</a>` : '';
+
+  const stats = [];
+  if (inf.engagement) stats.push(`<div class="stat-box"><div class="stat-label">Engagement</div><div class="stat-value ${statColor(inf.engagement,'eng')}">${esc(inf.engagement)}</div></div>`);
+  if (inf.growth) stats.push(`<div class="stat-box"><div class="stat-label">Growth (6mo)</div><div class="stat-value ${statColor(inf.growth,'growth')}">${esc(inf.growth)}</div></div>`);
+  if (inf.realScore) stats.push(`<div class="stat-box"><div class="stat-label">Real Followers</div><div class="stat-value ${statColor(inf.realScore,'real')}">${esc(inf.realScore)}</div></div>`);
+  if (inf.revenue) stats.push(`<div class="stat-box"><div class="stat-label">Est. Revenue</div><div class="stat-value blue">${esc(inf.revenue)}</div></div>`);
+
+  const editBtn = isLoggedIn ? `<button class="btn btn-secondary btn-sm" style="margin-top:6px;font-size:0.75rem;" onclick="openEditInfluencer(${inf.id})">✏️ Edit</button>` : '';
+
+  return `
+  <div class="card">
+    <div class="card-top">
+      <div class="avatar" style="background:${inf.color||'#0f2044'}">${inf.initials||initials(inf.name)}</div>
+      <div class="card-meta">
+        <div class="card-name">${esc(inf.name)}</div>
+        ${inf.handle ? `<div class="card-handle">${esc(inf.handle)}</div>` : ''}
+        <div class="card-cats">${catTags}</div>
+      </div>
+      ${inf.featured ? '<span class="featured-badge">⭐ Featured</span>' : ''}
+    </div>
+    <div class="card-body">
+      ${inf.cred ? `<div style="font-size:0.78rem;font-weight:600;color:var(--teal-dark);display:flex;align-items:center;gap:4px;">✓ ${esc(inf.cred)}${inf.followers?` · <span style="color:var(--text-muted);font-weight:400">${esc(inf.followers)}</span>`:''}${wiki}</div>` : ''}
+      <p class="card-summary">${esc(inf.summary||'')}</p>
+      ${stats.length ? `<div class="stats-grid">${stats.join('')}</div>` : ''}
+      ${platforms.length ? `<div class="platform-row">${platforms.join('')}</div>` : ''}
+      ${books.length ? `<div class="books-row">${books.join('')}</div>` : ''}
+      ${editBtn}
+    </div>
+  </div>`;
+}
+
+function statColor(val, type) {
+  const n = parseFloat(val);
+  if (isNaN(n)) return '';
+  if (type === 'eng') return n >= 5 ? 'green' : n >= 2.5 ? 'blue' : 'orange';
+  if (type === 'growth') return n >= 20 ? 'green' : n >= 5 ? 'blue' : n < 0 ? 'red' : 'orange';
+  if (type === 'real') return n >= 90 ? 'green' : n >= 75 ? 'blue' : 'orange';
+  return '';
+}
+
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+function initials(name) {
+  if (!name) return '?';
+  return name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+}
+
+// ──────────────────────────────────────
+// SIDEBAR / CATEGORY NAV
+// ──────────────────────────────────────
+function buildSidebar() {
+  const el = document.getElementById('catList');
+  if (!el) return;
+  let html = `<div class="cat-item ${currentCat==='all'?'active':''}" onclick="setCat('all')">🏠 All Categories <span class="cat-count" id="cnt-all">${allInfluencers.length}</span></div>`;
+  CATS.forEach(c => {
+    const count = allInfluencers.filter(l => catMatch(l, c.id)).length;
+    html += `<div class="cat-item ${currentCat===c.id?'active':''}" onclick="setCat('${c.id}')">
+      ${c.label} <span class="cat-count" id="cnt-${c.id}">${count}</span>
+      <a href="${c.hub}" class="hub-link" onclick="event.stopPropagation()">Hub →</a>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+function updateCatCounts() {
+  const all = document.getElementById('cnt-all');
+  if (all) all.textContent = allInfluencers.length;
+  CATS.forEach(c => {
+    const el = document.getElementById(`cnt-${c.id}`);
+    if (el) el.textContent = allInfluencers.filter(l => catMatch(l, c.id)).length;
+  });
+}
+
+function setCat(catId) {
+  currentCat = catId;
+  currentSearch = '';
+  if (document.getElementById('searchInput')) document.getElementById('searchInput').value = '';
+  buildSidebar();
+  applyFilters();
+  document.getElementById('directoryView').style.display = '';
+  document.getElementById('hubView').style.display = 'none';
+}
+
+// ──────────────────────────────────────
+// CLICK TRACKING
+// ──────────────────────────────────────
+function trackClick(name, platform) {
+  clicksToday++;
+  sessionClicks.push({ name, platform, time: new Date() });
+  document.getElementById('heroClicks').textContent = clicksToday;
+  logClickToSupabase(name, platform);
+}
+
+async function logClickToSupabase(name, platform) {
+  if (!CFG.sbUrl || !CFG.sbKey) return;
+  const date = new Date().toISOString().slice(0,10);
+  try {
+    await fetch(`${CFG.sbUrl}/rest/v1/profind_clicks`, {
+      method: 'POST',
+      headers: {
+        apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}`,
+        'Content-Type': 'application/json', Prefer: 'return=minimal',
+      },
+      body: JSON.stringify({ influencer: name, platform, clicked_at: new Date().toISOString(), date_key: date }),
+    });
+  } catch {}
+}
+
+// ──────────────────────────────────────
+// MODAL HELPERS
+// ──────────────────────────────────────
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+document.querySelectorAll('.modal-overlay').forEach(el => {
+  el.addEventListener('click', e => { if (e.target === el) el.classList.remove('open'); });
+});
+
+// ──────────────────────────────────────
+// ADVERTISE FORM
+// ──────────────────────────────────────
+async function submitAdvertise() {
+  const first = document.getElementById('adv_first').value.trim();
+  const email = document.getElementById('adv_email').value.trim();
+  if (!first || !email) { alert('Please fill in required fields.'); return; }
+  const payload = {
+    first, last: document.getElementById('adv_last').value.trim(),
+    email, company: document.getElementById('adv_company').value.trim(),
+    budget: document.getElementById('adv_budget').value,
+    type: document.getElementById('adv_type').value,
+    notes: document.getElementById('adv_notes').value.trim(),
+    source: 'SMBProFind Advertise Form',
+  };
+  if (CFG.whAdvertise) {
+    try { await fetch(CFG.whAdvertise, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload) }); } catch {}
+  }
+  document.getElementById('advertiseForm').style.display = 'none';
+  document.getElementById('advertiseSuccess').style.display = 'block';
+}
+
+// ──────────────────────────────────────
+// ADMIN AUTH
+// ──────────────────────────────────────
+function adminLogin() {
+  const u = document.getElementById('adminUser').value.trim();
+  const p = document.getElementById('adminPass').value.trim();
+  if (u === (CFG.adminUser||'admin') && p === (CFG.adminPass||'smbpro2025')) {
+    isLoggedIn = true;
+    document.getElementById('adminSignIn').classList.add('hidden');
+    document.getElementById('adminDash').classList.remove('hidden');
+    refreshAdminDash();
+    populateAdminSettings();
+  } else {
+    document.getElementById('adminErr').classList.remove('hidden');
+  }
+}
+
+function adminLogout() {
+  isLoggedIn = false;
+  document.getElementById('adminSignIn').classList.remove('hidden');
+  document.getElementById('adminDash').classList.add('hidden');
+  closeModal('adminModal');
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.admin-tab').forEach((t,i) => {
+    const tabs = ['dashboard','influencers','settings','pages'];
+    t.classList.toggle('active', tabs[i] === tab);
+  });
+  document.querySelectorAll('.admin-pane').forEach(p => p.classList.remove('active'));
+  const pane = document.getElementById(`pane-${tab}`);
+  if (pane) pane.classList.add('active');
+  if (tab === 'influencers') { populateAdminCatFilter(); renderAdminTable(); }
+}
+
+function refreshAdminDash() {
+  document.getElementById('dashCount').textContent = allInfluencers.length;
+  document.getElementById('dashFeatured').textContent = allInfluencers.filter(l=>l.featured).length;
+  document.getElementById('dashClicks').textContent = clicksToday;
+}
+
+// ──────────────────────────────────────
+// ADMIN TABLE
+// ──────────────────────────────────────
+let adminPage = 1;
+const ADMIN_PAGE_SIZE = 20;
+
+function populateAdminCatFilter() {
+  const sel = document.getElementById('adminCatFilter');
+  if (!sel || sel.options.length > 1) return;
+  CATS.forEach(c => { const o = document.createElement('option'); o.value = c.id; o.textContent = c.label; sel.appendChild(o); });
+}
+
+function renderAdminTable() {
+  const q = (document.getElementById('adminSearch')?.value || '').toLowerCase();
+  const cat = document.getElementById('adminCatFilter')?.value || '';
+  let data = allInfluencers.filter(l => {
+    const matchQ = !q || (l.name||'').toLowerCase().includes(q);
+    const matchC = !cat || catMatch(l, cat);
+    return matchQ && matchC;
+  });
+  const start = (adminPage-1)*ADMIN_PAGE_SIZE;
+  const page = data.slice(start, start+ADMIN_PAGE_SIZE);
+  const tbody = document.getElementById('adminTableBody');
+  if (!tbody) return;
+  if (!page.length) { tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:20px;">No results.</td></tr>'; return; }
+  tbody.innerHTML = page.map((l,i) => `
+    <tr>
+      <td>${start+i+1}</td>
+      <td class="td-name">${esc(l.name)}</td>
+      <td class="td-cat">${esc(l.category||'')}</td>
+      <td>${[l.yt?'▶':'',l.ig?'📸':'',l.tt?'♪':'',l.li?'in':'',l.web?'🌐':''].filter(Boolean).join(' ')}</td>
+      <td>${l.featured?'<span class="sb-status connected">⭐ Featured</span>':'<span style="font-size:0.75rem;color:var(--text-muted);">Standard</span>'}</td>
+      <td class="td-actions">
+        <button class="btn btn-secondary btn-sm" onclick="closeModal('adminModal');openEditInfluencer(${l.id})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="if(confirm('Delete ${esc(l.name)}?'))quickDelete(${l.id})">Del</button>
+      </td>
+    </tr>`).join('');
+}
+
+async function quickDelete(id) {
+  allInfluencers = allInfluencers.filter(l => l.id !== id);
+  storage.set('smb_influencers', allInfluencers);
+  await deleteFromSupabase(id);
+  applyFilters(); buildSidebar(); renderAdminTable(); refreshAdminDash();
+}
+
+// ──────────────────────────────────────
+// ADD / EDIT INFLUENCER
+// ──────────────────────────────────────
+function buildCatsCheckboxes(selected = []) {
+  const el = document.getElementById('catsCheckboxes');
+  if (!el) return;
+  el.innerHTML = CATS.map(c => `
+    <label>
+      <input type="checkbox" value="${c.id}" ${selected.includes(c.id)?'checked':''}>
+      ${c.label}
+    </label>`).join('');
+}
+
+function openAddInfluencer() {
+  closeModal('adminModal');
+  document.getElementById('infModalTitle').textContent = 'Add New Influencer';
+  document.getElementById('inf_id').value = '';
+  ['name','handle','followers','cred','highlight','engagement','growth','real','revenue','summary','bookTitles','bookUrls','courseTitles','courseUrls','yt','ig','tt','li','web','primary','wiki','initials'].forEach(f => {
+    const el = document.getElementById('inf_'+f);
+    if (el) el.value = '';
+  });
+  document.getElementById('inf_color').value = '#0f2044';
+  document.getElementById('inf_featured').checked = false;
+  document.getElementById('deleteBtn').style.display = 'none';
+  buildCatsCheckboxes([]);
+  openModal('influencerModal');
+}
+
+function openEditInfluencer(id) {
+  const inf = allInfluencers.find(l => l.id === id);
+  if (!inf) return;
+  document.getElementById('infModalTitle').textContent = 'Edit Influencer';
+  document.getElementById('inf_id').value = id;
+  const set = (field, val) => { const el = document.getElementById('inf_'+field); if(el) el.value = val||''; };
+  set('name', inf.name); set('handle', inf.handle); set('followers', inf.followers);
+  set('cred', inf.cred); set('highlight', inf.highlight); set('engagement', inf.engagement);
+  set('growth', inf.growth); set('real', inf.realScore); set('revenue', inf.revenue);
+  set('summary', inf.summary);
+  const bookTitles = Array.isArray(inf.bookTitles) ? inf.bookTitles.join(', ') : (inf.bookTitles||'');
+  const bookUrls = Array.isArray(inf.bookUrls) ? inf.bookUrls.join(', ') : (inf.bookUrls||'');
+  set('bookTitles', bookTitles); set('bookUrls', bookUrls);
+  const courseTitles = Array.isArray(inf.courseTitles) ? inf.courseTitles.join(', ') : (inf.courseTitles||'');
+  const courseUrls = Array.isArray(inf.courseUrls) ? inf.courseUrls.join(', ') : (inf.courseUrls||'');
+  set('courseTitles', courseTitles); set('courseUrls', courseUrls);
+  set('yt', inf.yt); set('ig', inf.ig); set('tt', inf.tt); set('li', inf.li);
+  set('web', inf.web); set('primary', inf.primary); set('wiki', inf.wiki);
+  set('initials', inf.initials);
+  document.getElementById('inf_color').value = inf.color||'#0f2044';
+  document.getElementById('inf_featured').checked = !!inf.featured;
+  document.getElementById('deleteBtn').style.display = '';
+  const cats = Array.isArray(inf.cats) ? inf.cats : [inf.category].filter(Boolean);
+  buildCatsCheckboxes(cats);
+  openModal('influencerModal');
+}
+
+async function saveInfluencer() {
+  const name = document.getElementById('inf_name').value.trim();
+  if (!name) { alert('Name is required.'); return; }
+  const selectedCats = [...document.querySelectorAll('#catsCheckboxes input:checked')].map(c => c.value);
+  if (!selectedCats.length) { alert('Select at least one category.'); return; }
+
+  const parseList = (val) => val ? val.split(',').map(s=>s.trim()).filter(Boolean) : [];
+
+  const rawId = document.getElementById('inf_id').value;
+  const id = rawId ? parseInt(rawId) : (Math.max(0, ...allInfluencers.map(l=>l.id||0)) + 1);
+
+  // Process book URLs — inject affiliate tag
+  const rawBookUrls = parseList(document.getElementById('inf_bookUrls').value);
+  const bookUrls = rawBookUrls.map(u => amazonLink(u));
+
+  const inf = {
+    id, name,
+    handle: document.getElementById('inf_handle').value.trim(),
+    category: selectedCats[0],
+    cats: selectedCats,
+    followers: document.getElementById('inf_followers').value.trim(),
+    cred: document.getElementById('inf_cred').value.trim(),
+    highlight: document.getElementById('inf_highlight').value.trim(),
+    engagement: document.getElementById('inf_engagement').value.trim(),
+    growth: document.getElementById('inf_growth').value.trim(),
+    realScore: document.getElementById('inf_real').value.trim(),
+    revenue: document.getElementById('inf_revenue').value.trim(),
+    summary: document.getElementById('inf_summary').value.trim(),
+    bookTitles: parseList(document.getElementById('inf_bookTitles').value),
+    bookUrls,
+    courseTitles: parseList(document.getElementById('inf_courseTitles').value),
+    courseUrls: parseList(document.getElementById('inf_courseUrls').value),
+    yt: document.getElementById('inf_yt').value.trim(),
+    ig: document.getElementById('inf_ig').value.trim(),
+    tt: document.getElementById('inf_tt').value.trim(),
+    li: document.getElementById('inf_li').value.trim(),
+    web: document.getElementById('inf_web').value.trim(),
+    primary: document.getElementById('inf_primary').value.trim(),
+    wiki: document.getElementById('inf_wiki').value.trim(),
+    initials: document.getElementById('inf_initials').value.trim() || initials(name),
+    color: document.getElementById('inf_color').value,
+    featured: document.getElementById('inf_featured').checked,
+  };
+
+  const idx = allInfluencers.findIndex(l => l.id === id);
+  if (idx >= 0) allInfluencers[idx] = inf;
+  else allInfluencers.push(inf);
+
+  storage.set('smb_influencers', allInfluencers);
+  await saveToSupabase(inf);
+  closeModal('influencerModal');
+  applyFilters(); buildSidebar(); refreshAdminDash();
+}
+
+async function deleteInfluencer() {
+  const id = parseInt(document.getElementById('inf_id').value);
+  if (!id || !confirm('Delete this influencer?')) return;
+  allInfluencers = allInfluencers.filter(l => l.id !== id);
+  storage.set('smb_influencers', allInfluencers);
+  await deleteFromSupabase(id);
+  closeModal('influencerModal');
+  applyFilters(); buildSidebar();
+}
+
+// ──────────────────────────────────────
+// ADMIN SETTINGS
+// ──────────────────────────────────────
+function populateAdminSettings() {
+  document.getElementById('cfg_sbUrl').value = CFG.sbUrl||'';
+  document.getElementById('cfg_sbKey').value = CFG.sbKey||'';
+  document.getElementById('cfg_sbTable').value = CFG.sbTable||'profind_influencers';
+  document.getElementById('cfg_aiKey').value = CFG.aiKey||'';
+  document.getElementById('cfg_wh1').value = CFG.whSubmit||'';
+  document.getElementById('cfg_wh2').value = CFG.whAdvertise||'';
+  document.getElementById('cfg_wh3').value = CFG.whNewsletter||'';
+  document.getElementById('cfg_amzTag').value = CFG.amzTag||'smbinf-20';
+  document.getElementById('cfg_disclosure').value = CFG.disclosure||'';
+  document.getElementById('sbStatusBadge').textContent = CFG.sbUrl ? '● Connected' : '○ Not connected';
+  document.getElementById('sbStatusBadge').className = `sb-status ${CFG.sbUrl?'connected':'disconnected'}`;
+}
+
+async function saveSupabase() {
+  CFG.sbUrl = document.getElementById('cfg_sbUrl').value.trim();
+  CFG.sbKey = document.getElementById('cfg_sbKey').value.trim();
+  CFG.sbTable = document.getElementById('cfg_sbTable').value.trim() || 'profind_influencers';
+  saveCFG();
+  const data = await fetchFromSupabase();
+  if (data) {
+    allInfluencers = data;
+    storage.set('smb_influencers', data);
+    applyFilters(); buildSidebar();
+    document.getElementById('sbStatusBadge').textContent = '● Connected';
+    document.getElementById('sbStatusBadge').className = 'sb-status connected';
+    alert(`✅ Connected! ${data.length} influencers loaded.`);
+  } else {
+    alert('❌ Connection failed. Check URL and key.');
+  }
+}
+
+function saveAIKey() {
+  CFG.aiKey = document.getElementById('cfg_aiKey').value.trim();
+  saveCFG(); alert('AI key saved.');
+}
+
+function saveCreds() {
+  const u = document.getElementById('cfg_user').value.trim();
+  const p = document.getElementById('cfg_pass').value.trim();
+  if (u) CFG.adminUser = u;
+  if (p) CFG.adminPass = p;
+  saveCFG(); alert('Credentials updated.');
+}
+
+function saveWebhooks() {
+  CFG.whSubmit = document.getElementById('cfg_wh1').value.trim();
+  CFG.whAdvertise = document.getElementById('cfg_wh2').value.trim();
+  CFG.whNewsletter = document.getElementById('cfg_wh3').value.trim();
+  saveCFG(); alert('Webhooks saved.');
+}
+
+function saveAffiliate() {
+  CFG.amzTag = document.getElementById('cfg_amzTag').value.trim() || 'smbinf-20';
+  CFG.disclosure = document.getElementById('cfg_disclosure').value.trim();
+  saveCFG(); alert('Affiliate settings saved.');
+}
+
+function resetAll() {
+  storage.remove('smb_influencers');
+  storage.remove('smb_cfg');
+  location.reload();
+}
+
+// ──────────────────────────────────────
+// EXPORT
+// ──────────────────────────────────────
+function exportJSON() {
+  const blob = new Blob([JSON.stringify(allInfluencers, null, 2)], {type:'application/json'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = 'smbprofind-influencers.json'; a.click();
+}
+
+function exportCSV() {
+  const headers = ['id','name','handle','category','cats','followers','cred','summary','yt','ig','tt','li','web','featured'];
+  const rows = allInfluencers.map(l => headers.map(h => {
+    const v = Array.isArray(l[h]) ? l[h].join(';') : (l[h]||'');
+    return `"${String(v).replace(/"/g,'""')}"`;
+  }).join(','));
+  const blob = new Blob([[headers.join(','),...rows].join('\n')], {type:'text/csv'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = 'smbprofind-influencers.csv'; a.click();
+}
+
+// ──────────────────────────────────────
+// FAQ TOGGLE
+// ──────────────────────────────────────
+function toggleFaq(btn) {
+  const ans = btn.nextElementSibling;
+  const toggle = btn.querySelector('.faq-toggle');
+  const isOpen = ans.classList.contains('open');
+  ans.classList.toggle('open', !isOpen);
+  if (toggle) toggle.textContent = isOpen ? '+' : '−';
+}
+
+// ──────────────────────────────────────
+// INIT
+// ──────────────────────────────────────
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadData();
+  buildSidebar();
+});
+</script>
+
+<!-- Schema: Organization + Website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SMBProFind",
+  "url": "https://smbprofind.netlify.app",
+  "description": "The #1 directory of business influencers, coaches & creators — 1,000+ verified profiles across 15 SMB categories.",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SMBProFind",
+  "url": "https://smbprofind.netlify.app",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://smbprofind.netlify.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+</body>
+</html>
