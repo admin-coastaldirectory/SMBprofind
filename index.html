@@ -1140,7 +1140,7 @@
         <div class="form-group"><label class="form-label">Password</label><input class="form-control" type="password" id="adminPass" placeholder="••••••" onkeydown="if(event.key==='Enter')adminLogin()"></div>
         <div class="admin-error hidden" id="adminErr">Incorrect username or password.</div>
         <button class="btn btn-navy" onclick="adminLogin()">Sign In</button>
-        <p style="font-size:0.75rem;color:var(--text-muted);">Default: admin / smbpro2025</p>
+
       </div>
     </div>
     <!-- Dashboard -->
@@ -1416,21 +1416,21 @@
 const AMAZON_TAG = 'smbinf-20';
 
 const CATS = [
-  {id:'entrepreneurship', label:'💼 Entrepreneurship', hub:'entrepreneurship.html'},
-  {id:'startup', label:'🚀 Startup', hub:'startup.html'},
-  {id:'eta', label:'🔑 ETA / Buy a Biz', hub:'eta-buy-a-business.html'},
-  {id:'franchise', label:'🏪 Franchise', hub:'franchise.html'},
-  {id:'marketing', label:'📣 Marketing & SEO', hub:'marketing-seo.html'},
-  {id:'business-finance', label:'📊 Finance — Business', hub:'business-finance.html'},
-  {id:'personal-finance', label:'💰 Finance — Personal', hub:'personal-finance.html'},
-  {id:'home-services', label:'🔧 Home Services', hub:'home-services.html'},
-  {id:'mechanical-trades', label:'⚙️ Mechanical Trades', hub:'mechanical-trades.html'},
-  {id:'ecommerce', label:'🛒 E-Commerce', hub:'ecommerce.html'},
-  {id:'sales', label:'🤝 Sales', hub:'sales.html'},
-  {id:'productivity', label:'⚡ Productivity', hub:'productivity.html'},
-  {id:'transportation', label:'🚚 Transportation & Logistics', hub:'transportation-logistics.html'},
-  {id:'real-estate', label:'🏡 Real Estate', hub:'real-estate.html'},
-  {id:'restaurant', label:'🍽️ Restaurant', hub:'restaurant.html'},
+  {id:'entrepreneurship',  label:'💼 Entrepreneurship',          hub:'entrepreneurship.html'},
+  {id:'startup',           label:'🚀 Startup',                   hub:'startup.html'},
+  {id:'eta',               label:'🔑 ETA / Buy a Biz',           hub:'eta-buy-a-business.html'},
+  {id:'franchise',         label:'🏪 Franchise',                 hub:'franchise.html'},
+  {id:'marketing',         label:'📣 Marketing & SEO',           hub:'marketing-seo.html'},
+  {id:'business-finance',  label:'📊 Finance — Business',        hub:'business-finance.html'},
+  {id:'personal-finance',  label:'💰 Finance — Personal',        hub:'personal-finance.html'},
+  {id:'home-services',     label:'🔧 Home Services',             hub:'home-services.html'},
+  {id:'mechanical-trades', label:'⚙️ Mechanical Trades',         hub:'mechanical-trades.html'},
+  {id:'ecommerce',         label:'🛒 E-Commerce',                hub:'ecommerce.html'},
+  {id:'sales',             label:'🤝 Sales',                     hub:'sales.html'},
+  {id:'productivity',      label:'⚡ Productivity',              hub:'productivity.html'},
+  {id:'transportation',    label:'🚚 Transportation & Logistics', hub:'transportation-logistics.html'},
+  {id:'real-estate',       label:'🏡 Real Estate',               hub:'real-estate.html'},
+  {id:'restaurant',        label:'🍽️ Restaurant',                hub:'restaurant.html'},
 ];
 
 // ── Storage helpers ──
@@ -1478,10 +1478,25 @@ function amazonLink(url) {
 // ──────────────────────────────────────
 // CATEGORY MATCHING (hyphen-safe)
 // ──────────────────────────────────────
+// Map directory cat ids → actual data category strings
+const CAT_ALIASES = {
+  'business-finance':  ['finance-business','finance business','business finance','business-finance'],
+  'personal-finance':  ['finance-personal','finance personal','personal finance','personal-finance'],
+  'startup':           ['startup','entrepreneurship'],
+  'home-services':     ['home-services','home services','landscaping','cleaning'],
+  'mechanical-trades': ['mechanical-trades','mechanical trades','hvac','plumbing','electrical'],
+  'ecommerce':         ['ecommerce','e-commerce','retail','dropshipping','etsy'],
+  'real-estate':       ['real-estate','real estate'],
+  'transportation':    ['transportation','transportation logistics'],
+  'marketing':         ['marketing','marketing-seo','marketing seo'],
+};
 function catMatch(l, kw) {
-  const str = [(l.category||''), (l.cats||[]).join(' ')].join(' ')
-    .toLowerCase().replace(/-/g, ' ');
-  return str.includes(kw.toLowerCase().replace(/-/g, ' '));
+  const str = [(l.category||''), Array.isArray(l.cats)? l.cats.join(' ') : ''].join(' ')
+    .toLowerCase().replace(/-/g,' ');
+  const kwClean = kw.toLowerCase().replace(/-/g,' ');
+  if (str.includes(kwClean)) return true;
+  const aliases = CAT_ALIASES[kw] || [];
+  return aliases.some(a => str.includes(a.replace(/-/g,' ')));
 }
 
 function getInfluencerCats(inf) {
