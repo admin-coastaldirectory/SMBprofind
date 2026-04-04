@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startup Coaches — Best Founder & Venture Educators | SMBProFind</title>
+<meta name="description" content="Browse verified startup coaches. Y Combinator, Indie Hackers, How I Built This & more founder resources.">
+<link rel="canonical" href="https://smbprofind.netlify.app/startup">
+<style>
+:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#fff;--off:#f8fafc;--gray-200:#e2e8f0;--text:#1e293b;--muted:#64748b;--sh:0 2px 12px rgba(15,32,68,.09);--sh2:0 8px 32px rgba(15,32,68,.16);--r:12px;--rs:8px;--tr:.2s ease;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off);line-height:1.6;}
+a{color:inherit;}
+nav{position:sticky;top:0;z-index:100;background:var(--navy);height:64px;display:flex;align-items:center;padding:0 24px;box-shadow:0 2px 12px rgba(0,0,0,.2);}
+.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:#fff;letter-spacing:-.5px;}.logo span{color:var(--teal);}
+.nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.88rem;font-weight:500;padding:6px 12px;border-radius:var(--rs);transition:var(--tr);}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.1);}
+.nav-links a.cta{background:var(--teal);color:#fff;font-weight:700;}
+.bc{max-width:1100px;margin:0 auto;padding:12px 20px;font-size:.8rem;color:var(--muted);}
+.bc a{color:var(--muted);text-decoration:none;}.bc a:hover{color:var(--teal);}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:#fff;padding:48px 24px 44px;text-align:center;}
+.badge{display:inline-block;background:rgba(0,184,148,.2);color:var(--teal);border:1px solid rgba(0,184,148,.4);padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+.hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:.97rem;color:rgba(255,255,255,.78);max-width:580px;margin:0 auto 14px;}
+.upd{font-size:.74rem;color:rgba(255,255,255,.4);}
+.content{max-width:1100px;margin:0 auto;padding:28px 20px;}
+.callout{background:var(--teal-light);border-left:4px solid var(--teal);border-radius:var(--rs);padding:16px 20px;margin-bottom:24px;font-size:.88rem;color:var(--muted);line-height:1.7;}
+.auth-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.auth-link{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--rs);font-size:.82rem;font-weight:600;color:var(--navy);text-decoration:none;box-shadow:var(--sh);transition:var(--tr);}
+.auth-link:hover{border-color:var(--teal);color:var(--teal-dark);}
+.resources-block{margin-bottom:28px;}
+.resources-block h2{font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--teal-light);display:flex;align-items:center;gap:8px;}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:12px;}
+.res-card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:14px;display:flex;gap:12px;align-items:flex-start;transition:var(--tr);text-decoration:none;color:inherit;border:1.5px solid transparent;}
+.res-card:hover{border-color:var(--teal);box-shadow:var(--sh2);transform:translateY(-1px);}
+.res-icon{width:42px;height:42px;border-radius:var(--rs);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;}
+.res-body{flex:1;min-width:0;}
+.res-name{font-size:.87rem;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.res-desc{font-size:.75rem;color:var(--muted);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.res-type{font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:10px;display:inline-block;}
+.sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;}
+.sec-hdr h2{font-size:1.1rem;font-weight:800;color:var(--navy);}
+.sec-hdr a{font-size:.82rem;color:var(--teal);text-decoration:none;font-weight:600;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:28px;}
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:box-shadow var(--tr),transform var(--tr);display:flex;flex-direction:column;}
+.card:hover{box-shadow:var(--sh2);transform:translateY(-2px);}
+.card-top{background:linear-gradient(135deg,var(--navy),var(--navy-mid));padding:16px;display:flex;align-items:flex-start;gap:12px;position:relative;}
+.av{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:#fff;flex-shrink:0;border:2px solid rgba(255,255,255,.25);}
+.cm{flex:1;min-width:0;}
+.cn{font-size:.95rem;font-weight:700;color:#fff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ch{font-size:.76rem;color:rgba(255,255,255,.6);margin-bottom:5px;}
+.ct{font-size:.67rem;background:rgba(0,184,148,.22);color:var(--teal);padding:2px 7px;border-radius:20px;font-weight:600;border:1px solid rgba(0,184,148,.35);}
+.fb{position:absolute;top:10px;right:10px;background:var(--gold);color:#7a5a00;font-size:.65rem;font-weight:800;padding:3px 8px;border-radius:20px;text-transform:uppercase;}
+.cb{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:9px;}
+.cc{font-size:.78rem;font-weight:600;color:var(--teal-dark);}
+.cs{font-size:.82rem;color:var(--muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
+.sb{background:var(--off);border-radius:6px;padding:5px 8px;text-align:center;}
+.sl{font-size:.62rem;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.sv{font-size:.8rem;font-weight:700;}.sv.green{color:#16a34a;}.sv.blue{color:#2563eb;}.sv.orange{color:#ea580c;}
+.pr{display:flex;gap:5px;flex-wrap:wrap;}
+.pb{display:inline-flex;align-items:center;gap:3px;padding:4px 9px;border-radius:6px;font-size:.73rem;font-weight:600;text-decoration:none;transition:var(--tr);border:1.5px solid transparent;}
+.pb.yt{background:#fee2e2;color:#991b1b;border-color:#fca5a5;}.pb.yt:hover{background:#ef4444;color:#fff;}
+.pb.ig{background:#fce7f3;color:#9d174d;border-color:#f9a8d4;}.pb.ig:hover{background:#ec4899;color:#fff;}
+.pb.li{background:#dbeafe;color:#1e40af;border-color:#93c5fd;}.pb.li:hover{background:#2563eb;color:#fff;}
+.pb.tk{background:#f0fdf4;color:#166534;border-color:#86efac;}.pb.tk:hover{background:#22c55e;color:#fff;}
+.pb.web{background:var(--teal-light);color:var(--teal-dark);border-color:#a7f3d0;}.pb.web:hover{background:var(--teal);color:#fff;}
+.bl{font-size:.72rem;color:var(--navy);text-decoration:none;background:var(--off);padding:3px 8px;border-radius:4px;border:1px solid var(--gray-200);transition:var(--tr);}
+.bl:hover{background:var(--navy);color:#fff;}
+.wl{font-size:.72rem;color:#1a73e8;background:#e8f0fe;padding:3px 7px;border-radius:4px;text-decoration:none;border:1px solid #c5d9f8;}
+.loading{text-align:center;padding:48px 20px;color:var(--muted);}
+.spinner{width:32px;height:32px;border:3px solid var(--gray-200);border-top-color:var(--teal);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 10px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.faqs{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:28px 32px;margin-bottom:28px;}
+.faqs h2{font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:16px;}
+.fi{border-bottom:1px solid var(--gray-200);}
+.fq{width:100%;text-align:left;padding:13px 0;font-size:.88rem;font-weight:600;color:var(--text);background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:inherit;gap:8px;}
+.fq:hover{color:var(--teal-dark);}
+.ft{color:var(--teal);font-size:1.1rem;flex-shrink:0;}
+.fa{display:none;font-size:.86rem;color:var(--muted);line-height:1.7;padding-bottom:13px;}
+.fa.open{display:block;}
+footer{background:var(--navy);color:rgba(255,255,255,.7);padding:36px 24px 20px;margin-top:48px;}
+.fi2{max-width:1280px;margin:0 auto;}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
+.fb2 .logo{font-size:1.2rem;}.fb2 p{font-size:.8rem;margin-top:6px;line-height:1.6;}
+.fc h5{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin-bottom:8px;}
+.fc a{display:block;font-size:.81rem;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:5px;}.fc a:hover{color:var(--teal);}
+.fb3{border-top:1px solid rgba(255,255,255,.12);padding-top:16px;font-size:.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.fb3 a{color:rgba(255,255,255,.5);text-decoration:none;}.fb3 a:hover{color:var(--teal);}
+.disc{font-size:.74rem;color:rgba(255,255,255,.4);margin-top:10px;line-height:1.5;}
+.disc a{color:rgba(0,184,148,.7);}
+@media(max-width:700px){.nav-links a:not(.cta){display:none;}.res-grid,.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <div class="nav-links">
+    <a href="index.html">Directory</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="hubs.html">🔗 Hubs</a>
+    <a href="centers.html">🏛️ Resources</a>
+    <a href="advertise.html">📢 Advertise</a>
+    <a href="submit.html" class="cta">Get Listed →</a>
+  </div>
+</nav>
+
+<!-- HUB NAV PILLS -->
+<div class="hub-pills-bar" id="hub-pills">
+  <div class="hub-pills-inner">
+    <a href="#coaches" class="hub-pill">🎙 Coaches</a><a href="#tools" class="hub-pill">🛠 Tools</a><a href="#books" class="hub-pill">📚 Books</a><a href="#courses" class="hub-pill">🎓 Courses</a><a href="#podcasts" class="hub-pill">🎧 Podcasts</a><a href="#communities" class="hub-pill">🤝 Communities</a><a href="#free-help" class="hub-pill">🏛️ Free Help</a>
+  </div>
+</div>
+<style>
+.hub-pills-bar{position:sticky;top:64px;z-index:90;background:var(--white,#fff);border-bottom:1.5px solid #e9ecef;padding:0 24px;box-shadow:0 2px 8px rgba(15,32,68,.06)}
+.hub-pills-inner{max-width:1200px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:10px 0;scrollbar-width:none}
+.hub-pills-inner::-webkit-scrollbar{display:none}
+.hub-pill{display:inline-flex;align-items:center;white-space:nowrap;padding:6px 14px;border-radius:100px;border:1.5px solid #e9ecef;background:#f8f9fa;font-size:.8rem;font-weight:600;color:#343a40;text-decoration:none;transition:all .18s;flex-shrink:0}
+.hub-pill:hover,.hub-pill.active{background:#0f2044;border-color:#0f2044;color:#fff}
+.hub-pill:last-child{background:rgba(0,184,148,.1);border-color:#00b894;color:#00967a}
+.hub-pill:last-child:hover{background:#00b894;color:#0f2044}
+</style>
+<script>
+(function(){
+  const pills=document.querySelectorAll('.hub-pill');
+  const bar=document.getElementById('hub-pills');
+  const sections=[...pills].map(p=>{
+    const id=p.getAttribute('href').slice(1);
+    return{pill:p,el:document.getElementById(id)};
+  }).filter(x=>x.el);
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY+120;
+    let active=null;
+    sections.forEach(s=>{if(s.el.offsetTop<=y)active=s;});
+    pills.forEach(p=>p.classList.remove('active'));
+    if(active)active.pill.classList.add('active');
+  },{passive:true});
+})();
+</script>
+<!-- END HUB NAV PILLS -->
+
+<div class="bc"><a href="index.html">Home</a> › Startup Coaches & Founder Educators</div>
+<div class="hero">
+  <div class="badge">🚀 Category Hub</div>
+  <h1>Startup Coaches & Founder Educators</h1>
+  <p>The best startup coaches, venture educators, and founder mentors for early-stage companies.</p>
+  <div class="upd">Last updated: March 2025</div>
+</div>
+<div class="content">
+  <div class="callout"><strong>Verified startup educators</strong> covering fundraising, product-market fit, pitch decks, growth hacking, bootstrapping, and building from zero to one.</div>
+  <div class="auth-links"><a href="https://www.ycombinator.com/blog" class="auth-link" target="_blank" rel="noopener">🚀 Y Combinator Blog</a><a href="https://review.firstround.com" class="auth-link" target="_blank" rel="noopener">📚 First Round Review</a><a href="https://www.indiehackers.com" class="auth-link" target="_blank" rel="noopener">💻 Indie Hackers</a></div>
+  <div class="resources-block" id="tools"><h2>🛠 Tools & Software</h2><div class="res-grid"><a href="https://notion.so/product/affiliate-program" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a1a1a">📓</div><div class="res-body"><div class="res-name">Notion</div><div class="res-desc">The all-in-one workspace used by millions of entrepreneurs — SOPs, wikis, databases, project management, and team docs in one tool.</div><div style="margin-top:5px;"><span class="res-type" style="background:#dbeafe;color:#1e40af;">Software</span></div></div></a><a href="https://www.shopify.com/affiliates" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#96bf48">🛒</div><div class="res-body"><div class="res-name">Shopify Affiliate Program</div><div class="res-desc">The gold standard of ecommerce affiliate programs — Shopify pays $150 for standard and up to $500 for advanced plan referrals. High brand recognition and the dominant platform position make this one of the best-converting affiliate opportunities for any entrepreneurship or business audience.</div><div style="margin-top:5px;"><span class="res-type" style="background:#dbeafe;color:#1e40af;">Software</span></div></div></a></div></div>
+<div class="resources-block" id="books"><h2>📚 Must-Read Books</h2><div class="res-grid"><a href="https://www.amazon.com/dp/0887307280?tag=smbinf-20" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a5c3a">📗</div><div class="res-body"><div class="res-name">The E-Myth Revisited</div><div class="res-desc">Michael Gerber's seminal book on why most small businesses fail — and how to fix it. The core insight: business owners must work on the business, not just in it. Introduces the Franchise Prototype model and the three personalities every owner must manage: entrepreneur, manager, and technician.</div><div style="margin-top:5px;"><span class="res-type" style="background:#fef9c3;color:#854d0e;">Book</span></div></div></a><a href="https://www.amazon.com/dp/1328972356?tag=smbinf-20" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a3260">📘</div><div class="res-body"><div class="res-name">Company of One (Paul Jarvis)</div><div class="res-desc">A counter-narrative to growth-at-all-costs — Paul Jarvis argues that staying lean, independent, and focused can lead to more profit, freedom, and sustainability than constant expansion. Must-read for solopreneurs and lifestyle business owners who want to optimize for margin, not headcount.</div><div style="margin-top:5px;"><span class="res-type" style="background:#fef9c3;color:#854d0e;">Book</span></div></div></a></div></div>
+<div class="resources-block" id="podcasts"><h2>🎧 Podcasts</h2><div class="res-grid"><a href="https://www.npr.org/series/how-i-built-this" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">🎙️</div><div class="res-body"><div class="res-name">How I Built This (NPR)</div><div class="res-desc">Guy Raz's legendary NPR podcast interviewing the founders of the world's best-known companies. From Airbnb to Spanx, each episode dives deep into origin stories, near-death moments, and the decisions that made the difference. Required listening for any entrepreneur.</div><div style="margin-top:5px;"><span class="res-type" style="background:#ffedd5;color:#9a3412;">Podcast</span></div></div></a><a href="https://www.mfmpod.com" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a4d3a">💰</div><div class="res-body"><div class="res-name">My First Million</div><div class="res-desc">Sam Parr and Shaan Puri brainstorm business ideas, break down how companies got to $1M+ in revenue, and riff on trends before they hit. One of the most entertaining and intellectually rich shows in the entrepreneurship space — famous for deep-dive idea breakdowns.</div><div style="margin-top:5px;"><span class="res-type" style="background:#ffedd5;color:#9a3412;">Podcast</span></div></div></a></div></div>
+<div class="resources-block"><h2>📧 Newsletters</h2><div class="res-grid"><a href="https://thehustle.co" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">📬</div><div class="res-body"><div class="res-name">The Hustle</div><div class="res-desc">HubSpot's daily business and tech newsletter read by 1.5M+ entrepreneurs and operators. Covers business news, startup stories, and market trends in a punchy, readable format. One of the most widely subscribed entrepreneurship newsletters on the internet.</div><div style="margin-top:5px;"><span class="res-type" style="background:#e0f2fe;color:#0c4a6e;">Newsletter</span></div></div></a><a href="https://bootstrappedfounder.com" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#2c3e50">🥾</div><div class="res-body"><div class="res-name">Bootstrapped Founder</div><div class="res-desc">Arvid Kahl writes about bootstrapping a SaaS or online business to profitability without VC funding. Covers building in public, audience monetization, and the mindset of self-funded founders. Essential for solo operators and lean startup builders.</div><div style="margin-top:5px;"><span class="res-type" style="background:#e0f2fe;color:#0c4a6e;">Newsletter</span></div></div></a></div></div>
+<div class="resources-block" id="communities"><h2>🤝 Communities & Networks</h2><div class="res-grid"><a href="https://www.facebook.com/groups/smallbusinessnetworking" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1877f2">👥</div><div class="res-body"><div class="res-name">Small Business Networking (Facebook)</div><div class="res-desc">One of the largest Facebook groups for small business owners with 300,000+ members. A peer support community for sharing challenges, getting advice, discussing marketing tactics, and connecting with fellow owners across all industries. Active daily posting.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://eonetwork.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#c0392b">🌐</div><div class="res-body"><div class="res-name">Entrepreneurs Organization (EO)</div><div class="res-desc">Global peer network of 17,000+ entrepreneurs in 60+ countries with annual revenue of $1M+. Local chapters host monthly forums, speaker events, and learning days. One of the highest-value business networks in the world — members only above the revenue threshold.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://score.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#1a5c3a">🏅</div><div class="res-body"><div class="res-name">SCORE Mentorship Network</div><div class="res-desc">Free mentorship and education for small business owners from 10,000+ volunteer mentors who are current and former executives. SCORE helped start 59,447 new businesses in 2024 alone. Access to live workshops, on-demand courses, and one-on-one mentoring sessions at no cost.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a><a href="https://ypo.org" class="res-card" target="_blank" rel="noopener"><div class="res-icon" style="background:#8b0000">🌟</div><div class="res-body"><div class="res-name">Aligned (YPO Local Chapters)</div><div class="res-desc">Young Presidents Organization — global community for chief executives under 45 with companies above a revenue threshold. Monthly forum groups of 10–12 peers, chapter events, and global learning conferences. The premier executive peer network for growth-stage business owners.</div><div style="margin-top:5px;"><span class="res-type" style="background:#f3e8ff;color:#6b21a8;">Community</span></div></div></a></div></div>
+  <div class="sec-hdr">
+    <div id="coaches"></div><h2>🎙 Top Educators <span id="cnt" style="font-size:.85rem;font-weight:400;color:var(--muted);"></span></h2>
+    <a href="index.html">Browse All →</a>
+  </div>
+  <div class="grid" id="grid">
+    <div class="loading"><div class="spinner"></div><p>Loading coaches…</p></div>
+  </div>
+  <div class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I find the right coach in this category?</span><span class="ft">+</span></button><div class="fa">Match coaches to your stage and business type. Browse the verified profiles above — featured coaches appear first. Use the main directory search to filter by name, keyword, or platform. All coaches are manually verified.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>Are the software and book links on this page affiliate links?</span><span class="ft">+</span></button><div class="fa">Some links include affiliate relationships where SMBProFind may earn a commission if you sign up or purchase. Amazon book links include tag=smbinf-20. This never affects our editorial rankings or recommendations. See our full Affiliate Disclosure.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I get listed in SMBProFind?</span><span class="ft">+</span></button><div class="fa">Business coaches, educators, and content creators can apply for a free listing using the Get Listed button. Featured listing upgrades are available for priority placement at the top of category pages. Our team reviews and verifies every submission.</div></div>
+    <div class="fi"><button class="fq" onclick="tf(this)"><span>How do I advertise to this audience?</span><span class="ft">+</span></button><div class="fa">SMBProFind offers pay-per-click advertising starting at $0.25/click, featured listings, category spotlight placements, newsletter sponsorships, and affiliate / CPA deal arrangements. Visit the Advertise page for full details and pricing.</div></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- FREE RESOURCES WIDGET -->
+<div id="free-help" style="background:linear-gradient(135deg,#0f2044 0%,#1a3060 60%,#1e4a7a 100%);padding:56px 24px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,184,148,.1) 0%,transparent 65%);pointer-events:none"></div>
+  <div style="max-width:1100px;margin:0 auto;position:relative">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:28px">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(0,184,148,.15);border:1px solid rgba(0,184,148,.3);color:#00b894;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:100px;margin-bottom:12px">🏛️ Free Government Resources</div>
+        <h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:#ffffff;font-weight:800;line-height:1.2">Free Local Help for Startup Owners</h2>
+        <p style="color:rgba(255,255,255,.65);font-size:.88rem;margin-top:6px">SBA-backed resources near you — free counseling, mentoring &amp; financing help.</p>
+      </div>
+      <a href="centers.html" style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:.82rem;font-weight:600;padding:9px 18px;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0">View All Resources →</a>
+    </div>
+    <div style="margin-bottom:20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <label style="color:rgba(255,255,255,.6);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em">Filter by State:</label>
+      <select id="rState_startup" onchange="runWidget_startup()" style="height:36px;border:1.5px solid rgba(255,255,255,.2);border-radius:7px;padding:0 12px;font-size:.82rem;color:#0f2044;background:#fff;outline:none;cursor:pointer">
+        <option value="">All States</option><option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option>
+      </select>
+      <span id="rCount_startup" style="color:rgba(255,255,255,.5);font-size:.78rem"></span>
+    </div>
+    <div id="rGrid_startup" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px"></div>
+    <div id="rLoader_startup" style="text-align:center;padding:32px;color:rgba(255,255,255,.5)">
+      <div style="width:28px;height:28px;border:2px solid rgba(255,255,255,.2);border-top-color:#00b894;border-radius:50%;animation:wspin .7s linear infinite;margin:0 auto 10px"></div>
+      <p style="font-size:.82rem">Loading resources…</p>
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <a href="centers.html" style="display:inline-flex;align-items:center;gap:8px;background:#00b894;color:#0f2044;font-weight:700;font-size:.88rem;padding:11px 24px;border-radius:8px;text-decoration:none">🔍 Search All Free Resources →</a>
+    </div>
+  </div>
+</div>
+<style>
+@keyframes wspin{to{transform:rotate(360deg)}}
+.wcard{background:#fff;border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:9px;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.wcard:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+</style>
+<script>
+(function(){
+  var SBURL='https://wixahbxwqhgizbotybyj.supabase.co';
+  var SBKEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8';
+  var TYPES=["sbdc","score","wbc"];
+  var ICONS={sbdc:'📚',score:'⭐',wbc:'👩‍💼',vboc:'🎖️',sba:'🏛️',chamber:'🏢',ida:'🏗️',edc:'📈',cdfi:'💰',state:'🏴'};
+  var LABELS={sbdc:'SBDC',score:'SCORE',wbc:"Women's Business Center",vboc:'Veterans (VBOC)',sba:'SBA Office',chamber:'Chamber',ida:'IDA',edc:'EDC',cdfi:'CDFI',state:'State Program'};
+  var COLORS={sbdc:'#2196f3',score:'#ff9800',wbc:'#9c27b0',vboc:'#4caf50',sba:'#f44336',chamber:'#795548',ida:'#1976d2',edc:'#1976d2',cdfi:'#e65100',state:'#607d8b'};
+
+  function runWidget_startup(){
+    var rGrid   = document.getElementById('rGrid_startup');
+    var rLoader = document.getElementById('rLoader_startup');
+    var rCount  = document.getElementById('rCount_startup');
+    var rState  = document.getElementById('rState_startup');
+    var state   = rState ? rState.value : '';
+
+    rGrid.innerHTML = '';
+    rLoader.style.display = 'block';
+
+    var rawUrl = SBURL + '/rest/v1/smb_resource_centers'
+      + '?select=*'
+      + '&is_active=eq.true'
+      + '&type=in.(' + TYPES.join(',') + ')'
+      + '&order=is_featured.desc,name.asc'
+      + '&limit=3';
+    if (state) rawUrl += '&state=eq.' + encodeURIComponent(state);
+    rawUrl += "&specialties=cs.{startup}";
+
+    fetch(rawUrl, {
+      headers: {
+        'apikey': SBKEY,
+        'Authorization': 'Bearer ' + SBKEY,
+        'Prefer': 'count=exact'
+      }
+    })
+    .then(function(r) {
+      var total = r.headers.get('content-range');
+      return r.json().then(function(data) {
+        return { data: data, total: total };
+      });
+    })
+    .then(function(res) {
+      var data  = res.data;
+      var total = res.total;
+      rLoader.style.display = 'none';
+      var n = total ? parseInt(total.split('/')[1]) : data.length;
+      rCount.textContent = n + ' resource' + (n !== 1 ? 's' : '') + ' found';
+
+      if (!data || data.length === 0) {
+        rGrid.innerHTML = '<div style="color:rgba(255,255,255,.7);font-size:.9rem;padding:16px 0">No resources found for that state yet. <a href="centers.html" style="color:#00b894;font-weight:600">Browse all states →</a></div>';
+        return;
+      }
+
+      rGrid.innerHTML = data.map(function(item) {
+        var specs = (item.specialties || []).filter(function(s) {
+          return ['women','veteran','minority','rural','export','startup'].indexOf(s) > -1;
+        });
+        var svcs = (item.services || []).slice(0,3).map(function(s) {
+          return '<span style="font-size:.65rem;padding:2px 8px;border-radius:100px;background:#f1f3f5;color:#6c757d">' + s + '</span>';
+        }).join('');
+        var visitBtn = item.website
+          ? '<a href="' + item.website + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="font-size:.75rem;font-weight:600;color:#00b894;text-decoration:none">Visit →</a>'
+          : '';
+        return '<div class="wcard" onclick="window.open('' + (item.website||'#') + '','_blank')">'
+          + '<div style="display:flex;align-items:flex-start;gap:10px">'
+          + '<div style="width:40px;height:40px;border-radius:8px;background:#f1f3f5;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0">' + (ICONS[item.type]||'🏢') + '</div>'
+          + '<div style="flex:1;min-width:0">'
+          + '<div style="font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:' + (COLORS[item.type]||'#00b894') + ';margin-bottom:2px">' + (LABELS[item.type]||item.type) + '</div>'
+          + '<div style="font-size:.88rem;font-weight:700;color:#0f2044;line-height:1.3">' + (item.name||'') + '</div>'
+          + (item.org ? '<div style="font-size:.72rem;color:#6c757d;margin-top:1px">' + item.org + '</div>' : '')
+          + '</div></div>'
+          + '<div style="font-size:.75rem;color:#6c757d">📍 ' + (item.city||'') + (item.city&&item.state?', ':'') + (item.state||'') + '</div>'
+          + (svcs ? '<div style="display:flex;flex-wrap:wrap;gap:4px">' + svcs + '</div>' : '')
+          + '<div style="display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #e9ecef;margin-top:auto">'
+          + '<span style="font-size:.68rem;font-weight:700;color:#009d7e;background:#e6faf6;padding:2px 8px;border-radius:100px">✓ Free Services</span>'
+          + visitBtn
+          + '</div></div>';
+      }).join('');
+    })
+    .catch(function(e) {
+      rLoader.style.display = 'none';
+      rGrid.innerHTML = '<div style="color:rgba(255,255,255,.6);font-size:.88rem;padding:16px 0">⚠️ Could not load resources. <a href="centers.html" style="color:#00b894">Browse all →</a></div>';
+    });
+  }
+
+  window.runWidget_startup = runWidget_startup;
+  runWidget_startup();
+})();
+</script>
+<!-- END FREE RESOURCES WIDGET -->
+
+<footer>
+  <div class="fi2">
+    <div class="fg">
+      <div class="fb2"><a href="index.html" class="logo">SMBPro<span>Find</span></a><p>The #1 directory of business influencers, coaches &amp; creators.</p></div>
+      <div class="fc"><h5>Directory</h5><a href="index.html">All Influencers</a><a href="hubs.html">Category Hubs</a><a href="blog.html">Blog</a><a href="submit.html">Get Listed</a></div>
+      <div class="fc"><h5>Top Hubs</h5><a href="entrepreneurship.html">Entrepreneurship</a><a href="home-services.html">Home Services</a><a href="sales.html">Sales</a><a href="marketing-seo.html">Marketing &amp; SEO</a><a href="ecommerce.html">E-Commerce</a></div>
+      <div class="fc"><h5>Company</h5><a href="about.html">About</a><a href="advertise.html">Advertise</a><a href="privacy.html">Privacy Policy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div>
+    </div>
+    <div class="fb3">
+      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
+      <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Affiliate Disclosure</a></span>
+    </div>
+    <p class="disc">SMBProFind participates in affiliate programs including Amazon Associates (tag: smbinf-20). Commissions never affect our editorial rankings. <a href="affiliate-disclosure.html">Full FTC Disclosure →</a></p>
+  </div>
+</footer>
+<script>
+
+const AMZ='smbinf-20';
+function esc(s){return s?String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'):''}
+function ini(n){return n?n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase():'?'}
+function sc(v,t){const n=parseFloat(v);if(isNaN(n))return'';return t==='eng'?n>=5?'green':n>=2.5?'blue':'orange':t==='grw'?n>=20?'green':n>=5?'blue':'orange':t==='real'?n>=90?'green':n>=75?'blue':'orange':''}
+function az(u){if(!u||!u.includes('amazon.com'))return u;return u.includes('tag=')?u:u+(u.includes('?')?'&':'?')+'tag='+AMZ}
+function rc(inf){
+  const cats=(Array.isArray(inf.cats)?inf.cats:[inf.category]).filter(Boolean).slice(0,2);
+  const ct=cats.map(c=>'<span class="ct">'+esc(c)+'</span>').join('');
+  const pl=[];
+  if(inf.yt)pl.push('<a href="'+esc(inf.yt)+'" class="pb yt" target="_blank" rel="noopener">▶ YouTube</a>');
+  if(inf.ig)pl.push('<a href="'+esc(inf.ig)+'" class="pb ig" target="_blank" rel="noopener">📸 IG</a>');
+  if(inf.li)pl.push('<a href="'+esc(inf.li)+'" class="pb li" target="_blank" rel="noopener">in LI</a>');
+  if(inf.tk)pl.push('<a href="'+esc(inf.tk)+'" class="pb tk" target="_blank" rel="noopener">♪ TikTok</a>');
+  if(inf.web)pl.push('<a href="'+esc(inf.web)+'" class="pb web" target="_blank" rel="noopener">🌐 Web</a>');
+  const bt=Array.isArray(inf.bookTitles)?inf.bookTitles:(inf.bookTitles||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const bu=Array.isArray(inf.bookUrls)?inf.bookUrls:(inf.bookUrls||'').split(',').map(s=>s.trim()).filter(Boolean);
+  const bks=bt.map((t,i)=>{const u=az(bu[i]||'');return u?'<a href="'+esc(u)+'" class="bl" target="_blank" rel="noopener">📖 '+esc(t)+'</a>':'<span class="bl">📖 '+esc(t)+'</span>';});
+  const wk=inf.wiki?'<a href="'+esc(inf.wiki)+'" class="wl" target="_blank" rel="noopener">W</a>':'';
+  const st=[];
+  if(inf.engagement)st.push('<div class="sb"><div class="sl">Engagement</div><div class="sv '+sc(inf.engagement,'eng')+'">'+esc(inf.engagement)+'</div></div>');
+  if(inf.growth)st.push('<div class="sb"><div class="sl">Growth 6mo</div><div class="sv '+sc(inf.growth,'grw')+'">'+esc(inf.growth)+'</div></div>');
+  if(inf.realScore)st.push('<div class="sb"><div class="sl">Real Followers</div><div class="sv '+sc(inf.realScore,'real')+'">'+esc(inf.realScore)+'</div></div>');
+  if(inf.revenue)st.push('<div class="sb"><div class="sl">Est. Revenue</div><div class="sv blue">'+esc(inf.revenue)+'</div></div>');
+  return '<div class="card"><div class="card-top"><div class="av" style="background:'+(inf.color||inf.avatarBg||'#0f2044')+'">'+(inf.initials||inf.avatar||ini(inf.name))+'</div><div class="cm"><div class="cn">'+esc(inf.name)+'</div>'+(inf.handle?'<div class="ch">'+esc(inf.handle)+'</div>':'')+'<div>'+ct+'</div></div>'+(inf.featured?'<span class="fb">⭐ Featured</span>':'')+'</div><div class="cb">'+(inf.exp||inf.cred?'<div class="cc">✓ '+(inf.exp||inf.cred||'')+(inf.subs||inf.followers?' · <span style="color:var(--muted);font-weight:400">'+(inf.subs||inf.followers)+'</span>':'')+(wk?' '+wk:'')+'</div>':'')+'<p class="cs">'+esc(inf.summary||'')+'</p>'+(st.length?'<div class="sg">'+st.join('')+'</div>':'')+(pl.length?'<div class="pr">'+pl.join('')+'</div>':'')+(bks.length?'<div class="pr">'+bks.join('')+'</div>':'')+'</div></div>';
+}
+async function load(KW){
+  const cfg=localStorage.getItem('smb_cfg')?JSON.parse(localStorage.getItem('smb_cfg')):{sbUrl:'https://wixahbxwqhgizbotybyj.supabase.co',sbKey:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8',sbTable:'profind_influencers'};
+  let data=[];
+  if(cfg.sbUrl&&cfg.sbKey){
+    try{
+      const r=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&order=id.asc',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
+      if(r.ok){const rows=await r.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
+    }catch(e){}
+  }
+  if(!data.length){try{const l=localStorage.getItem('smb_influencers');if(l)data=JSON.parse(l);}catch(e){}}
+  const f=data.filter(l=>{const s=[(l.category||''),(Array.isArray(l.cats)?l.cats:[]).join(' ')].join(' ').toLowerCase().replace(/-/g,' ');return KW.some(k=>s.includes(k.replace(/-/g,' ')));}).sort((a,b)=>(b.featured?1:0)-(a.featured?1:0));
+  document.getElementById('cnt').textContent='('+f.length+')';
+  const g=document.getElementById('grid');
+  g.innerHTML=f.length?f.map(rc).join(''):'<p style="color:var(--muted);padding:20px;font-size:.88rem;">Connect Supabase in the admin panel on the main directory to load verified coach profiles here.</p>';
+}
+function tf(btn){const a=btn.nextElementSibling;const t=btn.querySelector('.ft');const o=a.classList.contains('open');a.classList.toggle('open',!o);if(t)t.textContent=o?'+':'−';}
+
+load(["startup","venture","seed","pitch","mvp","product market fit","founder","saas","bootstrap","y combinator"]);
+</script>
+</body>
+</html>
