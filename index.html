@@ -999,6 +999,7 @@
     <a href="index.html">Directory</a>
     <a href="blog.html">📝 Blog</a>
     <a href="hubs.html">🔗 Hubs</a>
+    <a href="centers.html">🏛️ Resources</a>
     <a href="advertise.html">📢 Advertise</a>
     <a href="submit.html" class="btn-cta">Get Listed →</a>
   </div>
@@ -1482,8 +1483,7 @@ function amazonLink(url) {
 const CAT_ALIASES = {
   'business-finance':  ['finance-business','finance business','business finance','business-finance'],
   'personal-finance':  ['finance-personal','finance personal','personal finance','personal-finance'],
-  'startup':           ['startup'],
-  'entrepreneurship':  ['entrepreneurship','startup'],
+  'startup':           ['startup','entrepreneurship'],
   'home-services':     ['home-services','home services','landscaping','cleaning'],
   'mechanical-trades': ['mechanical-trades','mechanical trades','hvac','plumbing','electrical'],
   'ecommerce':         ['ecommerce','e-commerce','retail','dropshipping','etsy'],
@@ -1883,9 +1883,7 @@ async function submitAdvertise() {
 function adminLogin() {
   const u = document.getElementById('adminUser').value.trim();
   const p = document.getElementById('adminPass').value.trim();
-  const ADMIN_USER = 'admin';
-  const ADMIN_PASS = 'smbpro2025';
-  if (u === ADMIN_USER && p === ADMIN_PASS) {
+  if (u === (CFG.adminUser||'admin') && p === (CFG.adminPass||'smbpro2025')) {
     isLoggedIn = true;
     document.getElementById('adminSignIn').classList.add('hidden');
     document.getElementById('adminDash').classList.remove('hidden');
