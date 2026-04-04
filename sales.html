@@ -223,16 +223,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:36px 24px 20px;
     const state=document.getElementById('wState_sales').value;
     grid.innerHTML='';
     loader.style.display='block';
-    const url=new URL(SB_URL+'/rest/v1/smb_resource_centers');
-    url.searchParams.set('select','*');
-    url.searchParams.set('is_active','eq.true');
-    url.searchParams.set('type','in.('+TYPES.join(',')+')');
-    url.searchParams.set('order','is_featured.desc,name.asc');
-    url.searchParams.set('limit','3');
-    if(state) url.searchParams.set('state','eq.'+state);
+    const baseParams = new URLSearchParams();
+    baseParams.set('select','*');
+    baseParams.set('is_active','eq.true');
+    baseParams.set('order','is_featured.desc,name.asc');
+    baseParams.set('limit','3');
+    let rawUrl = SB_URL+'/rest/v1/smb_resource_centers?'+baseParams.toString()+'&type=in.('+TYPES.join(',')+')';
+    if(state) rawUrl += '&state=eq.'+encodeURIComponent(state);
     
     try{
-      const r=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'count=exact'}});
+      const r=await fetch(rawUrl,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'count=exact'}});
       const total=r.headers.get('content-range')?.split('/')[1];
       const data=await r.json();
       loader.style.display='none';
