@@ -7,7 +7,6 @@
   <meta name="description" content="Find free small business help near you. Search 1,800+ SBDC centers, SCORE chapters, Women's Business Centers, Veterans resources and more — searchable by state, city, and resource type." />
   <meta name="keywords" content="small business development center, SBDC, SCORE, free business counseling, small business resources, SBA, women's business center, veterans business" />
   <link rel="canonical" href="https://smbprofind.netlify.app/centers.html" />
-  <!-- Open Graph -->
   <meta property="og:title" content="SMB Resource Center — Free Business Help Near You" />
   <meta property="og:description" content="Search 1,800+ free small business resources by state, city, and type." />
   <meta property="og:url" content="https://smbprofind.netlify.app/centers.html" />
@@ -25,35 +24,33 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:'DM Sans',sans-serif;background:var(--gray-50);color:var(--gray-800);line-height:1.6}
 
-    /* NAV */
-    nav{background:var(--navy);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
-    .nav-logo{font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--white);text-decoration:none}
-    .nav-logo span{color:var(--teal)}
-    .nav-links{display:flex;gap:8px;align-items:center}
-    .nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.875rem;font-weight:500;padding:6px 14px;border-radius:6px;transition:all .2s}
-    .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.08)}
+    /* ── NAV — matches live SMBProFind nav exactly ── */
+    nav{background:var(--navy);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+    .nav-logo{font-family:'DM Serif Display',serif;font-size:1.35rem;color:var(--white);text-decoration:none;font-weight:400;letter-spacing:-.3px}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;padding:7px 13px;border-radius:6px;transition:all .2s;white-space:nowrap}
+    .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.1)}
     .nav-links a.active{color:var(--teal)}
-    .nav-cta{background:var(--teal)!important;color:var(--navy)!important;font-weight:700!important;padding:8px 18px!important;border-radius:8px!important}
-    .nav-cta:hover{background:var(--teal-dark)!important}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-    .hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px}
+    .nav-cta{background:var(--teal)!important;color:var(--navy)!important;font-weight:700!important;border-radius:7px!important}
+    .nav-cta:hover{background:var(--teal-dark)!important;color:var(--navy)!important}
 
-    /* BREADCRUMB */
-    .breadcrumb{background:var(--white);border-bottom:1px solid var(--gray-200);padding:10px 24px;font-size:.8rem;color:var(--gray-600)}
+    /* ── BREADCRUMB ── */
+    .breadcrumb{background:var(--white);border-bottom:1px solid var(--gray-200);padding:10px 32px;font-size:.8rem;color:var(--gray-600)}
     .breadcrumb a{color:var(--teal);text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
 
-    /* HERO */
-    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 60%,#1e4a7a 100%);padding:64px 24px 88px;text-align:center;position:relative;overflow:hidden}
+    /* ── HERO ── */
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 60%,#1e4a7a 100%);padding:64px 32px 88px;text-align:center;position:relative;overflow:hidden}
     .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,184,148,.12) 0%,transparent 65%)}
-    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,184,148,.15);border:1px solid rgba(0,184,148,.3);color:var(--teal);font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:20px}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,184,148,.15);border:1px solid rgba(0,184,148,.3);color:var(--teal);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:20px}
     .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.2rem);color:var(--white);line-height:1.15;max-width:720px;margin:0 auto 16px}
     .hero h1 em{font-style:italic;color:var(--teal)}
     .hero p{color:rgba(255,255,255,.7);font-size:1.05rem;max-width:580px;margin:0 auto 36px}
     .hero-stats{display:flex;gap:32px;justify-content:center;flex-wrap:wrap}
     .hero-stat strong{display:block;font-size:1.8rem;font-weight:700;color:var(--teal);line-height:1}
-    .hero-stat span{font-size:.8rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em}
+    .hero-stat span{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em}
 
-    /* SEARCH CARD */
+    /* ── SEARCH ── */
     .search-wrap{max-width:900px;margin:-36px auto 0;padding:0 24px;position:relative;z-index:10}
     .search-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:24px}
     .search-row{display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:12px;align-items:end}
@@ -63,52 +60,36 @@
     .search-btn{height:46px;background:var(--teal);color:var(--navy);border:none;border-radius:var(--radius-sm);padding:0 24px;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s;white-space:nowrap}
     .search-btn:hover{background:var(--teal-dark)}
 
-    /* SPECIALTY FILTERS */
+    /* ── SPECIALTY CHIPS ── */
     .specialty-row{max-width:1200px;margin:20px auto 0;padding:0 24px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
     .spec-label{font-size:.75rem;font-weight:700;color:var(--gray-600);text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
     .spec-chip{padding:5px 13px;border-radius:100px;border:1.5px solid var(--gray-200);background:var(--white);font-size:.78rem;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .2s}
     .spec-chip:hover{border-color:var(--teal);color:var(--teal)}
     .spec-chip.active{background:var(--navy);border-color:var(--navy);color:var(--white)}
 
-    /* FILTER CHIPS */
-    .filters-section{max-width:1200px;margin:16px auto 0;padding:0 24px}
+    /* ── TYPE CHIPS ── */
+    .filters-section{max-width:1200px;margin:12px auto 0;padding:0 24px}
     .filters-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .filter-label{font-size:.75rem;font-weight:700;color:var(--gray-600);text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
     .filter-chip{padding:6px 14px;border-radius:100px;border:1.5px solid var(--gray-200);background:var(--white);font-size:.82rem;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .2s}
     .filter-chip:hover{border-color:var(--teal);color:var(--teal)}
     .filter-chip.active{background:var(--teal);border-color:var(--teal);color:var(--navy);font-weight:600}
-    .results-meta{margin-left:auto;font-size:.82rem;color:var(--gray-600);display:flex;align-items:center;gap:12px}
+    .results-meta{margin-left:auto;font-size:.82rem;color:var(--gray-600)}
     .results-meta strong{color:var(--navy)}
 
-    /* GRID */
-    .grid-section{max-width:1200px;margin:24px auto 64px;padding:0 24px}
+    /* ── GRID ── */
+    .grid-section{max-width:1200px;margin:20px auto 64px;padding:0 24px}
     .resource-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
 
-    /* CARD */
+    /* ── CARD ── */
     .resource-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm);border:1.5px solid var(--gray-200);padding:22px;transition:all .2s;display:flex;flex-direction:column;gap:12px;cursor:pointer}
     .resource-card:hover{box-shadow:var(--shadow-md);border-color:var(--teal);transform:translateY(-2px)}
     .resource-card.featured{border-color:var(--teal);background:linear-gradient(135deg,var(--white),#f0fdf8)}
-    .featured-badge{font-size:.68rem;font-weight:700;color:var(--teal-dark);background:var(--teal-light);padding:2px 9px;border-radius:100px;display:inline-flex;align-items:center;gap:4px}
     .card-header{display:flex;align-items:flex-start;gap:12px}
     .card-icon{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
-    .card-icon.sbdc{background:#e6f4ff}
-    .card-icon.score{background:#fff3e6}
-    .card-icon.wbc{background:#fce6ff}
-    .card-icon.vboc{background:#e6ffe9}
-    .card-icon.sba{background:#fff0e6}
-    .card-icon.chamber{background:#fef9e6}
-    .card-icon.ida{background:#e6f0fe}
-    .card-icon.edc{background:#e6fef9}
-    .card-icon.cdfi{background:#fff5e6}
+    .card-icon.sbdc{background:#e6f4ff}.card-icon.score{background:#fff3e6}.card-icon.wbc{background:#fce6ff}.card-icon.vboc{background:#e6ffe9}.card-icon.sba{background:#fff0e6}.card-icon.chamber{background:#fef9e6}.card-icon.ida{background:#e6f0fe}.card-icon.edc{background:#e6fef9}.card-icon.cdfi{background:#fff5e6}
     .card-type{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
-    .card-type.sbdc{color:#2196f3}
-    .card-type.score{color:#ff9800}
-    .card-type.wbc{color:#9c27b0}
-    .card-type.vboc{color:#4caf50}
-    .card-type.sba{color:#f44336}
-    .card-type.chamber{color:#795548}
-    .card-type.ida,.card-type.edc{color:#1976d2}
-    .card-type.cdfi{color:#e65100}
+    .card-type.sbdc{color:#2196f3}.card-type.score{color:#ff9800}.card-type.wbc{color:#9c27b0}.card-type.vboc{color:#4caf50}.card-type.sba{color:#f44336}.card-type.chamber,.card-type.ida,.card-type.edc{color:#1976d2}.card-type.cdfi{color:#e65100}
     .card-name{font-size:.95rem;font-weight:700;color:var(--navy);line-height:1.3}
     .card-org{font-size:.78rem;color:var(--gray-600);margin-top:2px}
     .card-location{display:flex;align-items:center;gap:5px;font-size:.8rem;color:var(--gray-600)}
@@ -116,99 +97,92 @@
     .service-tag{font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:100px;background:var(--gray-100);color:var(--gray-600)}
     .spec-tags{display:flex;flex-wrap:wrap;gap:5px}
     .spec-tag{font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:100px}
-    .spec-tag.women{background:#fce4ec;color:#c2185b}
-    .spec-tag.veteran{background:#e8f5e9;color:#2e7d32}
-    .spec-tag.minority{background:#ede7f6;color:#512da8}
-    .spec-tag.rural{background:#f9fbe7;color:#558b2f}
-    .spec-tag.export{background:#e3f2fd;color:#1565c0}
-    .spec-tag.startup{background:#fff8e1;color:#f57f17}
+    .spec-tag.women{background:#fce4ec;color:#c2185b}.spec-tag.veteran{background:#e8f5e9;color:#2e7d32}.spec-tag.minority{background:#ede7f6;color:#512da8}.spec-tag.rural{background:#f9fbe7;color:#558b2f}.spec-tag.export{background:#e3f2fd;color:#1565c0}.spec-tag.startup{background:#fff8e1;color:#f57f17}
     .card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--gray-100);margin-top:auto}
     .card-free-badge{font-size:.7rem;font-weight:700;color:var(--teal-dark);background:var(--teal-light);padding:3px 10px;border-radius:100px}
     .card-link{font-size:.8rem;font-weight:600;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:4px}
     .card-link:hover{text-decoration:underline}
 
-    /* LOADING */
+    /* ── LOADING / EMPTY ── */
     .loading{text-align:center;padding:64px 24px;color:var(--gray-600)}
     .loading-spinner{width:36px;height:36px;border:3px solid var(--gray-200);border-top-color:var(--teal);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 16px}
     @keyframes spin{to{transform:rotate(360deg)}}
-
-    /* NO RESULTS */
     .no-results{text-align:center;padding:64px 24px;color:var(--gray-600);display:none}
     .no-results h3{color:var(--navy);margin-bottom:8px}
 
-    /* PHASE BANNER */
-    .phase-banner{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:20px 24px;max-width:1200px;margin:32px auto 0;display:flex;gap:32px;flex-wrap:wrap}
-    .phase-item{text-align:center;flex:1;min-width:140px}
-    .phase-item strong{display:block;font-size:1.5rem;font-weight:700;color:var(--teal)}
-    .phase-item span{font-size:.78rem;color:var(--gray-600)}
-    .phase-item.upcoming strong{color:var(--gray-400)}
-    .phase-item.upcoming span{color:var(--gray-400)}
+    /* ── PHASE BANNER ── */
+    .phase-banner{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:18px 24px;max-width:1200px;margin:24px auto 0;display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+    .phase-item{text-align:center;flex:1;min-width:120px}
+    .phase-item strong{display:block;font-size:1.4rem;font-weight:700;color:var(--teal)}
+    .phase-item span{font-size:.75rem;color:var(--gray-600)}
+    .phase-item.dim strong{color:var(--gray-400)}
+    .phase-item.dim span{color:var(--gray-400)}
 
-    /* STATE HUB LINKS */
+    /* ── STATE GRID ── */
     .state-hubs{max-width:1200px;margin:40px auto 0;padding:0 24px}
     .state-hubs h2{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:16px}
-    .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
-    .state-link{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);text-decoration:none;color:var(--navy);font-size:.85rem;font-weight:500;transition:all .2s}
+    .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px}
+    .state-link{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);text-decoration:none;color:var(--navy);font-size:.83rem;font-weight:500;transition:all .2s}
     .state-link:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-light)}
-    .state-count{font-size:.72rem;color:var(--gray-400);font-weight:400}
 
-    /* CTA BANNER */
+    /* ── CTA ── */
     .cta-banner{background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:56px 24px;text-align:center;margin-top:64px}
     .cta-banner h2{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--white);margin-bottom:12px}
     .cta-banner p{color:rgba(255,255,255,.7);max-width:500px;margin:0 auto 28px}
     .cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--navy);font-weight:700;font-size:.95rem;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;transition:background .2s}
     .cta-btn:hover{background:var(--teal-dark)}
 
-    /* FOOTER */
-    footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;padding:24px;font-size:.82rem}
-    footer a{color:var(--teal);text-decoration:none}
+    /* ── FOOTER — matches live site ── */
+    footer{background:var(--navy);padding:48px 32px 32px}
+    .footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer-brand p{color:rgba(255,255,255,.5);font-size:.85rem;margin-top:10px;line-height:1.6}
+    .footer-logo{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--white);text-decoration:none}
+    .footer-col h4{color:rgba(255,255,255,.4);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+    .footer-col a{display:block;color:rgba(255,255,255,.65);text-decoration:none;font-size:.85rem;margin-bottom:7px;transition:color .2s}
+    .footer-col a:hover{color:var(--teal)}
+    .footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .footer-bottom p{color:rgba(255,255,255,.4);font-size:.8rem}
+    .footer-bottom a{color:var(--teal);text-decoration:none}
+    .footer-disclosure{max-width:1200px;margin:16px auto 0;color:rgba(255,255,255,.3);font-size:.75rem;line-height:1.6}
 
-    @media(max-width:768px){
-      .search-row{grid-template-columns:1fr 1fr}
-      .search-btn{grid-column:span 2;justify-content:center}
-      .nav-links{display:none}
-      .hamburger{display:flex}
-      .hero{padding:40px 16px 64px}
-      .phase-banner{gap:16px}
-    }
-    @media(max-width:480px){
-      .search-row{grid-template-columns:1fr}
-      .search-btn{grid-column:span 1}
-    }
+    @media(max-width:900px){.search-row{grid-template-columns:1fr 1fr}.search-btn{grid-column:span 2;justify-content:center}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.search-row{grid-template-columns:1fr}.search-btn{grid-column:span 1}.nav-links a:not(.nav-cta){display:none}.footer-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-  <a href="/index.html" class="nav-logo">SMB<span>Pro</span>Find</a>
+  <a href="/" class="nav-logo">SMBProFind</a>
   <div class="nav-links">
-    <a href="/index.html">Coaches</a>
-    <a href="/centers.html" class="active">Resources</a>
-    <a href="/centers/blog/">Blog</a>
-    <a href="/about.html">About</a>
-    <a href="/advertise.html" class="nav-cta">Get Listed</a>
-  </div>
-  <div class="hamburger" onclick="toggleMobile()">
-    <span></span><span></span><span></span>
+    <a href="/">Directory</a>
+    <a href="/blog.html">📝 Blog</a>
+    <a href="/hubs.html">🔗 Hubs</a>
+    <a href="/centers.html" class="active">🏛️ Resources</a>
+    <a href="/advertise.html">📢 Advertise</a>
+    <a href="/submit.html" class="nav-cta">Get Listed →</a>
   </div>
 </nav>
 
+<!-- BREADCRUMB -->
 <div class="breadcrumb">
-  <a href="/index.html">Home</a> › <strong>SMB Resource Center</strong>
+  <a href="/">Home</a> › <strong>SMB Resource Center</strong>
 </div>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">🏛️ Government-Backed Free Resources</div>
   <h1>Find <em>Free Business Help</em><br>Near You</h1>
   <p>Search SBDCs, SCORE chapters, Women's Business Centers, Veterans resources, and more — all free, all searchable by state.</p>
   <div class="hero-stats">
-    <div class="hero-stat"><strong id="statTotal">—</strong><span>Total Resources</span></div>
+    <div class="hero-stat"><strong id="statTotal">80+</strong><span>Resources Live</span></div>
     <div class="hero-stat"><strong>950+</strong><span>SBDC Locations</span></div>
     <div class="hero-stat"><strong>250+</strong><span>SCORE Chapters</span></div>
     <div class="hero-stat"><strong>All 50</strong><span>States Covered</span></div>
   </div>
 </section>
 
+<!-- SEARCH -->
 <div class="search-wrap">
   <div class="search-card">
     <div class="search-row">
@@ -220,26 +194,7 @@
         <label>State</label>
         <select id="stateFilter">
           <option value="">All States</option>
-          <option>Alabama</option><option>Alaska</option><option>Arizona</option>
-          <option>Arkansas</option><option>California</option><option>Colorado</option>
-          <option>Connecticut</option><option>Delaware</option><option>Florida</option>
-          <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
-          <option>Illinois</option><option>Indiana</option><option>Iowa</option>
-          <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
-          <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
-          <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
-          <option>Missouri</option><option>Montana</option><option>Nebraska</option>
-          <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
-          <option>New Mexico</option><option>New York</option><option>North Carolina</option>
-          <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
-          <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
-          <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
-          <option>Texas</option><option>Utah</option><option>Vermont</option>
-          <option>Virginia</option><option>Washington</option><option>West Virginia</option>
-          <option>Wisconsin</option><option>Wyoming</option>
-          <option>Puerto Rico</option><option>Guam</option><option>Virgin Islands</option>
-          <option>American Samoa</option><option>Northern Mariana Islands</option>
-          <option>Washington DC</option>
+          <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Puerto Rico</option><option>Guam</option><option>Virgin Islands</option><option>American Samoa</option><option>Northern Mariana Islands</option><option>Washington DC</option>
         </select>
       </div>
       <div class="sf">
@@ -262,41 +217,39 @@
   </div>
 </div>
 
-<!-- SPECIALTY FILTERS -->
+<!-- SPECIALTY CHIPS -->
 <div class="specialty-row">
   <span class="spec-label">Specialty:</span>
-  <button class="spec-chip active" data-spec="" onclick="setSpec(this,'')">All</button>
-  <button class="spec-chip" data-spec="women" onclick="setSpec(this,'women')">👩‍💼 Women</button>
-  <button class="spec-chip" data-spec="veteran" onclick="setSpec(this,'veteran')">🎖️ Veteran</button>
-  <button class="spec-chip" data-spec="minority" onclick="setSpec(this,'minority')">🤝 Minority</button>
-  <button class="spec-chip" data-spec="startup" onclick="setSpec(this,'startup')">🚀 Startups</button>
-  <button class="spec-chip" data-spec="rural" onclick="setSpec(this,'rural')">🌾 Rural</button>
-  <button class="spec-chip" data-spec="export" onclick="setSpec(this,'export')">🌐 Export</button>
+  <button class="spec-chip active" onclick="setSpec(this,'')">All</button>
+  <button class="spec-chip" onclick="setSpec(this,'women')">👩‍💼 Women</button>
+  <button class="spec-chip" onclick="setSpec(this,'veteran')">🎖️ Veteran</button>
+  <button class="spec-chip" onclick="setSpec(this,'minority')">🤝 Minority</button>
+  <button class="spec-chip" onclick="setSpec(this,'startup')">🚀 Startups</button>
+  <button class="spec-chip" onclick="setSpec(this,'rural')">🌾 Rural</button>
+  <button class="spec-chip" onclick="setSpec(this,'export')">🌐 Export</button>
 </div>
 
 <!-- TYPE CHIPS -->
 <div class="filters-section">
   <div class="filters-row">
     <span class="filter-label">Type:</span>
-    <button class="filter-chip active" data-type="" onclick="setType(this,'')">All Resources</button>
-    <button class="filter-chip" data-type="sbdc" onclick="setType(this,'sbdc')">📚 SBDC</button>
-    <button class="filter-chip" data-type="score" onclick="setType(this,'score')">⭐ SCORE</button>
-    <button class="filter-chip" data-type="wbc" onclick="setType(this,'wbc')">👩‍💼 Women's</button>
-    <button class="filter-chip" data-type="vboc" onclick="setType(this,'vboc')">🎖️ Veterans</button>
-    <button class="filter-chip" data-type="sba" onclick="setType(this,'sba')">🏛️ SBA</button>
-    <div class="results-meta">
-      <span id="resultsCount"><strong>—</strong> resources</span>
-    </div>
+    <button class="filter-chip active" onclick="setType(this,'')">All Resources</button>
+    <button class="filter-chip" onclick="setType(this,'sbdc')">📚 SBDC</button>
+    <button class="filter-chip" onclick="setType(this,'score')">⭐ SCORE</button>
+    <button class="filter-chip" onclick="setType(this,'wbc')">👩‍💼 Women's</button>
+    <button class="filter-chip" onclick="setType(this,'vboc')">🎖️ Veterans</button>
+    <button class="filter-chip" onclick="setType(this,'sba')">🏛️ SBA</button>
+    <span class="results-meta" id="resultsCount"><strong>—</strong> resources</span>
   </div>
 </div>
 
-<!-- PHASE PROGRESS -->
-<div class="phase-banner" style="padding:16px 24px;margin-top:16px">
-  <div class="phase-item"><strong id="phaseCount">—</strong><span>Phase 1 Live (Federal)</span></div>
-  <div class="phase-item upcoming"><strong>2,500+</strong><span>Phase 2 Coming (State)</span></div>
-  <div class="phase-item upcoming"><strong>13,000+</strong><span>Phase 3 Coming (Local)</span></div>
-  <div style="margin-left:auto;align-self:center;font-size:.82rem;color:var(--gray-600);max-width:300px">
-    🔔 <strong>Get notified</strong> when your county resources go live — <a href="/advertise.html" style="color:var(--teal)">sign up here</a>
+<!-- PHASE BANNER -->
+<div class="phase-banner">
+  <div class="phase-item"><strong id="phaseCount">80+</strong><span>Phase 1 Live (Federal)</span></div>
+  <div class="phase-item dim"><strong>2,500+</strong><span>Phase 2 Coming (State)</span></div>
+  <div class="phase-item dim"><strong>13,000+</strong><span>Phase 3 Coming (Local)</span></div>
+  <div style="margin-left:auto;font-size:.82rem;color:var(--gray-600)">
+    🔔 Get notified when county resources go live → <a href="/advertise.html" style="color:var(--teal);font-weight:600">Sign up</a>
   </div>
 </div>
 
@@ -316,7 +269,7 @@
 
 <!-- STATE HUB LINKS -->
 <div class="state-hubs">
-  <h2>Browse by State</h2>
+  <h2>Browse Resources by State</h2>
   <div class="state-grid" id="stateGrid"></div>
 </div>
 
@@ -324,46 +277,59 @@
 <section class="cta-banner">
   <h2>Want to Learn While You Wait?</h2>
   <p>Your SBDC appointment is booked — find coaches who teach exactly what your local advisor recommends.</p>
-  <a href="/index.html" class="cta-btn">Browse Business Coaches on SMBProFind →</a>
+  <a href="/" class="cta-btn">Browse Business Coaches on SMBProFind →</a>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2025 Coastal Directory LLC ·
-    <a href="/centers.html">SMB Resource Center</a> ·
-    <a href="/index.html">SMBProFind</a> ·
-    <a href="https://www.sba.gov" target="_blank" rel="noopener">SBA.gov</a>
-  </p>
-  <p style="margin-top:6px">Resource information sourced from SBA.gov. Verify directly with each organization before visiting.</p>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">SMBProFind</a>
+      <p>The #1 directory of business influencers, coaches & creators — 1,000+ verified profiles across 15 categories.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Directory</h4>
+      <a href="/">All Influencers</a>
+      <a href="/hubs.html">Category Hubs</a>
+      <a href="/centers.html">Resource Center</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/submit.html">Get Listed</a>
+    </div>
+    <div class="footer-col">
+      <h4>Top Categories</h4>
+      <a href="/entrepreneurship.html">Entrepreneurship</a>
+      <a href="/home-services.html">Home Services</a>
+      <a href="/sales.html">Sales</a>
+      <a href="/marketing-seo.html">Marketing & SEO</a>
+      <a href="/ecommerce.html">E-Commerce</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about.html">About SMBProFind</a>
+      <a href="/advertise.html">Advertise</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</p>
+    <div style="display:flex;gap:16px">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <p class="footer-disclosure"><strong>Disclosure:</strong> SMBProFind participates in affiliate programs including Amazon Associates (tag: <strong>smbinf-20</strong>). Resource information sourced from SBA.gov — verify directly with each organization.</p>
 </footer>
 
 <script>
-  const SUPABASE_URL = 'https://wixahbxwqhgizbotybyj.supabase.co';
-  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8';
+  const SB_URL = 'https://wixahbxwqhgizbotybyj.supabase.co';
+  const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8';
 
-  const typeIcons   = {sbdc:'📚',score:'⭐',wbc:'👩‍💼',vboc:'🎖️',sba:'🏛️',chamber:'🏢',ida:'🏗️',edc:'📈',cdfi:'💰',state:'🏴'};
-  const typeLabels  = {sbdc:'SBDC',score:'SCORE',wbc:"Women's Business Center",vboc:'Veterans (VBOC)',sba:'SBA Office',chamber:'Chamber of Commerce',ida:'Industrial Dev. Authority',edc:'Economic Dev. Corp',cdfi:'CDFI / Microlender',state:'State Program'};
-  const specColors  = {women:'#c2185b',veteran:'#2e7d32',minority:'#512da8',rural:'#558b2f',export:'#1565c0',startup:'#f57f17'};
-  const specBg      = {women:'#fce4ec',veteran:'#e8f5e9',minority:'#ede7f6',rural:'#f9fbe7',export:'#e3f2fd',startup:'#fff8e1'};
+  const ICONS  = {sbdc:'📚',score:'⭐',wbc:'👩‍💼',vboc:'🎖️',sba:'🏛️',chamber:'🏢',ida:'🏗️',edc:'📈',cdfi:'💰',state:'🏴'};
+  const LABELS = {sbdc:'SBDC',score:'SCORE',wbc:"Women's Business Center",vboc:'Veterans (VBOC)',sba:'SBA Office',chamber:'Chamber of Commerce',ida:'Industrial Dev. Authority',edc:'Economic Dev. Corp',cdfi:'CDFI / Microlender',state:'State Program'};
+  const STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 
-  const US_STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
-
-  let currentType = '', currentSpec = '', allData = [];
-
-  async function supabaseFetch(params) {
-    const url = new URL(`${SUPABASE_URL}/rest/v1/smb_resource_centers`);
-    Object.entries(params).forEach(([k,v]) => url.searchParams.set(k,v));
-    const r = await fetch(url, {
-      headers: {
-        'apikey': SUPABASE_KEY,
-        'Authorization': `Bearer ${SUPABASE_KEY}`,
-        'Content-Type': 'application/json',
-        'Prefer': 'count=exact'
-      }
-    });
-    const count = r.headers.get('content-range')?.split('/')[1];
-    const data = await r.json();
-    return { data, count: parseInt(count)||data.length };
-  }
+  let currentType = '', currentSpec = '';
 
   async function loadResources() {
     document.getElementById('loadingState').style.display = 'block';
@@ -374,112 +340,89 @@
     const state = document.getElementById('stateFilter').value;
     const type  = document.getElementById('typeFilter').value || currentType;
 
-    const params = {
-      select: '*',
-      is_active: 'eq.true',
-      order: 'is_featured.desc,name.asc',
-      limit: 200
-    };
-
-    if (state) params.state = `eq.${state}`;
-    if (type)  params.type  = `eq.${type}`;
-    if (currentSpec) params.specialties = `cs.{${currentSpec}}`;
-    if (q) params.or = `name.ilike.*${q}*,city.ilike.*${q}*,org.ilike.*${q}*`;
+    const url = new URL(`${SB_URL}/rest/v1/smb_resource_centers`);
+    url.searchParams.set('select','*');
+    url.searchParams.set('is_active','eq.true');
+    url.searchParams.set('order','is_featured.desc,name.asc');
+    url.searchParams.set('limit','200');
+    if (state) url.searchParams.set('state',`eq.${state}`);
+    if (type)  url.searchParams.set('type',`eq.${type}`);
+    if (currentSpec) url.searchParams.set('specialties',`cs.{${currentSpec}}`);
+    if (q) url.searchParams.set('or',`name.ilike.*${q}*,city.ilike.*${q}*,org.ilike.*${q}*`);
 
     try {
-      const { data, count } = await supabaseFetch(params);
-      allData = data;
+      const r = await fetch(url, {headers:{'apikey':SB_KEY,'Authorization':`Bearer ${SB_KEY}`,'Prefer':'count=exact'}});
+      const total = r.headers.get('content-range')?.split('/')[1];
+      const data  = await r.json();
       renderGrid(data);
-      document.getElementById('resultsCount').innerHTML = `<strong>${count}</strong> resource${count!==1?'s':''}`;
-      document.getElementById('statTotal').textContent = count + '+';
+      const n = parseInt(total)||data.length;
+      document.getElementById('resultsCount').innerHTML = `<strong>${n}</strong> resource${n!==1?'s':''}`;
+      document.getElementById('statTotal').textContent  = n+'+';
+      document.getElementById('phaseCount').textContent = n+'+';
     } catch(e) {
-      console.error(e);
-      document.getElementById('loadingState').innerHTML = '<p style="color:#e53e3e">⚠️ Could not load resources. Please check your connection.</p>';
+      document.getElementById('loadingState').innerHTML = '<p style="color:#e53e3e">⚠️ Could not connect. Please refresh and try again.</p>';
     }
   }
 
   function renderGrid(data) {
     document.getElementById('loadingState').style.display = 'none';
     const grid = document.getElementById('resourceGrid');
-    if (!data.length) {
-      document.getElementById('noResults').style.display = 'block';
-      return;
-    }
+    if (!data.length) { document.getElementById('noResults').style.display='block'; return; }
     grid.innerHTML = data.map(r => {
       const specs = (r.specialties||[]).filter(s=>['women','veteran','minority','rural','export','startup'].includes(s));
-      return `
-        <div class="resource-card${r.is_featured?' featured':''}" onclick="window.open('${r.website||'#'}','_blank')">
-          ${r.is_featured ? '<div class="featured-badge">⭐ Featured Resource</div>' : ''}
-          <div class="card-header">
-            <div class="card-icon ${r.type}">${typeIcons[r.type]||'🏢'}</div>
-            <div style="flex:1">
-              <div class="card-type ${r.type}">${typeLabels[r.type]||r.type.toUpperCase()}</div>
-              <div class="card-name">${r.name}</div>
-              ${r.org ? `<div class="card-org">${r.org}</div>` : ''}
-            </div>
+      return `<div class="resource-card${r.is_featured?' featured':''}" onclick="window.open('${r.website||'#'}','_blank')">
+        <div class="card-header">
+          <div class="card-icon ${r.type}">${ICONS[r.type]||'🏢'}</div>
+          <div style="flex:1">
+            <div class="card-type ${r.type}">${LABELS[r.type]||r.type}</div>
+            <div class="card-name">${r.name}</div>
+            ${r.org?`<div class="card-org">${r.org}</div>`:''}
           </div>
-          <div class="card-location">📍 ${r.city||''}${r.city&&r.state?', ':''}${r.state||''}</div>
-          ${(r.services||[]).length ? `<div class="card-services">${r.services.slice(0,4).map(s=>`<span class="service-tag">${s}</span>`).join('')}</div>` : ''}
-          ${specs.length ? `<div class="spec-tags">${specs.map(s=>`<span class="spec-tag ${s}">${s.charAt(0).toUpperCase()+s.slice(1)}</span>`).join('')}</div>` : ''}
-          <div class="card-footer">
-            ${r.is_free ? '<span class="card-free-badge">✓ Free Services</span>' : '<span></span>'}
-            ${r.website ? `<a class="card-link" href="${r.website}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Visit Website →</a>` : ''}
-          </div>
-        </div>`;
+        </div>
+        <div class="card-location">📍 ${r.city||''}${r.city&&r.state?', ':''}${r.state||''}</div>
+        ${(r.services||[]).length?`<div class="card-services">${r.services.slice(0,4).map(s=>`<span class="service-tag">${s}</span>`).join('')}</div>`:''}
+        ${specs.length?`<div class="spec-tags">${specs.map(s=>`<span class="spec-tag ${s}">${s.charAt(0).toUpperCase()+s.slice(1)}</span>`).join('')}</div>`:''}
+        <div class="card-footer">
+          ${r.is_free?'<span class="card-free-badge">✓ Free Services</span>':'<span></span>'}
+          ${r.website?`<a class="card-link" href="${r.website}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Visit Website →</a>`:''}
+        </div>
+      </div>`;
     }).join('');
   }
 
   function setType(el, type) {
     document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
-    el.classList.add('active');
-    currentType = type;
+    el.classList.add('active'); currentType = type;
     document.getElementById('typeFilter').value = type;
     loadResources();
   }
 
   function setSpec(el, spec) {
     document.querySelectorAll('.spec-chip').forEach(c=>c.classList.remove('active'));
-    el.classList.add('active');
-    currentSpec = spec;
+    el.classList.add('active'); currentSpec = spec;
     loadResources();
   }
 
   function resetFilters() {
-    document.getElementById('searchInput').value = '';
-    document.getElementById('stateFilter').value = '';
-    document.getElementById('typeFilter').value = '';
-    currentType = ''; currentSpec = '';
+    document.getElementById('searchInput').value='';
+    document.getElementById('stateFilter').value='';
+    document.getElementById('typeFilter').value='';
+    currentType=''; currentSpec='';
     document.querySelectorAll('.filter-chip').forEach((c,i)=>c.classList.toggle('active',i===0));
     document.querySelectorAll('.spec-chip').forEach((c,i)=>c.classList.toggle('active',i===0));
     loadResources();
   }
 
   function buildStateGrid() {
-    const grid = document.getElementById('stateGrid');
-    grid.innerHTML = US_STATES.map(s => {
-      const slug = s.toLowerCase().replace(/\s+/g,'-');
-      return `<a href="/centers/${slug}.html" class="state-link">${s} <span class="state-count">›</span></a>`;
-    }).join('');
+    document.getElementById('stateGrid').innerHTML = STATES.map(s =>
+      `<a href="/centers/${s.toLowerCase().replace(/\s+/g,'-')}.html" class="state-link">${s} <span style="color:var(--gray-400)">›</span></a>`
+    ).join('');
   }
 
-  function toggleMobile() {
-    const links = document.querySelector('.nav-links');
-    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '64px';
-    links.style.right = '0';
-    links.style.background = 'var(--navy)';
-    links.style.padding = '12px';
-    links.style.borderRadius = '0 0 8px 8px';
-  }
-
-  // EVENT LISTENERS
   document.getElementById('searchInput').addEventListener('keyup', e => { if(e.key==='Enter') loadResources(); });
   document.getElementById('stateFilter').addEventListener('change', loadResources);
   document.getElementById('typeFilter').addEventListener('change', loadResources);
 
-  // INIT
   buildStateGrid();
   loadResources();
 </script>
