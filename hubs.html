@@ -82,7 +82,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
 
 <div class="content">
 
-  <p class="section-label">🏆 15 Industry Hub Pages</p>
+  <p class="section-label">🏆 17 Industry Hub Pages</p>
   <div class="hub-grid">
 
     <a href="entrepreneurship.html" class="hub-card">
@@ -90,6 +90,22 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
       <div class="hub-card-body">
         <p class="hub-desc">Business building, offer creation, systems, scaling, and the full journey from idea to 8-figure company.</p>
         <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Alex Hormozi</span><span class="hub-link-btn">Gary Vee</span></div>
+      </div>
+    </a>
+
+    <a href="startup.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🚀</div><div class="hub-name">Startup</div><div class="hub-count">70+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Pre-revenue founders, SaaS builders, bootstrappers, VC-backed startups — product-market fit, fundraising, and zero-to-one growth.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Y Combinator</span><span class="hub-link-btn">Naval Ravikant</span></div>
+      </div>
+    </a>
+
+    <a href="eta-buy-a-business.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🔑</div><div class="hub-name">ETA / Buy a Business</div><div class="hub-count">76+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Entrepreneurship Through Acquisition — buying existing SMBs, SBA loans, search funds, due diligence, and deal structuring.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Walker Deibel</span><span class="hub-link-btn">Codie Sanchez</span></div>
       </div>
     </a>
 
@@ -130,6 +146,14 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
       <div class="hub-card-body">
         <p class="hub-desc">FDD due diligence, franchise investment, multi-unit operations, and franchisee-to-franchisor strategy.</p>
         <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Erik Van Horn</span><span class="hub-link-btn">Brian Beers</span></div>
+      </div>
+    </a>
+
+    <a href="eta-buy-a-business.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🔑</div><div class="hub-name">ETA / Buy a Business</div><div class="hub-count">75+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Search funds, SBA acquisition loans, business valuation, due diligence, and post-close operations.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Walker Deibel</span><span class="hub-link-btn">Codie Sanchez</span></div>
       </div>
     </a>
 
@@ -189,7 +213,15 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
       </div>
     </a>
 
-    </div>
+    <a href="startup.html" class="hub-card">
+      <div class="hub-card-top"><div class="hub-icon">🚀</div><div class="hub-name">Startup</div><div class="hub-count">45+ coaches</div></div>
+      <div class="hub-card-body">
+        <p class="hub-desc">Fundraising, product-market fit, MVPs, pitch decks, VC vs. bootstrapping, and founder education.</p>
+        <div class="hub-links"><span class="hub-link-btn primary">View Hub →</span><span class="hub-link-btn">Y Combinator</span></div>
+      </div>
+    </a>
+
+  </div>
 
   <div class="seo-links-section">
     <h2>📰 Trending Guides & SEO Pages</h2>
@@ -286,7 +318,7 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
     
 
     try{
-      const r=await fetch(url,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'count=exact'}});
+      const r=await fetch(rawUrl,{headers:{'apikey':SB_KEY,'Authorization':'Bearer '+SB_KEY,'Prefer':'count=exact'}});
       const total=r.headers.get('content-range')?.split('/')[1];
       const data=await r.json();
       loading.style.display='none';
@@ -343,6 +375,8 @@ footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:36px 24px 20px
       <div class="footer-col">
         <h5>Top Hubs</h5>
         <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="startup.html">Startup</a>
+        <a href="eta-buy-a-business.html">ETA / Buy a Biz</a>
         <a href="home-services.html">Home Services</a>
         <a href="sales.html">Sales</a>
         <a href="marketing-seo.html">Marketing & SEO</a>
