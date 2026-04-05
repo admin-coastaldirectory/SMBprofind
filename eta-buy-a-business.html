@@ -493,7 +493,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:36px 24px 20px;
   <div class="fi2">
     <div class="fg">
       <div class="fb2"><a href="index.html" class="logo">SMBPro<span>Find</span></a><p>The #1 directory of business influencers, coaches &amp; creators.</p></div>
-      <div class="fc"><h5>Directory</h5><a href="index.html">All Influencers</a><a href="hubs.html">Category Hubs</a><a href="blog.html">Blog</a><a href="submit.html">Get Listed</a></div>
+      <div class="fc"><h5>Directory</h5><a href="index.html">All Influencers</a><a href="hubs.html">Category Hubs</a><a href="centers.html">🏛️ Resources</a><a href="blog.html">Blog</a><a href="submit.html">Get Listed</a></div>
       <div class="fc"><h5>Top Hubs</h5><a href="entrepreneurship.html">Entrepreneurship</a><a href="home-services.html">Home Services</a><a href="sales.html">Sales</a><a href="marketing-seo.html">Marketing &amp; SEO</a><a href="ecommerce.html">E-Commerce</a></div>
       <div class="fc"><h5>Company</h5><a href="about.html">About</a><a href="advertise.html">Advertise</a><a href="privacy.html">Privacy Policy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div>
     </div>
@@ -536,8 +536,8 @@ async function load(KW){
   let data=[];
   if(cfg.sbUrl&&cfg.sbKey){
     try{
-      const sbRes=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&category=eq.eta&order=id.asc&limit=1000',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
-      if(sbRes.ok){const rows=await sbRes.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
+      const r=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&order=id.asc',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
+      if(r.ok){const rows=await r.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
     }catch(e){}
   }
   if(!data.length){try{const l=localStorage.getItem('smb_influencers');if(l)data=JSON.parse(l);}catch(e){}}

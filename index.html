@@ -1371,6 +1371,7 @@
         <h5>Directory</h5>
         <a href="index.html">All Influencers</a>
         <a href="hubs.html">Category Hubs</a>
+        <a href="centers.html">🏛️ Resources</a>
         <a href="blog.html">Blog</a>
         <a href="submit.html">Get Listed</a>
       </div>
@@ -1511,23 +1512,13 @@ function getInfluencerCats(inf) {
 async function fetchFromSupabase() {
   if (!CFG.sbUrl || !CFG.sbKey) return null;
   try {
-    let allRows = [];
-    let offset = 0;
-    const pageSize = 1000;
-    while (true) {
-      const res = await fetch(
-        `${CFG.sbUrl}/rest/v1/${CFG.sbTable}?select=*&order=id.asc&limit=${pageSize}&offset=${offset}`,
-        { headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}`, Prefer: 'count=exact' } }
-      );
-      if (!res.ok) break;
-      const rows = await res.json();
-      if (!rows.length) break;
-      allRows = allRows.concat(rows);
-      if (rows.length < pageSize) break;
-      offset += pageSize;
-    }
-    if (!allRows.length) return null;
-    return allRows.map(r => {
+    const res = await fetch(
+      `${CFG.sbUrl}/rest/v1/${CFG.sbTable}?select=*&order=id.asc`,
+      { headers: { apikey: CFG.sbKey, Authorization: `Bearer ${CFG.sbKey}` } }
+    );
+    if (!res.ok) return null;
+    const rows = await res.json();
+    return rows.map(r => {
       const d = r.data || {};
       return { id: r.id, name: r.name || d.name, category: r.category || d.category, ...d };
     });

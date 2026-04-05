@@ -1,396 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SMB Resource Center — Free Business Help Near You | SMBProFind</title>
-<meta name="description" content="Find free small business help near you. Search SBDCs, SCORE chapters, Women's Business Centers, Veterans resources, SBA offices and more — searchable by state, city, and specialty.">
-<link rel="canonical" href="https://smbprofind.netlify.app/centers">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "SMB Resource Center — Free Business Help Near You",
-  "description": "Directory of free small business resources including SBDCs, SCORE chapters, Women's Business Centers, and Veterans Business Outreach Centers across all 50 states.",
-  "url": "https://smbprofind.netlify.app/centers",
-  "isPartOf": { "@type": "WebSite", "name": "SMBProFind", "url": "https://smbprofind.netlify.app" }
-}
-</script>
-<style>
-:root{--navy:#0f2044;--navy-mid:#1a3260;--teal:#00b894;--teal-dark:#00967a;--teal-light:#e6faf6;--gold:#f4b942;--white:#fff;--off:#f8fafc;--gray-200:#e2e8f0;--text:#1e293b;--muted:#64748b;--sh:0 2px 12px rgba(15,32,68,.09);--sh2:0 8px 28px rgba(15,32,68,.16);--r:12px;--rs:8px;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;color:var(--text);background:var(--off);line-height:1.6;}
-nav{position:sticky;top:0;z-index:100;background:var(--navy);height:64px;display:flex;align-items:center;padding:0 24px;box-shadow:0 2px 12px rgba(0,0,0,.2);}
-.logo{font-size:1.4rem;font-weight:800;text-decoration:none;color:#fff;letter-spacing:-.5px;}.logo span{color:var(--teal);}
-.nav-links{display:flex;align-items:center;gap:6px;margin-left:auto;}
-.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.88rem;font-weight:500;padding:6px 12px;border-radius:var(--rs);transition:.2s;}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.1);}
-.nav-links a.cta{background:var(--teal);color:#fff;font-weight:700;}
-.nav-links a.active{color:var(--teal);}
-.bc{max-width:1200px;margin:0 auto;padding:12px 20px;font-size:.8rem;color:var(--muted);}
-.bc a{color:var(--muted);text-decoration:none;}
-.hero{background:linear-gradient(135deg,var(--navy),var(--navy-mid));color:#fff;padding:52px 24px 44px;text-align:center;}
-.hero-badge{display:inline-block;background:rgba(0,184,148,.2);color:var(--teal);border:1px solid rgba(0,184,148,.4);padding:4px 14px;border-radius:20px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
-.hero h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:12px;}
-.hero h1 em{color:var(--teal);font-style:normal;}
-.hero p{font-size:.97rem;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto 24px;}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-bottom:3px solid var(--teal);}
-.stat{padding:18px 16px;text-align:center;border-right:1px solid var(--gray-200);}
-.stat:last-child{border-right:none;}
-.stat-n{font-size:1.8rem;font-weight:800;color:var(--navy);}
-.stat-l{font-size:.67rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:3px;}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMB Resource Center | Free Small Business Help Near You | SMBProFind</title>
+  <meta name="description" content="Find free small business help near you. Search 1,800+ SBDC centers, SCORE chapters, Women's Business Centers, Veterans resources and more — searchable by state, city, and resource type." />
+  <meta name="keywords" content="small business development center, SBDC, SCORE, free business counseling, small business resources, SBA, women's business center, veterans business" />
+  <link rel="canonical" href="https://smbprofind.netlify.app/centers.html" />
+  <meta property="og:title" content="SMB Resource Center — Free Business Help Near You" />
+  <meta property="og:description" content="Search 1,800+ free small business resources by state, city, and type." />
+  <meta property="og:url" content="https://smbprofind.netlify.app/centers.html" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:#0f2044; --navy-light:#1a3060; --teal:#00b894; --teal-dark:#009d7e;
+      --teal-light:#e6faf6; --white:#ffffff; --gray-50:#f8f9fa; --gray-100:#f1f3f5;
+      --gray-200:#e9ecef; --gray-400:#adb5bd; --gray-600:#6c757d; --gray-800:#343a40;
+      --shadow-sm:0 1px 3px rgba(15,32,68,.08); --shadow-md:0 4px 16px rgba(15,32,68,.12);
+      --shadow-lg:0 8px 32px rgba(15,32,68,.16); --radius:12px; --radius-sm:8px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'DM Sans',sans-serif;background:var(--gray-50);color:var(--gray-800);line-height:1.6}
 
-/* AI Summary */
-.ai-summary-wrap{max-width:1200px;margin:0 auto;padding:28px 20px 0;}
-.ai-summary{background:#fff;border:1.5px solid var(--teal);border-radius:var(--r);padding:24px 28px;margin-bottom:28px;position:relative;}
-.ai-summary-label{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--teal-dark);margin-bottom:14px;}
-.ai-summary-label::before{content:'✦';font-size:.9rem;}
-.ai-summary h2{font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:12px;}
-.ai-summary p{font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:10px;}
-.ai-summary p:last-child{margin-bottom:0;}
-.ai-summary strong{color:var(--text);}
-.ai-summary-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
-.ai-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:20px;font-size:.75rem;font-weight:600;border:1.5px solid;}
-.ai-pill.gov{background:#e6f0ff;color:#1a3d8f;border-color:#b3caf5;}
-.ai-pill.free{background:#e6faf6;color:var(--teal-dark);border-color:#a7f3d0;}
-.ai-pill.all50{background:#fef9c3;color:#854d0e;border-color:#fde68a;}
+    /* ── NAV — matches live SMBProFind nav exactly ── */
+    nav{background:var(--navy);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+    .nav-logo{font-family:'DM Serif Display',serif;font-size:1.35rem;color:var(--white);text-decoration:none;font-weight:400;letter-spacing:-.3px}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-links a{color:rgba(255,255,255,.8);text-decoration:none;font-size:.875rem;font-weight:500;padding:7px 13px;border-radius:6px;transition:all .2s;white-space:nowrap}
+    .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.1)}
+    .nav-links a.active{color:var(--teal)}
+    .nav-cta{background:var(--teal)!important;color:var(--navy)!important;font-weight:700!important;border-radius:7px!important}
+    .nav-cta:hover{background:var(--teal-dark)!important;color:var(--navy)!important}
 
-/* Search + Filters */
-.search-section{background:#fff;border-bottom:1px solid var(--gray-200);padding:18px 24px;position:sticky;top:64px;z-index:50;}
-.search-inner{max-width:1200px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
-.search-input{flex:1;min-width:200px;padding:10px 16px;border:1.5px solid var(--gray-200);border-radius:var(--rs);font-size:.88rem;font-family:inherit;outline:none;}
-.search-input:focus{border-color:var(--teal);}
-select.filter{padding:10px 14px;border:1.5px solid var(--gray-200);border-radius:var(--rs);font-size:.88rem;font-family:inherit;background:#fff;outline:none;cursor:pointer;}
-select.filter:focus{border-color:var(--teal);}
-.search-btn{background:var(--teal);color:#fff;border:none;padding:10px 20px;border-radius:var(--rs);font-size:.88rem;font-weight:700;cursor:pointer;font-family:inherit;}
-.result-count{font-size:.8rem;color:var(--muted);padding:6px 0;}
+    /* ── BREADCRUMB ── */
+    .breadcrumb{background:var(--white);border-bottom:1px solid var(--gray-200);padding:10px 32px;font-size:.8rem;color:var(--gray-600)}
+    .breadcrumb a{color:var(--teal);text-decoration:none}
+    .breadcrumb a:hover{text-decoration:underline}
 
-/* Type filter pills */
-.type-pills{max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;gap:8px;flex-wrap:wrap;}
-.type-pill{padding:6px 14px;border-radius:20px;border:1.5px solid var(--gray-200);font-size:.78rem;font-weight:600;cursor:pointer;background:#fff;color:var(--muted);transition:.15s;font-family:inherit;}
-.type-pill:hover,.type-pill.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+    /* ── HERO ── */
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 60%,#1e4a7a 100%);padding:64px 32px 88px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,184,148,.12) 0%,transparent 65%)}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(0,184,148,.15);border:1px solid rgba(0,184,148,.3);color:var(--teal);font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:20px}
+    .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.2rem);color:var(--white);line-height:1.15;max-width:720px;margin:0 auto 16px}
+    .hero h1 em{font-style:italic;color:var(--teal)}
+    .hero p{color:rgba(255,255,255,.7);font-size:1.05rem;max-width:580px;margin:0 auto 36px}
+    .hero-stats{display:flex;gap:32px;justify-content:center;flex-wrap:wrap}
+    .hero-stat strong{display:block;font-size:1.8rem;font-weight:700;color:var(--teal);line-height:1}
+    .hero-stat span{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em}
 
-/* Resource cards */
-.content{max-width:1200px;margin:0 auto;padding:20px 20px 60px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;}
-.card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;transition:.2s;border:1.5px solid transparent;display:flex;flex-direction:column;}
-.card:hover{box-shadow:var(--sh2);border-color:var(--teal);transform:translateY(-2px);}
-.card-top{padding:18px 20px 14px;border-bottom:1px solid var(--gray-200);}
-.card-type-badge{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 9px;border-radius:10px;margin-bottom:10px;}
-.card-name{font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.3;}
-.card-loc{font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:4px;}
-.card-body{padding:14px 20px;flex:1;}
-.card-desc{font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
-.card-services{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px;}
-.svc-tag{font-size:.68rem;background:var(--off);border:1px solid var(--gray-200);color:var(--muted);padding:2px 8px;border-radius:4px;}
-.card-footer{padding:12px 20px;border-top:1px solid var(--gray-200);display:flex;gap:8px;align-items:center;}
-.card-link{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:600;color:var(--teal-dark);text-decoration:none;padding:6px 12px;border:1.5px solid var(--teal);border-radius:6px;transition:.15s;}
-.card-link:hover{background:var(--teal);color:#fff;}
-.card-phone{font-size:.75rem;color:var(--muted);}
-.no-results{text-align:center;padding:60px 20px;color:var(--muted);}
+    /* ── SEARCH ── */
+    .search-wrap{max-width:900px;margin:-36px auto 0;padding:0 24px;position:relative;z-index:10}
+    .search-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:24px}
+    .search-row{display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:12px;align-items:end}
+    .sf label{display:block;font-size:.72rem;font-weight:700;color:var(--gray-600);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px}
+    .sf input,.sf select{width:100%;height:46px;border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);padding:0 12px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--gray-800);background:var(--gray-50);outline:none;transition:border-color .2s}
+    .sf input:focus,.sf select:focus{border-color:var(--teal);background:var(--white)}
+    .search-btn{height:46px;background:var(--teal);color:var(--navy);border:none;border-radius:var(--radius-sm);padding:0 24px;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .2s;white-space:nowrap}
+    .search-btn:hover{background:var(--teal-dark)}
 
-/* CTA */
-.cta-bar{background:var(--teal-light);border:1.5px solid var(--teal);border-radius:var(--r);padding:24px 28px;margin:0 0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.cta-bar p{font-size:.9rem;color:var(--text);line-height:1.6;}
-.cta-bar a{white-space:nowrap;background:var(--navy);color:#fff;text-decoration:none;padding:10px 20px;border-radius:var(--rs);font-size:.85rem;font-weight:700;}
+    /* ── SPECIALTY CHIPS ── */
+    .specialty-row{max-width:1200px;margin:20px auto 0;padding:0 24px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .spec-label{font-size:.75rem;font-weight:700;color:var(--gray-600);text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
+    .spec-chip{padding:5px 13px;border-radius:100px;border:1.5px solid var(--gray-200);background:var(--white);font-size:.78rem;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .2s}
+    .spec-chip:hover{border-color:var(--teal);color:var(--teal)}
+    .spec-chip.active{background:var(--navy);border-color:var(--navy);color:var(--white)}
 
-footer{background:var(--navy);color:rgba(255,255,255,.7);padding:36px 24px 20px;margin-top:48px;}
-.fi{max-width:1280px;margin:0 auto;}
-.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;margin-bottom:24px;}
-.fb .logo{font-size:1.2rem;}.fb p{font-size:.8rem;margin-top:6px;}
-.fc h5{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#fff;margin-bottom:8px;}
-.fc a{display:block;font-size:.81rem;color:rgba(255,255,255,.6);text-decoration:none;margin-bottom:5px;}.fc a:hover{color:var(--teal);}
-.fb2{border-top:1px solid rgba(255,255,255,.12);padding-top:16px;font-size:.76rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-.fb2 a{color:rgba(255,255,255,.5);text-decoration:none;}
-@media(max-width:700px){.stats{grid-template-columns:1fr 1fr;}.search-inner{flex-direction:column;}.grid{grid-template-columns:1fr;}.nav-links a:not(.cta){display:none;}}
-</style>
+    /* ── TYPE CHIPS ── */
+    .filters-section{max-width:1200px;margin:12px auto 0;padding:0 24px}
+    .filters-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .filter-label{font-size:.75rem;font-weight:700;color:var(--gray-600);text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
+    .filter-chip{padding:6px 14px;border-radius:100px;border:1.5px solid var(--gray-200);background:var(--white);font-size:.82rem;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .2s}
+    .filter-chip:hover{border-color:var(--teal);color:var(--teal)}
+    .filter-chip.active{background:var(--teal);border-color:var(--teal);color:var(--navy);font-weight:600}
+    .results-meta{margin-left:auto;font-size:.82rem;color:var(--gray-600)}
+    .results-meta strong{color:var(--navy)}
+
+    /* ── GRID ── */
+    .grid-section{max-width:1200px;margin:20px auto 64px;padding:0 24px}
+    .resource-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+
+    /* ── CARD ── */
+    .resource-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-sm);border:1.5px solid var(--gray-200);padding:22px;transition:all .2s;display:flex;flex-direction:column;gap:12px;cursor:pointer}
+    .resource-card:hover{box-shadow:var(--shadow-md);border-color:var(--teal);transform:translateY(-2px)}
+    .resource-card.featured{border-color:var(--teal);background:linear-gradient(135deg,var(--white),#f0fdf8)}
+    .card-header{display:flex;align-items:flex-start;gap:12px}
+    .card-icon{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+    .card-icon.sbdc{background:#e6f4ff}.card-icon.score{background:#fff3e6}.card-icon.wbc{background:#fce6ff}.card-icon.vboc{background:#e6ffe9}.card-icon.sba{background:#fff0e6}.card-icon.chamber{background:#fef9e6}.card-icon.ida{background:#e6f0fe}.card-icon.edc{background:#e6fef9}.card-icon.cdfi{background:#fff5e6}
+    .card-type{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+    .card-type.sbdc{color:#2196f3}.card-type.score{color:#ff9800}.card-type.wbc{color:#9c27b0}.card-type.vboc{color:#4caf50}.card-type.sba{color:#f44336}.card-type.chamber,.card-type.ida,.card-type.edc{color:#1976d2}.card-type.cdfi{color:#e65100}
+    .card-name{font-size:.95rem;font-weight:700;color:var(--navy);line-height:1.3}
+    .card-org{font-size:.78rem;color:var(--gray-600);margin-top:2px}
+    .card-location{display:flex;align-items:center;gap:5px;font-size:.8rem;color:var(--gray-600)}
+    .card-services{display:flex;flex-wrap:wrap;gap:6px}
+    .service-tag{font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:100px;background:var(--gray-100);color:var(--gray-600)}
+    .spec-tags{display:flex;flex-wrap:wrap;gap:5px}
+    .spec-tag{font-size:.68rem;font-weight:600;padding:2px 8px;border-radius:100px}
+    .spec-tag.women{background:#fce4ec;color:#c2185b}.spec-tag.veteran{background:#e8f5e9;color:#2e7d32}.spec-tag.minority{background:#ede7f6;color:#512da8}.spec-tag.rural{background:#f9fbe7;color:#558b2f}.spec-tag.export{background:#e3f2fd;color:#1565c0}.spec-tag.startup{background:#fff8e1;color:#f57f17}
+    .card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--gray-100);margin-top:auto}
+    .card-free-badge{font-size:.7rem;font-weight:700;color:var(--teal-dark);background:var(--teal-light);padding:3px 10px;border-radius:100px}
+    .card-link{font-size:.8rem;font-weight:600;color:var(--teal);text-decoration:none;display:flex;align-items:center;gap:4px}
+    .card-link:hover{text-decoration:underline}
+
+    /* ── LOADING / EMPTY ── */
+    .loading{text-align:center;padding:64px 24px;color:var(--gray-600)}
+    .loading-spinner{width:36px;height:36px;border:3px solid var(--gray-200);border-top-color:var(--teal);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 16px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .no-results{text-align:center;padding:64px 24px;color:var(--gray-600);display:none}
+    .no-results h3{color:var(--navy);margin-bottom:8px}
+
+    /* ── PHASE BANNER ── */
+    .phase-banner{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius);padding:18px 24px;max-width:1200px;margin:24px auto 0;display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+    .phase-item{text-align:center;flex:1;min-width:120px}
+    .phase-item strong{display:block;font-size:1.4rem;font-weight:700;color:var(--teal)}
+    .phase-item span{font-size:.75rem;color:var(--gray-600)}
+    .phase-item.dim strong{color:var(--gray-400)}
+    .phase-item.dim span{color:var(--gray-400)}
+
+    /* ── STATE GRID ── */
+    .state-hubs{max-width:1200px;margin:40px auto 0;padding:0 24px}
+    .state-hubs h2{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--navy);margin-bottom:16px}
+    .state-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:8px}
+    .state-link{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);text-decoration:none;color:var(--navy);font-size:.83rem;font-weight:500;transition:all .2s}
+    .state-link:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-light)}
+
+    /* ── CTA ── */
+    .cta-banner{background:linear-gradient(135deg,var(--navy),var(--navy-light));padding:56px 24px;text-align:center;margin-top:64px}
+    .cta-banner h2{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--white);margin-bottom:12px}
+    .cta-banner p{color:rgba(255,255,255,.7);max-width:500px;margin:0 auto 28px}
+    .cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:var(--navy);font-weight:700;font-size:.95rem;padding:14px 28px;border-radius:var(--radius-sm);text-decoration:none;transition:background .2s}
+    .cta-btn:hover{background:var(--teal-dark)}
+
+    /* ── FOOTER — matches live site ── */
+    footer{background:var(--navy);padding:48px 32px 32px}
+    .footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer-brand p{color:rgba(255,255,255,.5);font-size:.85rem;margin-top:10px;line-height:1.6}
+    .footer-logo{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--white);text-decoration:none}
+    .footer-col h4{color:rgba(255,255,255,.4);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+    .footer-col a{display:block;color:rgba(255,255,255,.65);text-decoration:none;font-size:.85rem;margin-bottom:7px;transition:color .2s}
+    .footer-col a:hover{color:var(--teal)}
+    .footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .footer-bottom p{color:rgba(255,255,255,.4);font-size:.8rem}
+    .footer-bottom a{color:var(--teal);text-decoration:none}
+    .footer-disclosure{max-width:1200px;margin:16px auto 0;color:rgba(255,255,255,.3);font-size:.75rem;line-height:1.6}
+
+    @media(max-width:900px){.search-row{grid-template-columns:1fr 1fr}.search-btn{grid-column:span 2;justify-content:center}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.search-row{grid-template-columns:1fr}.search-btn{grid-column:span 1}.nav-links a:not(.nav-cta){display:none}.footer-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-  <a href="index.html" class="logo">SMBPro<span>Find</span></a>
+  <a href="/" class="nav-logo">SMBProFind</a>
   <div class="nav-links">
-    <a href="index.html">Directory</a>
-    <a href="blog.html">📝 Blog</a>
-    <a href="hubs.html">🔗 Hubs</a>
-    <a href="centers.html" class="active">🏛️ Free Help</a>
-    <a href="advertise.html">📢 Advertise</a>
-    <a href="submit.html" class="cta">Get Listed →</a>
+    <a href="/">Directory</a>
+    <a href="/blog.html">📝 Blog</a><a href="centers.html">🏛️ Resources</a>
+    <a href="/hubs.html">🔗 Hubs</a>
+    <a href="/centers.html" class="active">🏛️ Resources</a>
+    <a href="/advertise.html">📢 Advertise</a>
+    <a href="/submit.html" class="nav-cta">Get Listed →</a>
   </div>
 </nav>
 
-<div class="bc"><a href="index.html">Home</a> › SMB Resource Center</div>
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="/">Home</a> › <strong>SMB Resource Center</strong>
+</div>
 
-<div class="hero">
+<!-- HERO -->
+<section class="hero">
   <div class="hero-badge">🏛️ Government-Backed Free Resources</div>
-  <h1>Find <em>Free Business Help</em> Near You</h1>
+  <h1>Find <em>Free Business Help</em><br>Near You</h1>
   <p>Search SBDCs, SCORE chapters, Women's Business Centers, Veterans resources, and more — all free, all searchable by state.</p>
-  <div style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6);margin-top:4px;">
-    <span>✅ No cost to search</span>
-    <span>✅ Government-verified</span>
-    <span>✅ All 50 states</span>
-    <span>✅ Updated 2025</span>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong id="statTotal">80+</strong><span>Resources Live</span></div>
+    <div class="hero-stat"><strong>950+</strong><span>SBDC Locations</span></div>
+    <div class="hero-stat"><strong>250+</strong><span>SCORE Chapters</span></div>
+    <div class="hero-stat"><strong>All 50</strong><span>States Covered</span></div>
   </div>
-</div>
+</section>
 
-<div class="stats">
-  <div class="stat"><div class="stat-n">1,800+</div><div class="stat-l">Resources Listed</div></div>
-  <div class="stat"><div class="stat-n">950+</div><div class="stat-l">SBDC Locations</div></div>
-  <div class="stat"><div class="stat-n">250+</div><div class="stat-l">SCORE Chapters</div></div>
-  <div class="stat"><div class="stat-n">All 50</div><div class="stat-l">States Covered</div></div>
-</div>
-
-<!-- AI SUMMARY SECTION -->
-<div class="ai-summary-wrap">
-  <div class="ai-summary">
-    <div class="ai-summary-label">AI Summary — What Is This Page?</div>
-    <h2>Your Complete Guide to Free Small Business Resources in America</h2>
-    <p>This page is a searchable directory of <strong>free and low-cost government-backed small business resources</strong> available across all 50 states. Most small business owners don't know these exist — yet they provide the same quality of business planning, financial, and marketing advice you'd pay a consultant thousands of dollars for.</p>
-    <p>The U.S. Small Business Administration (SBA) funds a nationwide network of resource partners including <strong>Small Business Development Centers (SBDCs)</strong> with nearly 1,000 locations offering free one-on-one counseling; <strong>SCORE</strong> with 250+ chapters of volunteer executive mentors; <strong>Women's Business Centers (WBCs)</strong> serving women entrepreneurs; and <strong>Veterans Business Outreach Centers (VBOCs)</strong> supporting military-connected founders. All services listed here are either completely free or very low cost.</p>
-    <p>Use the search and filters below to find resources in your state, city, or by the type of help you need — whether that's writing a business plan, applying for an SBA loan, finding a mentor, or accessing minority business programs. Once you find free local help, come back to <a href="index.html" style="color:var(--teal-dark);font-weight:600;">SMBProFind's influencer directory</a> to find coaches and educators who go deeper on the same topics.</p>
-    <div class="ai-summary-pills">
-      <span class="ai-pill gov">🏛️ SBA-Verified Resources</span>
-      <span class="ai-pill free">✅ Free to Use</span>
-      <span class="ai-pill all50">📍 All 50 States</span>
-      <span class="ai-pill gov">🎓 Business Counseling</span>
-      <span class="ai-pill free">💰 Loan Assistance</span>
-      <span class="ai-pill all50">👩‍💼 Women & Veterans Programs</span>
+<!-- SEARCH -->
+<div class="search-wrap">
+  <div class="search-card">
+    <div class="search-row">
+      <div class="sf">
+        <label>Search</label>
+        <input type="text" id="searchInput" placeholder="City, organization, or keyword…" />
+      </div>
+      <div class="sf">
+        <label>State</label>
+        <select id="stateFilter">
+          <option value="">All States</option>
+          <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Puerto Rico</option><option>Guam</option><option>Virgin Islands</option><option>American Samoa</option><option>Northern Mariana Islands</option><option>Washington DC</option>
+        </select>
+      </div>
+      <div class="sf">
+        <label>Resource Type</label>
+        <select id="typeFilter">
+          <option value="">All Types</option>
+          <option value="sbdc">SBDC</option>
+          <option value="score">SCORE</option>
+          <option value="wbc">Women's Business Center</option>
+          <option value="vboc">Veterans (VBOC)</option>
+          <option value="sba">SBA District Office</option>
+          <option value="chamber">Chamber of Commerce</option>
+          <option value="ida">Industrial Dev. Authority</option>
+          <option value="edc">Economic Dev. Corp</option>
+          <option value="cdfi">CDFI / Microlender</option>
+        </select>
+      </div>
+      <button class="search-btn" onclick="loadResources()">🔍 Search</button>
     </div>
   </div>
+</div>
 
-  <!-- CTA Bar -->
-  <div class="cta-bar">
-    <p>💡 <strong>Pro tip:</strong> Use your free SBDC counselor to build your business plan and apply for SBA loans — then use SMBProFind coaches to sharpen your marketing, sales, and operations skills.</p>
-    <a href="index.html">Browse 1,000+ Coaches →</a>
+<!-- SPECIALTY CHIPS -->
+<div class="specialty-row">
+  <span class="spec-label">Specialty:</span>
+  <button class="spec-chip active" onclick="setSpec(this,'')">All</button>
+  <button class="spec-chip" onclick="setSpec(this,'women')">👩‍💼 Women</button>
+  <button class="spec-chip" onclick="setSpec(this,'veteran')">🎖️ Veteran</button>
+  <button class="spec-chip" onclick="setSpec(this,'minority')">🤝 Minority</button>
+  <button class="spec-chip" onclick="setSpec(this,'startup')">🚀 Startups</button>
+  <button class="spec-chip" onclick="setSpec(this,'rural')">🌾 Rural</button>
+  <button class="spec-chip" onclick="setSpec(this,'export')">🌐 Export</button>
+</div>
+
+<!-- TYPE CHIPS -->
+<div class="filters-section">
+  <div class="filters-row">
+    <span class="filter-label">Type:</span>
+    <button class="filter-chip active" onclick="setType(this,'')">All Resources</button>
+    <button class="filter-chip" onclick="setType(this,'sbdc')">📚 SBDC</button>
+    <button class="filter-chip" onclick="setType(this,'score')">⭐ SCORE</button>
+    <button class="filter-chip" onclick="setType(this,'wbc')">👩‍💼 Women's</button>
+    <button class="filter-chip" onclick="setType(this,'vboc')">🎖️ Veterans</button>
+    <button class="filter-chip" onclick="setType(this,'sba')">🏛️ SBA</button>
+    <span class="results-meta" id="resultsCount"><strong>—</strong> resources</span>
   </div>
 </div>
 
-<!-- SEARCH + FILTERS -->
-<div class="search-section">
-  <div class="search-inner">
-    <input type="text" class="search-input" id="searchInput" placeholder="Search by name, city, or keyword…" oninput="filterCards()">
-    <select class="filter" id="stateFilter" onchange="filterCards()">
-      <option value="">All States</option>
-      <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
-      <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
-      <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
-      <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
-      <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
-      <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
-      <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
-      <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
-      <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
-      <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
-      <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
-      <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
-      <option>Wisconsin</option><option>Wyoming</option><option>Washington DC</option><option>Puerto Rico</option>
-    </select>
-    <select class="filter" id="typeFilter" onchange="filterCards()">
-      <option value="">All Types</option>
-      <option>SBDC</option>
-      <option>SCORE</option>
-      <option>Women's Business Center</option>
-      <option>Veterans (VBOC)</option>
-      <option>APEX Accelerator</option>
-      <option>SBA District Office</option>
-      <option>Chamber of Commerce</option>
-      <option>Economic Development</option>
-      <option>CDFI / Microlender</option>
-    </select>
-    <select class="filter" id="specialtyFilter" onchange="filterCards()">
-      <option value="">All Specialties</option>
-      <option>Free Counseling</option>
-      <option>Loans & Funding</option>
-      <option>Women-Owned</option>
-      <option>Veteran-Owned</option>
-      <option>Minority-Owned</option>
-      <option>Export Assistance</option>
-      <option>Rural Business</option>
-      <option>Startup / Launch</option>
-      <option>Federal Contracting</option>
-    </select>
-    <button class="search-btn" onclick="filterCards()">Search</button>
-  </div>
-  <div style="max-width:1200px;margin:0 auto;padding:6px 20px;">
-    <span class="result-count" id="resultCount"></span>
+<!-- PHASE BANNER -->
+<div class="phase-banner">
+  <div class="phase-item"><strong id="phaseCount">80+</strong><span>Phase 1 Live (Federal)</span></div>
+  <div class="phase-item dim"><strong>2,500+</strong><span>Phase 2 Coming (State)</span></div>
+  <div class="phase-item dim"><strong>13,000+</strong><span>Phase 3 Coming (Local)</span></div>
+  <div style="margin-left:auto;font-size:.82rem;color:var(--gray-600)">
+    🔔 Get notified when county resources go live → <a href="/advertise.html" style="color:var(--teal);font-weight:600">Sign up</a>
   </div>
 </div>
 
-<!-- TYPE PILLS -->
-<div class="type-pills">
-  <button class="type-pill active" onclick="setType('',this)">🔍 All Resources</button>
-  <button class="type-pill" onclick="setType('SBDC',this)">🎓 SBDC</button>
-  <button class="type-pill" onclick="setType('SCORE',this)">🤝 SCORE</button>
-  <button class="type-pill" onclick="setType('Women',this)">👩‍💼 Women's Centers</button>
-  <button class="type-pill" onclick="setType('Veterans',this)">🎖️ Veterans</button>
-  <button class="type-pill" onclick="setType('APEX',this)">⚡ APEX</button>
-  <button class="type-pill" onclick="setType('SBA',this)">🏦 SBA Offices</button>
-  <button class="type-pill" onclick="setType('Chamber',this)">🏪 Chambers</button>
-  <button class="type-pill" onclick="setType('Economic',this)">🏗️ Economic Dev</button>
-</div>
-
-<!-- RESOURCE CARDS -->
-<div class="content">
-  <div class="grid" id="resourceGrid"></div>
-  <div class="no-results hidden" id="noResults">
-    <p style="font-size:1rem;font-weight:600;color:var(--text);margin-bottom:8px;">No resources found</p>
-    <p style="font-size:.88rem;">Try adjusting your search or filters. More resources are being added weekly.</p>
+<!-- GRID -->
+<div class="grid-section">
+  <div id="loadingState" class="loading">
+    <div class="loading-spinner"></div>
+    <p>Loading resources…</p>
+  </div>
+  <div class="resource-grid" id="resourceGrid"></div>
+  <div class="no-results" id="noResults">
+    <h3>No resources found</h3>
+    <p>Try clearing some filters or broadening your search.</p>
+    <button onclick="resetFilters()" style="margin-top:16px;padding:10px 20px;background:var(--teal);color:var(--navy);border:none;border-radius:8px;font-weight:600;cursor:pointer">Clear Filters</button>
   </div>
 </div>
 
+<!-- STATE HUB LINKS -->
+<div class="state-hubs">
+  <h2>Browse Resources by State</h2>
+  <div class="state-grid" id="stateGrid"></div>
+</div>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Want to Learn While You Wait?</h2>
+  <p>Your SBDC appointment is booked — find coaches who teach exactly what your local advisor recommends.</p>
+  <a href="/" class="cta-btn">Browse Business Coaches on SMBProFind →</a>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="fi">
-    <div class="fg">
-      <div class="fb"><a href="index.html" class="logo">SMBPro<span>Find</span></a><p>The #1 directory of business influencers, coaches &amp; free resources.</p></div>
-      <div class="fc"><h5>Directory</h5><a href="index.html">All Coaches</a><a href="hubs.html">Category Hubs</a><a href="blog.html">Blog</a><a href="submit.html">Get Listed</a></div>
-      <div class="fc"><h5>Free Resources</h5><a href="centers.html">Resource Center</a><a href="centers.html?state=New York">New York</a><a href="centers.html?state=California">California</a><a href="centers.html?state=Texas">Texas</a></div>
-      <div class="fc"><h5>Company</h5><a href="about.html">About</a><a href="advertise.html">Advertise</a><a href="privacy.html">Privacy Policy</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo">SMBProFind</a>
+      <p>The #1 directory of business influencers, coaches & creators — 1,000+ verified profiles across 15 categories.</p>
     </div>
-    <div class="fb2">
-      <span>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</span>
-      <span><a href="privacy.html">Privacy</a> · <a href="affiliate-disclosure.html">Disclosure</a></span>
+    <div class="footer-col">
+      <h4>Directory</h4>
+      <a href="/">All Influencers</a>
+      <a href="/hubs.html">Category Hubs</a>
+      <a href="/centers.html">Resource Center</a>
+      <a href="/blog.html">Blog</a><a href="centers.html">🏛️ Resources</a>
+      <a href="/submit.html">Get Listed</a>
+    </div>
+    <div class="footer-col">
+      <h4>Top Categories</h4>
+      <a href="/entrepreneurship.html">Entrepreneurship</a>
+      <a href="/home-services.html">Home Services</a>
+      <a href="/sales.html">Sales</a>
+      <a href="/marketing-seo.html">Marketing & SEO</a>
+      <a href="/ecommerce.html">E-Commerce</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about.html">About SMBProFind</a>
+      <a href="/advertise.html">Advertise</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
     </div>
   </div>
+  <div class="footer-bottom">
+    <p>© 2025 SMBProFind · Coastal Directory, LLC · Wyoming</p>
+    <div style="display:flex;gap:16px">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+  <p class="footer-disclosure"><strong>Disclosure:</strong> SMBProFind participates in affiliate programs including Amazon Associates (tag: <strong>smbinf-20</strong>). Resource information sourced from SBA.gov — verify directly with each organization.</p>
 </footer>
 
 <script>
-// ── RESOURCE DATA ─────────────────────────────────────────────────────────
-const RESOURCES = [
-  // FEDERAL — SBA DISTRICT OFFICES
-  {name:'SBA New York District Office',type:'SBA District Office',state:'New York',city:'New York',phone:'212-264-4354',website:'https://www.sba.gov/offices/district/ny/new-york',desc:'The SBA New York District Office serves NYC and surrounding areas with SBA loan programs, business counseling, procurement assistance, and disaster recovery resources.',services:['SBA 7(a) Loans','504 Loans','Contracting','8(a) Program'],specialty:['Loans & Funding','Federal Contracting']},
-  {name:'SBA Los Angeles District Office',type:'SBA District Office',state:'California',city:'Los Angeles',phone:'818-552-3215',website:'https://www.sba.gov/offices/district/ca/los-angeles',desc:'Serving greater Los Angeles with SBA loan programs, small business certifications, and access to capital resources for minority-owned, women-owned, and veteran-owned businesses.',services:['SBA Loans','Certifications','Export Help'],specialty:['Loans & Funding','Minority-Owned']},
-  {name:'SBA Texas District Office',type:'SBA District Office',state:'Texas',city:'Houston',phone:'713-773-6500',website:'https://www.sba.gov/offices/district/tx/houston',desc:'The Houston SBA District Office covers East Texas with the full suite of SBA programs including lending, business development, and federal contracting assistance.',services:['SBA 7(a) Loans','Business Counseling','Federal Contracting'],specialty:['Loans & Funding','Federal Contracting']},
-  {name:'SBA Florida District Office',type:'SBA District Office',state:'Florida',city:'Miami',phone:'305-536-5521',website:'https://www.sba.gov/offices/district/fl/miami',desc:'The Miami SBA District Office serves South Florida with bilingual services, SBA loans, SBIC investments, and export assistance for Florida businesses.',services:['SBA Loans','Export Assistance','Disaster Recovery'],specialty:['Loans & Funding','Export Assistance']},
+  const SB_URL = 'https://wixahbxwqhgizbotybyj.supabase.co';
+  const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndpeGFoYnh3cWhnaXpib3R5YnlqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwMTgzNjUsImV4cCI6MjA4ODU5NDM2NX0.Ps-IpYm6xKbj34Mu0cz921w3IF_IxaQfegH4g4i8Ho8';
 
-  // SBDC LEAD CENTERS — ALL 50 STATES
-  {name:'New York SBDC — Statewide Network',type:'SBDC',state:'New York',city:'Albany',phone:'518-944-2840',website:'https://www.nyssbdc.org',desc:'The New York Small Business Development Center network serves entrepreneurs across the state with 24 regional centers providing free one-on-one business counseling, business plan development, loan packaging, market research, and export assistance.',services:['Free Counseling','Business Plans','Loan Packaging','Market Research','Export Help'],specialty:['Free Counseling','Loans & Funding','Startup / Launch','Export Assistance']},
-  {name:'California SBDC Network',type:'SBDC',state:'California',city:'Sacramento',phone:'916-845-6670',website:'https://www.californiasbdc.org',desc:'California\'s SBDC network operates through multiple regional hosts providing free business advising to entrepreneurs across the state\'s diverse economy covering tech startups, agriculture, manufacturing, and service businesses.',services:['Free Counseling','Business Plans','Access to Capital','Tech Assistance'],specialty:['Free Counseling','Startup / Launch','Loans & Funding']},
-  {name:'Texas SBDC Network',type:'SBDC',state:'Texas',city:'San Antonio',phone:'210-458-2460',website:'https://www.txsbdc.org',desc:'The Texas SBDC Network is one of the largest in the nation, with four regions serving thousands of Texas entrepreneurs annually with free counseling, training, and specialized programs for energy, agriculture, and international trade.',services:['Free Counseling','Export Assistance','Government Contracting','Financial Analysis'],specialty:['Free Counseling','Export Assistance','Federal Contracting']},
-  {name:'Florida SBDC Network',type:'SBDC',state:'Florida',city:'Pensacola',phone:'850-898-3489',website:'https://www.floridasbdc.org',desc:'The Florida SBDC Network serves entrepreneurs statewide with free expert advising on business planning, access to capital, market research, disaster preparedness, and government contracting from over 40 service centers.',services:['Free Counseling','Business Plans','Disaster Recovery','Government Contracting'],specialty:['Free Counseling','Loans & Funding','Federal Contracting']},
-  {name:'Illinois SBDC Network',type:'SBDC',state:'Illinois',city:'Springfield',phone:'217-524-5700',website:'https://www.ilsbdc.org',desc:'Illinois SBDC provides free business consulting and training through a network of centers hosted at universities and community colleges across the state, serving all stages from pre-venture to established business.',services:['Free Counseling','Market Research','Financial Projections','Training'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'Pennsylvania SBDC Network',type:'SBDC',state:'Pennsylvania',city:'Philadelphia',phone:'215-898-1219',website:'https://www.pasbdc.org',desc:'Pennsylvania\'s SBDC network is hosted at universities across the state, providing free advising on business planning, access to capital, international trade, and technology commercialization.',services:['Free Counseling','Technology Help','Export Assistance','Loan Packaging'],specialty:['Free Counseling','Export Assistance','Loans & Funding']},
-  {name:'Ohio SBDC Network',type:'SBDC',state:'Ohio',city:'Columbus',phone:'614-466-2711',website:'https://www.ohiosbdc.ohio.gov',desc:'Ohio\'s SBDC network provides free business development services through centers hosted at colleges and universities, helping entrepreneurs with business planning, financial management, and growth strategies.',services:['Free Counseling','Business Plans','Financial Management','Training'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'Georgia SBDC Network',type:'SBDC',state:'Georgia',city:'Athens',phone:'706-542-6762',website:'https://www.georgiasbdc.org',desc:'The University of Georgia hosts Georgia\'s SBDC network with 17 regional offices providing free consulting to entrepreneurs on business planning, financial analysis, marketing, and access to capital.',services:['Free Counseling','Financial Analysis','Marketing Help','Loan Packaging'],specialty:['Free Counseling','Loans & Funding']},
-  {name:'Michigan SBDC',type:'SBDC',state:'Michigan',city:'Lansing',phone:'616-331-7480',website:'https://www.michigansbdc.org',desc:'Michigan SBDC provides free business advising and education to entrepreneurs statewide, with specialized programs for technology businesses, manufacturing, and international trade.',services:['Free Counseling','Technology Assistance','International Trade','Financial Planning'],specialty:['Free Counseling','Export Assistance','Startup / Launch']},
-  {name:'North Carolina SBDC',type:'SBDC',state:'North Carolina',city:'Chapel Hill',phone:'919-962-0389',website:'https://www.sbtdc.org',desc:'North Carolina\'s Small Business & Technology Development Center provides free counseling and training to entrepreneurs across the state with specialized expertise in technology commercialization and manufacturing.',services:['Free Counseling','Tech Commercialization','Export Assistance','Government Contracting'],specialty:['Free Counseling','Export Assistance','Federal Contracting']},
-  {name:'Virginia SBDC Network',type:'SBDC',state:'Virginia',city:'Herndon',phone:'703-277-1278',website:'https://www.virginiasbdc.org',desc:'Virginia SBDC Network provides free business consulting and training through 28 offices across the commonwealth, helping entrepreneurs with business planning, government contracting, and access to capital.',services:['Free Counseling','Government Contracting','Access to Capital','Market Analysis'],specialty:['Free Counseling','Federal Contracting','Loans & Funding']},
-  {name:'Washington SBDC',type:'SBDC',state:'Washington',city:'Pullman',phone:'509-358-7765',website:'https://www.wsbdc.org',desc:'Washington SBDC serves entrepreneurs statewide with free business advising on business plans, financial analysis, market research, and access to capital through a network of centers at community colleges and universities.',services:['Free Counseling','Business Plans','Financial Analysis','Market Research'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'Arizona SBDC Network',type:'SBDC',state:'Arizona',city:'Phoenix',phone:'480-784-0590',website:'https://www.azsbdc.net',desc:'Arizona\'s SBDC network provides free business advising and training to entrepreneurs across the state, with specialized services for rural businesses, Native American entrepreneurs, and international trade.',services:['Free Counseling','Rural Business Help','Export Assistance','Native American Programs'],specialty:['Free Counseling','Export Assistance','Rural Business']},
-  {name:'Colorado SBDC Network',type:'SBDC',state:'Colorado',city:'Denver',phone:'303-592-5920',website:'https://www.coloradosbdc.org',desc:'Colorado\'s SBDC network provides free business consulting through a statewide network, helping entrepreneurs with access to capital, business planning, marketing, and technology adoption.',services:['Free Counseling','Access to Capital','Business Planning','Tech Adoption'],specialty:['Free Counseling','Loans & Funding','Startup / Launch']},
+  const ICONS  = {sbdc:'📚',score:'⭐',wbc:'👩‍💼',vboc:'🎖️',sba:'🏛️',chamber:'🏢',ida:'🏗️',edc:'📈',cdfi:'💰',state:'🏴'};
+  const LABELS = {sbdc:'SBDC',score:'SCORE',wbc:"Women's Business Center",vboc:'Veterans (VBOC)',sba:'SBA Office',chamber:'Chamber of Commerce',ida:'Industrial Dev. Authority',edc:'Economic Dev. Corp',cdfi:'CDFI / Microlender',state:'State Program'};
+  const STATES = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 
-  // SCORE CHAPTERS
-  {name:'SCORE New York City',type:'SCORE',state:'New York',city:'New York',phone:'212-264-4507',website:'https://www.score.org/newyork',desc:'SCORE NYC provides free and confidential business mentoring from experienced executives and entrepreneurs. Over 200 volunteer mentors cover all aspects of business including finance, marketing, operations, and legal matters.',services:['Free Mentoring','Business Plan Review','Financial Advice','Marketing Strategy'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Los Angeles',type:'SCORE',state:'California',city:'Los Angeles',phone:'818-552-3206',website:'https://www.score.org/losangeles',desc:'SCORE Los Angeles connects entrepreneurs with volunteer business mentors from diverse industries. Offers free one-on-one mentoring, workshops, and online resources for all stages of business.',services:['Free Mentoring','Workshops','Online Resources','Industry-Specific Advice'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Chicago',type:'SCORE',state:'Illinois',city:'Chicago',phone:'312-353-7724',website:'https://www.score.org/chicago',desc:'SCORE Chicago volunteers have helped thousands of small businesses with free mentoring on business planning, financial management, marketing, and operations. Serving Chicago and surrounding communities.',services:['Free Mentoring','Business Planning','Financial Coaching','Operations Help'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Houston',type:'SCORE',state:'Texas',city:'Houston',phone:'713-773-6565',website:'https://www.score.org/houston',desc:'SCORE Houston chapter provides free mentoring from executives with diverse industry backgrounds including energy, healthcare, retail, and technology. Virtual and in-person sessions available.',services:['Free Mentoring','Industry Expertise','Startup Advice','Growth Strategy'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Miami',type:'SCORE',state:'Florida',city:'Miami',phone:'305-536-5521',website:'https://www.score.org/miami-dade',desc:'SCORE Miami provides bilingual mentoring in English and Spanish, serving Miami\'s diverse entrepreneurial community with free business advice, workshops, and resources.',services:['Free Mentoring','Bilingual Services','Workshops','Business Plan Help'],specialty:['Free Counseling','Startup / Launch','Minority-Owned']},
-  {name:'SCORE Boston',type:'SCORE',state:'Massachusetts',city:'Boston',phone:'617-565-5591',website:'https://www.score.org/boston',desc:'SCORE Boston offers free mentoring from retired and working executives to help entrepreneurs start and grow businesses. Specialty areas include technology, biotech, retail, and professional services.',services:['Free Mentoring','Tech Startup Advice','Financial Planning','Marketing'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Atlanta',type:'SCORE',state:'Georgia',city:'Atlanta',phone:'404-331-0116',website:'https://www.score.org/atlanta',desc:'SCORE Atlanta connects entrepreneurs with experienced volunteer mentors for free business counseling. Workshops, webinars, and one-on-one sessions cover every aspect of starting and growing a business.',services:['Free Mentoring','Workshops','Webinars','Business Plan Review'],specialty:['Free Counseling','Startup / Launch']},
-  {name:'SCORE Seattle',type:'SCORE',state:'Washington',city:'Seattle',phone:'206-553-7320',website:'https://www.score.org/seattle',desc:'SCORE Seattle serves entrepreneurs in the Pacific Northwest with free mentoring from experienced business professionals in technology, retail, hospitality, and professional services.',services:['Free Mentoring','Tech Industry Expertise','Startup Advice','Growth Strategies'],specialty:['Free Counseling','Startup / Launch']},
+  let currentType = '', currentSpec = '';
 
-  // WOMEN'S BUSINESS CENTERS
-  {name:'Women\'s Venture Fund — New York',type:'Women\'s Business Center',state:'New York',city:'New York',phone:'212-563-0499',website:'https://www.wvf-ny.org',desc:'The Women\'s Venture Fund provides low-income women entrepreneurs with access to capital, business education, and one-on-one technical assistance to start and grow successful businesses in New York City.',services:['Microloans','Business Training','Technical Assistance','Networking'],specialty:['Women-Owned','Loans & Funding','Minority-Owned']},
-  {name:'Women\'s Business Center of New Hampshire',type:'Women\'s Business Center',state:'New Hampshire',city:'Concord',phone:'603-225-1400',website:'https://www.nhsbdc.org/wbc',desc:'Providing free and low-cost business counseling, training, and networking opportunities for women entrepreneurs throughout New Hampshire at all stages of business development.',services:['Business Counseling','Training Programs','Networking','Mentoring'],specialty:['Women-Owned','Free Counseling','Startup / Launch']},
-  {name:'Illinois Women\'s Business Center',type:'Women\'s Business Center',state:'Illinois',city:'Chicago',phone:'312-853-3477',website:'https://www.wbdc.org',desc:'The Women\'s Business Development Center provides comprehensive business development services to women entrepreneurs and underserved communities throughout Illinois, including financing, education, and advocacy.',services:['Financing','Business Education','Advocacy','Consulting'],specialty:['Women-Owned','Loans & Funding','Minority-Owned']},
-  {name:'California Women\'s Business Center',type:'Women\'s Business Center',state:'California',city:'Los Angeles',phone:'213-622-9295',website:'https://www.cwbcla.org',desc:'Providing education, technical assistance, and access to capital for women entrepreneurs in Southern California, with special focus on low-income and minority women business owners.',services:['Business Training','Access to Capital','Technical Assistance','Peer Networks'],specialty:['Women-Owned','Loans & Funding','Minority-Owned']},
-  {name:'Texas Women\'s Business Center',type:'Women\'s Business Center',state:'Texas',city:'Houston',phone:'713-681-9422',website:'https://www.twbc.org',desc:'The Texas Women\'s Business Center offers free and low-cost training, counseling, and resources for women entrepreneurs in the greater Houston area and throughout Texas.',services:['Free Counseling','Training','Networking','Loan Referrals'],specialty:['Women-Owned','Free Counseling','Startup / Launch']},
+  async function loadResources() {
+    document.getElementById('loadingState').style.display = 'block';
+    document.getElementById('resourceGrid').innerHTML = '';
+    document.getElementById('noResults').style.display = 'none';
 
-  // VETERANS BUSINESS OUTREACH CENTERS
-  {name:'Veterans Business Outreach Center — New York',type:'Veterans (VBOC)',state:'New York',city:'New York',phone:'212-264-4507',website:'https://www.nyc.gov/vboc',desc:'The New York VBOC provides entrepreneurial development services including Boots to Business training, business plan workshops, and referrals to SBA resources for transitioning service members, veterans, and military spouses.',services:['Boots to Business','Business Plan Workshops','SBA Referrals','Mentoring'],specialty:['Veteran-Owned','Free Counseling','Startup / Launch']},
-  {name:'Veterans Business Outreach Center — Southeast',type:'Veterans (VBOC)',state:'Florida',city:'Tampa',phone:'813-905-1500',website:'https://www.vbocse.org',desc:'Serving veterans in Florida, Georgia, South Carolina, and Tennessee with comprehensive entrepreneurship training, counseling, and access to SBA resources for veteran-owned businesses.',services:['Boots to Business','Business Counseling','Access to Capital','Networking'],specialty:['Veteran-Owned','Free Counseling','Startup / Launch']},
-  {name:'Veterans Business Outreach Center — Texas',type:'Veterans (VBOC)',state:'Texas',city:'San Antonio',phone:'210-458-2480',website:'https://www.vbocsanantonio.org',desc:'The Texas VBOC provides transitioning service members, veterans, and military spouses with business training, counseling, and access to SBA programs and resources to start or grow a business.',services:['Boots to Business','Boots to Business Reboot','Counseling','SBA Programs'],specialty:['Veteran-Owned','Free Counseling','Startup / Launch','Loans & Funding']},
-  {name:'Veterans Business Outreach Center — California',type:'Veterans (VBOC)',state:'California',city:'Fresno',phone:'559-241-7414',website:'https://www.cvbc.net',desc:'Serving California veterans and military-connected entrepreneurs with free business counseling, Boots to Business training, and connections to SBA loan programs and federal contracting opportunities.',services:['Boots to Business','Business Counseling','Federal Contracting Help','Loan Referrals'],specialty:['Veteran-Owned','Free Counseling','Federal Contracting']},
+    const q     = document.getElementById('searchInput').value.trim();
+    const state = document.getElementById('stateFilter').value;
+    const type  = document.getElementById('typeFilter').value || currentType;
 
-  // ECONOMIC DEVELOPMENT / LOCAL
-  {name:'Nassau County Industrial Development Agency',type:'Economic Development',state:'New York',city:'Uniondale',phone:'516-571-1945',website:'https://www.nassauida.org',desc:'The Nassau County IDA provides tax incentives, low-cost financing, and business assistance to companies that create or retain jobs in Nassau County. Programs include tax-exempt bond financing, PILOTs, and sales tax exemptions for qualifying projects.',services:['Tax Incentives','Bond Financing','PILOT Agreements','Business Assistance'],specialty:['Loans & Funding','Startup / Launch']},
-  {name:'NYC Economic Development Corporation',type:'Economic Development',state:'New York',city:'New York',phone:'212-619-5000',website:'https://www.nycedc.com',desc:'NYCEDC drives inclusive growth and sustainable development in New York City by creating good jobs, building dynamic neighborhoods, and connecting New Yorkers to economic opportunity. Offers grants, financing, and business support programs.',services:['Business Financing','Grant Programs','Commercial Space','Workforce Development'],specialty:['Loans & Funding','Startup / Launch','Minority-Owned']},
-  {name:'Los Angeles County Economic Development Corporation',type:'Economic Development',state:'California',city:'Los Angeles',phone:'213-236-4800',website:'https://www.laedc.org',desc:'LAEDC works to attract, grow, and retain businesses and jobs for the benefit of Los Angeles County and its residents. Programs include business attraction, workforce development, and economic research.',services:['Business Attraction','Workforce Development','Site Selection','Economic Research'],specialty:['Startup / Launch','Rural Business']},
-  {name:'Greater Houston Partnership',type:'Economic Development',state:'Texas',city:'Houston',phone:'713-844-3600',website:'https://www.houston.org',desc:'The Greater Houston Partnership leads economic development for the Houston region, attracting investment, supporting business growth, and connecting companies to local resources and talent.',services:['Business Attraction','Site Selection','Talent Connections','Industry Research'],specialty:['Startup / Launch']},
+    const url = new URL(`${SB_URL}/rest/v1/smb_resource_centers`);
+    url.searchParams.set('select','*');
+    url.searchParams.set('is_active','eq.true');
+    url.searchParams.set('order','is_featured.desc,name.asc');
+    url.searchParams.set('limit','200');
+    if (state) url.searchParams.set('state',`eq.${state}`);
+    if (type)  url.searchParams.set('type',`eq.${type}`);
+    if (currentSpec) url.searchParams.set('specialties',`cs.{${currentSpec}}`);
+    if (q) url.searchParams.set('or',`name.ilike.*${q}*,city.ilike.*${q}*,org.ilike.*${q}*`);
 
-  // APEX ACCELERATORS
-  {name:'APEX Accelerator — New York',type:'APEX Accelerator',state:'New York',city:'Albany',phone:'518-944-2840',website:'https://www.nys-apex.org',desc:'The New York APEX Accelerator helps small businesses pursue government contracting opportunities by providing free procurement technical assistance, bid matching, and contracting education.',services:['Procurement Assistance','Bid Matching','Contract Training','Certification Help'],specialty:['Federal Contracting','Free Counseling']},
-  {name:'California APEX Accelerator Network',type:'APEX Accelerator',state:'California',city:'San Diego',phone:'619-482-6388',website:'https://www.apexnorcal.org',desc:'California\'s APEX Accelerator network assists small businesses in pursuing and performing on contracts with federal, state, and local government agencies through free technical assistance and training.',services:['Government Contracting Help','SAM Registration','Bid Preparation','Contract Compliance'],specialty:['Federal Contracting','Free Counseling']},
-  {name:'Texas APEX Accelerator',type:'APEX Accelerator',state:'Texas',city:'Austin',phone:'512-928-7222',website:'https://www.texasptac.org',desc:'Texas APEX Accelerator provides free procurement technical assistance to help Texas businesses access government contracting opportunities at the federal, state, and local level.',services:['Contracting Assistance','SAM.gov Help','Proposal Writing','Contract Compliance'],specialty:['Federal Contracting','Free Counseling']},
-];
-
-// ── RENDER ────────────────────────────────────────────────────────────────
-const typeColors = {
-  'SBDC':{'bg':'#dbeafe','color':'#1e40af'},
-  'SCORE':{'bg':'#dcfce7','color':'#166534'},
-  'Women\'s Business Center':{'bg':'#fce7f3','color':'#9d174d'},
-  'Veterans (VBOC)':{'bg':'#ffedd5','color':'#9a3412'},
-  'APEX Accelerator':{'bg':'#f3e8ff','color':'#6b21a8'},
-  'SBA District Office':{'bg':'#fef9c3','color':'#854d0e'},
-  'Chamber of Commerce':{'bg':'#e0f2fe','color':'#0c4a6e'},
-  'Economic Development':{'bg':'#e6faf6','color':'#00967a'},
-  'CDFI / Microlender':{'bg':'#f1f5f9','color':'#374151'},
-};
-
-function renderCard(r) {
-  const tc = typeColors[r.type] || {bg:'#f1f5f9',color:'#374151'};
-  const svcs = r.services.slice(0,4).map(s=>`<span class="svc-tag">${s}</span>`).join('');
-  return `<div class="card">
-    <div class="card-top">
-      <span class="card-type-badge" style="background:${tc.bg};color:${tc.color};">${r.type}</span>
-      <div class="card-name">${r.name}</div>
-      <div class="card-loc">📍 ${r.city}, ${r.state}</div>
-    </div>
-    <div class="card-body">
-      <div class="card-desc">${r.desc}</div>
-      <div class="card-services">${svcs}</div>
-    </div>
-    <div class="card-footer">
-      <a href="${r.website}" class="card-link" target="_blank" rel="noopener">Visit Website ↗</a>
-      ${r.phone ? `<span class="card-phone">📞 ${r.phone}</span>` : ''}
-    </div>
-  </div>`;
-}
-
-let currentType = '';
-function setType(type, btn) {
-  currentType = type;
-  document.querySelectorAll('.type-pill').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  filterCards();
-}
-
-function filterCards() {
-  const q = (document.getElementById('searchInput').value||'').toLowerCase();
-  const state = document.getElementById('stateFilter').value;
-  const type = document.getElementById('typeFilter').value;
-  const specialty = document.getElementById('specialtyFilter').value;
-
-  const filtered = RESOURCES.filter(r => {
-    const matchQ = !q || r.name.toLowerCase().includes(q) || r.city.toLowerCase().includes(q) || r.desc.toLowerCase().includes(q) || r.services.some(s=>s.toLowerCase().includes(q));
-    const matchState = !state || r.state === state;
-    const matchType = (!type && !currentType) || r.type === type || (currentType && r.type.includes(currentType));
-    const matchSpec = !specialty || (r.specialty && r.specialty.includes(specialty));
-    return matchQ && matchState && matchType && matchSpec;
-  });
-
-  const grid = document.getElementById('resourceGrid');
-  const noRes = document.getElementById('noResults');
-  document.getElementById('resultCount').textContent = `${filtered.length} resource${filtered.length!==1?'s':''} found`;
-
-  if (filtered.length === 0) {
-    grid.innerHTML = '';
-    noRes.classList.remove('hidden');
-  } else {
-    noRes.classList.add('hidden');
-    grid.innerHTML = filtered.map(renderCard).join('');
+    try {
+      const r = await fetch(url, {headers:{'apikey':SB_KEY,'Authorization':`Bearer ${SB_KEY}`,'Prefer':'count=exact'}});
+      const total = r.headers.get('content-range')?.split('/')[1];
+      const data  = await r.json();
+      renderGrid(data);
+      const n = parseInt(total)||data.length;
+      document.getElementById('resultsCount').innerHTML = `<strong>${n}</strong> resource${n!==1?'s':''}`;
+      document.getElementById('statTotal').textContent  = n+'+';
+      document.getElementById('phaseCount').textContent = n+'+';
+    } catch(e) {
+      document.getElementById('loadingState').innerHTML = '<p style="color:#e53e3e">⚠️ Could not connect. Please refresh and try again.</p>';
+    }
   }
-}
 
-// Check URL params for pre-filtering
-const urlParams = new URLSearchParams(window.location.search);
-if (urlParams.get('state')) {
-  document.getElementById('stateFilter').value = urlParams.get('state');
-}
-if (urlParams.get('type')) {
-  document.getElementById('typeFilter').value = urlParams.get('type');
-}
+  function renderGrid(data) {
+    document.getElementById('loadingState').style.display = 'none';
+    const grid = document.getElementById('resourceGrid');
+    if (!data.length) { document.getElementById('noResults').style.display='block'; return; }
+    grid.innerHTML = data.map(r => {
+      const specs = (r.specialties||[]).filter(s=>['women','veteran','minority','rural','export','startup'].includes(s));
+      return `<div class="resource-card${r.is_featured?' featured':''}" onclick="window.open('${r.website||'#'}','_blank')">
+        <div class="card-header">
+          <div class="card-icon ${r.type}">${ICONS[r.type]||'🏢'}</div>
+          <div style="flex:1">
+            <div class="card-type ${r.type}">${LABELS[r.type]||r.type}</div>
+            <div class="card-name">${r.name}</div>
+            ${r.org?`<div class="card-org">${r.org}</div>`:''}
+          </div>
+        </div>
+        <div class="card-location">📍 ${r.city||''}${r.city&&r.state?', ':''}${r.state||''}</div>
+        ${(r.services||[]).length?`<div class="card-services">${r.services.slice(0,4).map(s=>`<span class="service-tag">${s}</span>`).join('')}</div>`:''}
+        ${specs.length?`<div class="spec-tags">${specs.map(s=>`<span class="spec-tag ${s}">${s.charAt(0).toUpperCase()+s.slice(1)}</span>`).join('')}</div>`:''}
+        <div class="card-footer">
+          ${r.is_free?'<span class="card-free-badge">✓ Free Services</span>':'<span></span>'}
+          ${r.website?`<a class="card-link" href="${r.website}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Visit Website →</a>`:''}
+        </div>
+      </div>`;
+    }).join('');
+  }
 
-filterCards();
+  function setType(el, type) {
+    document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
+    el.classList.add('active'); currentType = type;
+    document.getElementById('typeFilter').value = type;
+    loadResources();
+  }
+
+  function setSpec(el, spec) {
+    document.querySelectorAll('.spec-chip').forEach(c=>c.classList.remove('active'));
+    el.classList.add('active'); currentSpec = spec;
+    loadResources();
+  }
+
+  function resetFilters() {
+    document.getElementById('searchInput').value='';
+    document.getElementById('stateFilter').value='';
+    document.getElementById('typeFilter').value='';
+    currentType=''; currentSpec='';
+    document.querySelectorAll('.filter-chip').forEach((c,i)=>c.classList.toggle('active',i===0));
+    document.querySelectorAll('.spec-chip').forEach((c,i)=>c.classList.toggle('active',i===0));
+    loadResources();
+  }
+
+  function buildStateGrid() {
+    document.getElementById('stateGrid').innerHTML = STATES.map(s =>
+      `<a href="/centers/${s.toLowerCase().replace(/\s+/g,'-')}.html" class="state-link">${s} <span style="color:var(--gray-400)">›</span></a>`
+    ).join('');
+  }
+
+  document.getElementById('searchInput').addEventListener('keyup', e => { if(e.key==='Enter') loadResources(); });
+  document.getElementById('stateFilter').addEventListener('change', loadResources);
+  document.getElementById('typeFilter').addEventListener('change', loadResources);
+
+  buildStateGrid();
+  loadResources();
 </script>
 </body>
 </html>
