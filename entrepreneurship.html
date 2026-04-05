@@ -354,8 +354,9 @@ async function load(KW){
   let data=[];
   if(cfg.sbUrl&&cfg.sbKey){
     try{
-      const r=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&order=id.asc',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
-      if(r.ok){const rows=await r.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
+      // Fetch only entrepreneurship category rows directly from Supabase
+      const sbRes=await fetch(cfg.sbUrl+'/rest/v1/'+(cfg.sbTable||'profind_influencers')+'?select=*&category=eq.entrepreneurship&order=id.asc&limit=1000',{headers:{apikey:cfg.sbKey,Authorization:'Bearer '+cfg.sbKey}});
+      if(sbRes.ok){const rows=await sbRes.json();data=rows.map(r2=>({id:r2.id,...(r2.data||{}),name:r2.name||r2.data?.name,category:r2.category||r2.data?.category}));}
     }catch(e){}
   }
   if(!data.length){try{const l=localStorage.getItem('smb_influencers');if(l)data=JSON.parse(l);}catch(e){}}
@@ -366,7 +367,7 @@ async function load(KW){
 }
 function tf(btn){const a=btn.nextElementSibling;const t=btn.querySelector('.ft');const o=a.classList.contains('open');a.classList.toggle('open',!o);if(t)t.textContent=o?'+':'−';}
 
-load(["entrepreneur","startup","business owner","founder","small business","acquisition","buy a business","eta","search fund","m&a","venture","bootstrap","saas","seed","pitch","mvp","product market fit","y combinator","solopreneur","self-employed"]);
+load(["entrepreneur","startup","business owner","founder","small business"]);
 </script>
 </body>
 </html>
